@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/_10sdp"
+    android:layout_marginBottom="@dimen/_10sdp">
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imageViewRestaurant"
+        android:layout_width="@dimen/_80sdp"
+        android:layout_height="@dimen/_80sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imageViewFav"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_5sdp"
+        app:srcCompat="@drawable/fav_unfav_selector"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewRestaurant"
+        app:layout_constraintTop_toTopOf="@+id/imageViewRestaurant" />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textViewRestaurantName"
+        style="@style/AuthHeadingTextView.TextViewCommonLayoutMedium"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:text="Restaurant Lorena's"
+        app:layout_constraintBottom_toTopOf="@+id/textViewRestaurantItem"
+        app:layout_constraintStart_toEndOf="@+id/imageViewRestaurant"
+        app:layout_constraintTop_toTopOf="@+id/imageViewRestaurant"
+        app:layout_constraintVertical_chainStyle="spread" />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textViewRestaurantItem"
+        style="@style/AuthHeadingTextView.TextViewCommonLayout"
+        android:layout_width="0dp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:text="Restaurant Lorena's,Restaurant Lorena's,Restaurant Lorena's"
+        android:textColor="@color/dark_gray"
+        app:layout_constraintBottom_toTopOf="@+id/ratingBarRestaurant"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/textViewRestaurantName"
+        app:layout_constraintTop_toBottomOf="@+id/textViewRestaurantName" />
+
+
+    <com.kraven.utils.RatingBar
+        android:id="@+id/ratingBarRestaurant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_5sdp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewRestaurant"
+        app:layout_constraintStart_toStartOf="@+id/textViewRestaurantName"
+        app:layout_constraintTop_toBottomOf="@+id/textViewRestaurantItem"
+        app:rb_click_rating="false"
+        app:rb_count="3"
+        app:rb_empty="@drawable/ic_raitng_empty"
+        app:rb_fill="@drawable/ic_rating"
+        app:rb_max_count="5"
+        app:rb_space="@dimen/_5sdp"
+        app:rb_touch_rating="true" />
+    
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textViewReviewCount"
+        style="@style/AuthHeadingTextView.TextViewCommonLayout"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:text="(500 Reviews)"
+        app:layout_constraintBottom_toBottomOf="@+id/ratingBarRestaurant"
+        app:layout_constraintStart_toEndOf="@+id/ratingBarRestaurant"
+        app:layout_constraintTop_toTopOf="@+id/ratingBarRestaurant" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

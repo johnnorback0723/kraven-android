@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/_5sdp"
+    android:paddingBottom="@dimen/_5sdp">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imageViewDelete2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/_10sdp"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewCardNumber"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/textViewCardNumber"
+        app:layout_constraintTop_toTopOf="@+id/textViewCardNumber"
+        app:srcCompat="@drawable/ic_delete" />
+
+    <androidx.appcompat.widget.AppCompatRadioButton
+        android:id="@+id/radioButtonSelectedCard"
+        android:layout_width="@dimen/_20sdp"
+        android:layout_height="@dimen/_20sdp"
+        android:button="@drawable/radio_button_delivery_type"
+        android:enabled="false"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="@+id/textViewCardNumber"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textViewCardNumber" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textViewCardNumber"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginEnd="30dp"
+        android:fontFamily="@font/work_sans_regular"
+        android:text="xxxx xxxx xxxx 1524"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_14ssp"
+        app:layout_constraintEnd_toStartOf="@id/imageViewCardType"
+        app:layout_constraintStart_toEndOf="@id/radioButtonSelectedCard"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:visibility="gone"
+        android:id="@+id/imageViewCardType"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="0dp"
+        app:srcCompat="@drawable/ic_master"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewCardNumber"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textViewCardNumber" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:alpha="0.5"
+        android:background="@color/black"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCardNumber" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

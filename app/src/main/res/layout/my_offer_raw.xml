@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_marginBottom="@dimen/_10sdp">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imageViewOffer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:foreground="#80000000"
+		app:layout_constraintDimensionRatio="H,16:9"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textViewOffer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_bold_0"
+        tools:text="@string/off"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_12ssp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonOrderNow"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewOffer"
+        app:layout_constraintStart_toStartOf="@+id/imageViewOffer"
+        app:layout_constraintTop_toTopOf="@+id/imageViewOffer"
+        app:layout_constraintWidth_percent="0.8" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonOrderNow"
+        style="@style/CommonButton"
+        android:layout_width="wrap_content"
+        android:backgroundTint="@color/light_blue"
+        android:paddingStart="@dimen/_20sdp"
+        android:paddingEnd="@dimen/_20sdp"
+        android:text="@string/order_now"
+        android:textSize="@dimen/_12ssp"
+        app:cornerRadius="@dimen/_30sdp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewOffer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewOffer" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

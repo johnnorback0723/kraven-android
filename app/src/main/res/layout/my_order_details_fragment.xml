@@ -1,0 +1,461 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:fillViewport="true">
+	
+	<androidx.constraintlayout.widget.ConstraintLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:paddingStart="@dimen/_15sdp"
+		android:paddingTop="@dimen/_10sdp"
+		android:paddingEnd="@dimen/_15sdp"
+		android:paddingBottom="@dimen/_30sdp">
+		
+		
+		<androidx.appcompat.widget.AppCompatTextView
+			android:id="@+id/textViewOrderId"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:fontFamily="@font/work_sans_medium"
+			android:text="@string/order_id"
+			android:textColor="@color/black"
+			android:textSize="@dimen/_13ssp"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toTopOf="parent" />
+		
+		<androidx.appcompat.widget.AppCompatTextView
+			android:id="@+id/textViewOrderDateTime"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="@dimen/_5sdp"
+			android:fontFamily="@font/work_sans_regular"
+			android:text="@string/date_time"
+			android:textColor="@color/black"
+			android:textSize="@dimen/_12ssp"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toBottomOf="@+id/textViewOrderId" />
+		
+		<androidx.appcompat.widget.AppCompatTextView
+			android:id="@+id/textViewCancelBy"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="@dimen/_5sdp"
+			android:fontFamily="@font/work_sans_medium"
+			android:textColor="@color/red"
+			android:textSize="@dimen/_12ssp"
+			android:visibility="gone"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toBottomOf="@+id/textViewOrderDateTime"
+			tools:text="Rejected by :Restaurant" />
+		
+		
+		<androidx.appcompat.widget.AppCompatTextView
+			android:id="@+id/textViewCancelReason"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:fontFamily="@font/work_sans_medium"
+			android:textColor="@color/red"
+			android:textSize="@dimen/_12ssp"
+			android:visibility="gone"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toBottomOf="@+id/textViewCancelBy" />
+		
+		<androidx.recyclerview.widget.RecyclerView
+			android:id="@+id/recyclerViewOrderList"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			app:layout_behavior="@string/appbar_scrolling_view_behavior"
+			app:layout_constraintTop_toBottomOf="@id/textViewCancelReason" />
+		
+		<androidx.appcompat.widget.AppCompatTextView
+			android:id="@+id/textViewRestaurant"
+			style="@style/CartTextView"
+			android:text="@string/restaurant"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toBottomOf="@+id/recyclerViewOrderList" />
+		
+		<androidx.appcompat.widget.AppCompatImageView
+			android:id="@+id/imageViewRestaurant"
+			android:layout_width="@dimen/_100sdp"
+			android:layout_height="@dimen/_100sdp"
+			android:layout_marginTop="@dimen/_10sdp"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toBottomOf="@+id/textViewRestaurant" />
+		
+		
+		<androidx.appcompat.widget.AppCompatTextView
+			android:id="@+id/textViewRestaurantName"
+			style="@style/AuthHeadingTextView.TextViewCommonLayoutMedium"
+			android:layout_marginStart="@dimen/_10sdp"
+			app:layout_constraintBottom_toTopOf="@id/textViewRestaurantItem"
+			app:layout_constraintStart_toEndOf="@id/imageViewRestaurant"
+			app:layout_constraintTop_toTopOf="@+id/imageViewRestaurant"
+			app:layout_constraintVertical_chainStyle="spread"
+			tools:text="Restaurant Lorena's" />
+		
+		
+		<androidx.appcompat.widget.AppCompatTextView
+			android:id="@+id/textViewRestaurantItem"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:fontFamily="@font/work_sans_regular"
+			android:textColor="@color/dark_gray"
+			android:textSize="@dimen/_12ssp"
+			app:layout_constraintBottom_toTopOf="@id/ratingBarRestaurant"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintStart_toStartOf="@+id/textViewRestaurantName"
+			app:layout_constraintTop_toBottomOf="@+id/textViewRestaurantName"
+			tools:text="Noodles,Sandwich,Burder" />
+		
+		<com.kraven.utils.RatingBar
+			android:id="@+id/ratingBarRestaurant"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="@dimen/_5sdp"
+			app:layout_constraintBottom_toBottomOf="@+id/imageViewRestaurant"
+			app:layout_constraintStart_toStartOf="@+id/textViewRestaurantName"
+			app:layout_constraintTop_toBottomOf="@+id/textViewRestaurantItem"
+			app:rb_click_rating="false"
+			app:rb_empty="@drawable/ic_raitng_empty"
+			app:rb_fill="@drawable/ic_rating"
+			app:rb_space="@dimen/_5sdp"
+			app:rb_touch_rating="false" />
+		
+		
+		<androidx.appcompat.widget.AppCompatTextView
+			android:id="@+id/textViewReviewCount"
+			style="@style/AuthHeadingTextView.TextViewCommonLayout"
+			android:layout_marginStart="@dimen/_10sdp"
+			android:textSize="@dimen/_11ssp"
+			app:layout_constraintBottom_toBottomOf="@+id/ratingBarRestaurant"
+			app:layout_constraintStart_toEndOf="@+id/ratingBarRestaurant"
+			app:layout_constraintTop_toTopOf="@+id/ratingBarRestaurant"
+			tools:text="(500 Reviews)" />
+		
+		<androidx.appcompat.widget.AppCompatTextView
+			android:id="@+id/textViewNote"
+			style="@style/CartTextView"
+			android:text="@string/note"
+			android:visibility="gone"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toBottomOf="@+id/imageViewRestaurant" />
+		
+		<androidx.appcompat.widget.AppCompatTextView
+			android:id="@+id/textViewNotDetails"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="@dimen/_5sdp"
+			android:fontFamily="@font/work_sans_medium"
+			android:lineSpacingExtra="@dimen/_2sdp"
+			android:maxLines="3"
+			android:text="@string/long_text"
+			android:textColor="@color/black"
+			android:textSize="@dimen/_12ssp"
+			android:visibility="gone"
+			app:layout_constraintTop_toBottomOf="@+id/textViewNote" />
+		
+		
+		<androidx.appcompat.widget.AppCompatTextView
+			android:id="@+id/textViewAddressLabel"
+			style="@style/CartTextView"
+			android:text="@string/address"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toBottomOf="@+id/textViewNotDetails" />
+		
+		<androidx.appcompat.widget.AppCompatTextView
+			android:id="@+id/textViewAddressType"
+			style="@style/AuthHeadingTextView.TextViewCommonLayoutMedium"
+			android:layout_marginTop="@dimen/_5sdp"
+			android:textSize="@dimen/_14ssp"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toBottomOf="@+id/textViewAddressLabel"
+			tools:text="Home" />
+		
+		<androidx.appcompat.widget.AppCompatTextView
+			android:id="@+id/textViewAddress"
+			style="@style/AuthHeadingTextView.TextViewCommonLayout"
+			android:layout_marginTop="@dimen/_5sdp"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toBottomOf="@+id/textViewAddressType"
+			tools:text="51 Buttrnut Lan Haisburg IL 2946" />
+		
+		<androidx.appcompat.widget.AppCompatTextView
+			android:id="@+id/textViewPriceLabel"
+			style="@style/CartTextView"
+			android:text="@string/price_details"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toBottomOf="@+id/textViewAddress" />
+		
+		
+		<androidx.appcompat.widget.AppCompatTextView
+			android:id="@+id/textViewSubTotal"
+			style="@style/AuthHeadingTextView.TextViewCommonLayoutMedium"
+			android:layout_marginTop="@dimen/_15sdp"
+			android:text="@string/sub_total"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toBottomOf="@+id/textViewPriceLabel" />
+		
+		<androidx.appcompat.widget.AppCompatTextView
+			android:id="@+id/textViewSubTotalValue"
+			style="@style/AuthHeadingTextView.TextViewCommonLayoutMedium"
+			app:layout_constraintBottom_toBottomOf="@id/textViewSubTotal"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintTop_toTopOf="@+id/textViewSubTotal"
+			tools:text="$165" />
+		
+		<androidx.appcompat.widget.AppCompatTextView
+			android:id="@+id/textViewDeliveryCharge"
+			style="@style/AuthHeadingTextView.TextViewCommonLayoutMedium"
+			android:layout_marginTop="@dimen/_15sdp"
+			android:text="@string/delivery_charge"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toBottomOf="@+id/textViewSubTotal" />
+		
+		<androidx.appcompat.widget.AppCompatImageView
+			android:id="@+id/imageViewDeliveryInfo"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginStart="@dimen/_7sdp"
+			android:background="@drawable/ic_info"
+			app:layout_constraintBottom_toBottomOf="@+id/textViewDeliveryCharge"
+			app:layout_constraintStart_toEndOf="@id/textViewDeliveryCharge"
+			app:layout_constraintTop_toTopOf="@+id/textViewDeliveryCharge" />
+		
+		
+		<androidx.appcompat.widget.AppCompatTextView
+			android:id="@+id/textViewDeliveryChargeValue"
+			style="@style/AuthHeadingTextView.TextViewCommonLayoutMedium"
+			app:layout_constraintBottom_toBottomOf="@id/textViewDeliveryCharge"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintTop_toTopOf="@+id/textViewDeliveryCharge"
+			tools:text="$10" />
+		
+		<androidx.appcompat.widget.AppCompatTextView
+			android:id="@+id/textViewVat"
+			style="@style/AuthHeadingTextView.TextViewCommonLayoutMedium"
+			android:layout_marginTop="@dimen/_15sdp"
+			android:text="@string/vat"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toBottomOf="@+id/textViewDeliveryCharge" />
+		
+		<androidx.appcompat.widget.AppCompatTextView
+			android:id="@+id/textViewVatValue"
+			style="@style/AuthHeadingTextView.TextViewCommonLayoutMedium"
+			app:layout_constraintBottom_toBottomOf="@id/textViewVat"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintTop_toTopOf="@+id/textViewVat"
+			tools:text="$10" />
+		
+		<androidx.appcompat.widget.AppCompatTextView
+			android:id="@+id/textViewTip"
+			style="@style/AuthHeadingTextView.TextViewCommonLayoutMedium"
+			android:layout_marginTop="@dimen/_15sdp"
+			android:text="@string/tip"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toBottomOf="@+id/textViewVat" />
+		
+		<androidx.appcompat.widget.AppCompatTextView
+			android:id="@+id/textViewTipValue"
+			style="@style/AuthHeadingTextView.TextViewCommonLayoutMedium"
+			app:layout_constraintBottom_toBottomOf="@id/textViewTip"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintTop_toTopOf="@+id/textViewTip"
+			tools:text="$10" />
+		
+		<androidx.appcompat.widget.AppCompatTextView
+			android:id="@+id/textViewDiscount"
+			style="@style/AuthHeadingTextView.TextViewCommonLayoutMedium"
+			android:layout_marginTop="@dimen/_15sdp"
+			android:text="@string/discount"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toBottomOf="@+id/textViewTip" />
+		
+		<androidx.appcompat.widget.AppCompatTextView
+			android:id="@+id/textViewDiscountValue"
+			style="@style/AuthHeadingTextView.TextViewCommonLayoutMedium"
+			app:layout_constraintBottom_toBottomOf="@id/textViewDiscount"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintTop_toTopOf="@+id/textViewDiscount"
+			tools:text="-$50" />
+		
+		<androidx.appcompat.widget.AppCompatTextView
+			android:id="@+id/textViewTollFee"
+			style="@style/AuthHeadingTextView.TextViewCommonLayoutMedium"
+			android:layout_marginTop="@dimen/_15sdp"
+			android:text="Toll Fee"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toBottomOf="@+id/textViewDiscount" />
+		
+		<androidx.appcompat.widget.AppCompatTextView
+			android:id="@+id/textViewTollFeeValue"
+			style="@style/AuthHeadingTextView.TextViewCommonLayoutMedium"
+			app:layout_constraintBottom_toBottomOf="@id/textViewTollFee"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintTop_toTopOf="@+id/textViewTollFee"
+			tools:text="-$50" />
+		
+		<androidx.constraintlayout.widget.Group
+			android:id="@+id/groupTollFee"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			/>
+		
+		<androidx.appcompat.widget.AppCompatTextView
+			android:id="@+id/textViewTotalLabel"
+			style="@style/AuthHeadingTextView.TextViewCommonLayoutMedium"
+			android:layout_marginTop="@dimen/_15sdp"
+			android:text="@string/total"
+			android:textSize="@dimen/_15ssp"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toBottomOf="@+id/textViewTollFee" />
+		
+		<androidx.appcompat.widget.AppCompatTextView
+			android:id="@+id/textViewTotal"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:fontFamily="@font/work_sans_bold"
+			android:textColor="@color/black"
+			android:textSize="@dimen/_15ssp"
+			app:layout_constraintBottom_toBottomOf="@id/textViewTotalLabel"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintTop_toTopOf="@id/textViewTotalLabel"
+			tools:text="$185" />
+		
+		
+		<androidx.constraintlayout.widget.Group
+			android:id="@+id/groupPaymentVisible"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			app:constraint_referenced_ids="textViewCardNumber,textViewCardNumberValue,textViewTransactionValue,textViewTransactionId" />
+		
+		<androidx.appcompat.widget.AppCompatTextView
+			android:id="@+id/textViewPaymentLabel"
+			style="@style/CartTextView"
+			android:text="@string/payment_method"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toBottomOf="@+id/textViewTotalLabel" />
+		
+		
+		<androidx.appcompat.widget.AppCompatTextView
+			android:id="@+id/textViewPaymentModeLabel"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="@dimen/_10sdp"
+			android:fontFamily="@font/work_sans_medium"
+			android:text="@string/payment_mode"
+			android:textColor="@color/dark_gray"
+			android:textSize="@dimen/_12ssp"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toBottomOf="@+id/textViewPaymentLabel" />
+		
+		<androidx.appcompat.widget.AppCompatTextView
+			android:id="@+id/textViewPaymentModeValue"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_marginStart="@dimen/_5sdp"
+			android:fontFamily="@font/work_sans_medium"
+			android:textColor="@color/black"
+			android:textSize="@dimen/_12ssp"
+			app:layout_constraintBottom_toBottomOf="@id/textViewPaymentModeLabel"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintStart_toEndOf="@id/textViewPaymentModeLabel"
+			app:layout_constraintTop_toTopOf="@id/textViewPaymentModeLabel"
+			tools:text="Visa Card : $90, Wallet : $50 dsfsdfd" />
+		
+		<androidx.appcompat.widget.AppCompatTextView
+			android:id="@+id/textViewCardNumber"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="@dimen/_10sdp"
+			android:fontFamily="@font/work_sans_medium"
+			android:text="@string/card_number"
+			android:textColor="@color/dark_gray"
+			android:textSize="@dimen/_12ssp"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toBottomOf="@+id/textViewPaymentModeLabel" />
+		
+		<androidx.appcompat.widget.AppCompatTextView
+			android:id="@+id/textViewCardNumberValue"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_marginStart="@dimen/_5sdp"
+			android:fontFamily="@font/work_sans_medium"
+			android:textColor="@color/black"
+			android:textSize="@dimen/_12ssp"
+			app:layout_constraintBottom_toBottomOf="@id/textViewCardNumber"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintStart_toEndOf="@id/textViewCardNumber"
+			app:layout_constraintTop_toTopOf="@id/textViewCardNumber"
+			tools:text="xxxx xxxx xxxx 1534" />
+		
+		<androidx.appcompat.widget.AppCompatTextView
+			android:id="@+id/textViewTransactionId"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="@dimen/_10sdp"
+			android:fontFamily="@font/work_sans_medium"
+			android:text="@string/transaction_id"
+			android:textColor="@color/dark_gray"
+			android:textSize="@dimen/_12ssp"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toBottomOf="@+id/textViewCardNumber" />
+		
+		<androidx.appcompat.widget.AppCompatTextView
+			android:id="@+id/textViewTransactionValue"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_marginStart="@dimen/_5sdp"
+			android:fontFamily="@font/work_sans_medium"
+			android:textColor="@color/black"
+			android:textSize="@dimen/_12ssp"
+			app:layout_constraintBottom_toBottomOf="@id/textViewTransactionId"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintStart_toEndOf="@id/textViewTransactionId"
+			app:layout_constraintTop_toTopOf="@id/textViewTransactionId"
+			tools:text="153245 sdfsdfsdff sdfsdfsd fsdfsdfs " />
+		
+		<com.google.android.material.button.MaterialButton
+			android:id="@+id/buttonCancel"
+			style="@style/CommonButton.Cancel"
+			android:layout_width="0dp"
+			android:layout_marginTop="@dimen/_20sdp"
+			android:paddingStart="0dp"
+			android:paddingEnd="0dp"
+			android:text="@string/reorder"
+			app:backgroundTint="@color/white"
+			app:cornerRadius="@dimen/_20sdp"
+			app:layout_constraintBottom_toBottomOf="parent"
+			app:layout_constraintEnd_toStartOf="@id/buttonTrack"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toBottomOf="@+id/textViewTransactionId"
+			app:layout_constraintWidth_percent="0.48"
+			app:strokeColor="@color/orange"
+			app:strokeWidth="@dimen/_1sdp" />
+		
+		
+		<com.google.android.material.button.MaterialButton
+			android:id="@+id/buttonTrack"
+			style="@style/CommonButton"
+			android:layout_width="0dp"
+			android:layout_marginStart="@dimen/_5sdp"
+			android:layout_marginTop="@dimen/_20sdp"
+			android:paddingStart="0dp"
+			android:paddingEnd="0dp"
+			android:text="@string/track"
+			app:cornerRadius="@dimen/_20sdp"
+			app:layout_constraintBottom_toBottomOf="parent"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintStart_toEndOf="@id/buttonCancel"
+			app:layout_constraintTop_toBottomOf="@+id/textViewTransactionId"
+			app:layout_constraintWidth_percent="0.48" />
+	
+	
+	</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.core.widget.NestedScrollView>

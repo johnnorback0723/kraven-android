@@ -1,0 +1,494 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginStart="@dimen/_15sdp"
+    android:layout_marginEnd="@dimen/_15sdp"
+    android:layout_marginBottom="@dimen/_10sdp"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imageViewLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_6sdp"
+            android:layout_marginEnd="@dimen/_6sdp"
+            app:layout_constraintEnd_toStartOf="@id/textViewAppName"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/logo_orange_white_wrapper" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewAppName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/typo_round_bold_demo"
+            android:text="@string/app_name"
+            android:textColor="@color/orange"
+            android:textSize="@dimen/_38ssp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageViewLogo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/imageViewLogo"
+            app:layout_constraintTop_toTopOf="@+id/imageViewLogo"
+            app:textAllCaps="true" />
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/inputLayoutSelectDate"
+            style="@style/AuthTextInputLayout.Black"
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_25sdp"
+            app:layout_constraintTop_toBottomOf="@+id/textViewAppName">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextSelectDate"
+                style="@style/AuthEditText.Disable.Black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableEnd="@drawable/ic_calander"
+                android:drawablePadding="@dimen/_5sdp"
+                android:hint="@string/select_date"
+                android:inputType="none"
+                android:paddingBottom="@dimen/_15sdp"
+                android:theme="@style/AuthEditTextColor" />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/inputLayoutSelectTime"
+            style="@style/AuthTextInputLayout.Black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_15sdp"
+            app:layout_constraintTop_toBottomOf="@+id/inputLayoutSelectDate">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextSelectTime"
+                style="@style/AuthEditText.Disable.Black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableEnd="@drawable/ic_time"
+                android:drawablePadding="@dimen/_5sdp"
+                android:hint="@string/select_time"
+                android:inputType="none"
+                android:paddingBottom="@dimen/_15sdp"
+                android:theme="@style/AuthEditTextColor" />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/inputLayoutHours"
+            style="@style/AuthTextInputLayout.Black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:theme="@style/AuthEditTextColorBlack"
+            app:layout_constraintTop_toBottomOf="@+id/inputLayoutSelectTime">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextHours"
+                style="@style/AuthEditText.Disable.Black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableEnd="@drawable/ic_down_arrow"
+                android:drawablePadding="@dimen/_5sdp"
+                android:hint="@string/hours_of_service"
+                android:inputType="text"
+                android:paddingBottom="@dimen/_15sdp"
+                android:theme="@style/AuthEditTextColorBlack" />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/inputLayoutEvent"
+            style="@style/AuthTextInputLayout.Black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_15sdp"
+            app:layout_constraintTop_toBottomOf="@+id/inputLayoutHours">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextEvent"
+                style="@style/AuthEditText.Disable.Black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableEnd="@drawable/ic_down_arrow"
+                android:drawablePadding="@dimen/_5sdp"
+                android:hint="@string/type_of_event"
+                android:inputType="none"
+                android:paddingBottom="@dimen/_15sdp"
+                android:theme="@style/AuthEditTextColor" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/inputLayoutDressCode"
+            style="@style/AuthTextInputLayout.Black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_15sdp"
+            app:layout_constraintTop_toBottomOf="@+id/inputLayoutEvent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextDressCode"
+                style="@style/AuthEditText.Disable.Black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableEnd="@drawable/ic_down_arrow"
+                android:drawablePadding="@dimen/_5sdp"
+                android:hint="@string/dress_code"
+                android:inputType="none"
+                android:paddingBottom="@dimen/_15sdp"
+                android:theme="@style/AuthEditTextColor" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/editTextWallet"
+            style="@style/DashButtonStyle"
+            android:layout_width="0dp"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_weight="1"
+            android:background="@drawable/button_dash_bg"
+            android:hint="@string/my_wallet"
+            android:inputType="number"
+            android:paddingStart="@dimen/_5sdp"
+            android:paddingTop="@dimen/_12sdp"
+            android:paddingEnd="@dimen/_5sdp"
+            android:paddingBottom="@dimen/_12sdp"
+            android:textAlignment="center"
+            android:textColorHint="@color/light_blue"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/inputLayoutDressCode" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewAddressLabel"
+            style="@style/CartTextView"
+            android:text="@string/address"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextWallet" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewChange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/work_sans_medium"
+            android:text="@string/change"
+            android:textColor="@color/light_blue"
+            android:textSize="@dimen/_12ssp"
+            app:layout_constraintBottom_toBottomOf="@+id/textViewAddressLabel"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textViewAddressLabel" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewAddressType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:fontFamily="@font/work_sans_medium"
+            android:text="Home"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_14ssp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewAddressLabel" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:fontFamily="@font/work_sans_regular"
+            android:text="51 Buttrnut Lan Haisburg IL 2946"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12ssp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewAddressType" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewPriceLabel"
+            style="@style/CartTextView"
+            android:text="@string/price_details"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewAddress" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewSubTotal"
+            style="@style/AuthHeadingTextView.TextViewCommonLayoutMedium"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:text="@string/sub_total"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewPriceLabel" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/AuthHeadingTextView.TextViewCommonLayoutMedium"
+            android:text="$165"
+            app:layout_constraintBottom_toBottomOf="@id/textViewSubTotal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textViewSubTotal" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewDeliveryCharge"
+            style="@style/AuthHeadingTextView.TextViewCommonLayoutMedium"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:text="@string/delivery_charge"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewSubTotal" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imageViewDeliveryInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_7sdp"
+            android:background="@drawable/ic_info"
+            app:layout_constraintBottom_toBottomOf="@+id/textViewDeliveryCharge"
+            app:layout_constraintStart_toEndOf="@id/textViewDeliveryCharge"
+            app:layout_constraintTop_toTopOf="@+id/textViewDeliveryCharge" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/AuthHeadingTextView.TextViewCommonLayoutMedium"
+            android:text="$10"
+            app:layout_constraintBottom_toBottomOf="@id/textViewDeliveryCharge"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textViewDeliveryCharge" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewVat"
+            style="@style/AuthHeadingTextView.TextViewCommonLayoutMedium"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:text="@string/vat"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewDeliveryCharge" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/AuthHeadingTextView.TextViewCommonLayoutMedium"
+            android:text="$10"
+            app:layout_constraintBottom_toBottomOf="@id/textViewVat"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textViewVat" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewTipLabel"
+            style="@style/AuthHeadingTextView.TextViewCommonLayoutMedium"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:text="@string/tip"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewVat" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewTip"
+            style="@style/AuthHeadingTextView.TextViewCommonLayoutMedium"
+            android:text="$50"
+            app:layout_constraintBottom_toBottomOf="@id/textViewTipLabel"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textViewTipLabel" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewTotalLabel"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:fontFamily="@font/work_sans_medium"
+            android:text="@string/total"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_15ssp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewTipLabel" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewTotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/work_sans_bold"
+            android:text="$185"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_15ssp"
+            app:layout_constraintBottom_toBottomOf="@id/textViewTotalLabel"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/textViewTotalLabel" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewPaymentLabel"
+            style="@style/CartTextView"
+            android:text="@string/payment_method"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewTotalLabel" />
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/llCashOn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@+id/textViewPaymentLabel">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textViewCashOn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/work_sans_medium"
+                android:text="@string/cash_on_delivery"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12ssp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imageViewCashInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:background="@drawable/ic_info"
+                android:padding="@dimen/_5sdp"
+                app:layout_constraintBottom_toBottomOf="@id/textViewCashOn"
+                app:layout_constraintStart_toEndOf="@id/textViewCashOn"
+                app:layout_constraintTop_toTopOf="@id/radioButtonCashOn" />
+
+            <androidx.appcompat.widget.AppCompatRadioButton
+                android:id="@+id/radioButtonCashOn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:button="@drawable/radio_button_payment_type"
+                android:gravity="start"
+                android:layoutDirection="rtl"
+                android:text=""
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/imageViewCashInfo"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:id="@+id/radioButtonDebitCard"
+            style="@style/RadioButtonStyle"
+            android:text="@string/debit_card"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/llCashOn" />
+
+        <RelativeLayout
+            android:visibility="gone"
+            android:id="@+id/linearLayoutTip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/radioButtonDebitCard">
+
+            <RelativeLayout
+                android:id="@+id/llTip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/button_dash_bg">
+
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/buttonTip"
+                    style="@style/DashButtonStyle"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:drawableStart="@drawable/ic_tip"
+                    android:drawablePadding="@dimen/_10sdp"
+                    android:gravity="center"
+                    android:maxLines="2"
+                    android:text="@string/add_tip" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/imageViewCloseTip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    android:background="@drawable/ic_close"
+                    android:visibility="gone" />
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/llEnterTip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/button_dash_bg"
+                android:visibility="gone"
+                android:orientation="horizontal"
+                >
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/ic_tip" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerViewTip"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_70sdp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_weight="1"
+                    android:padding="@dimen/_5sdp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/buttonDoneTip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/work_sans_medium"
+                    android:text="@string/done"
+                    android:textAllCaps="false"
+                    android:textColor="@color/orange"
+                    android:textSize="@dimen/_12ssp"
+                    android:visibility="gone" />
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonSend"
+            style="@style/CommonButton"
+            android:layout_marginTop="@dimen/_10ssp"
+            android:text="@string/send"
+            app:cornerRadius="@dimen/_20sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayoutTip" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

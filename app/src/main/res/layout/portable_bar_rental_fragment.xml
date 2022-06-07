@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="@dimen/_20sdp"
+    android:fillViewport="true"
+    android:paddingStart="@dimen/_15sdp"
+    android:paddingTop="@dimen/_10sdp"
+    android:paddingEnd="@dimen/_15sdp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imageViewLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_6sdp"
+            android:layout_marginEnd="@dimen/_6sdp"
+            app:layout_constraintEnd_toStartOf="@id/textViewAppName"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/logo_orange_white_wrapper" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewAppName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/typo_round_bold_demo"
+            android:text="@string/app_name"
+            android:textColor="@color/orange"
+            android:textSize="@dimen/_38ssp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageViewLogo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/imageViewLogo"
+            app:layout_constraintTop_toTopOf="@+id/imageViewLogo"
+            app:textAllCaps="true" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewPortableBarList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/textViewAppName" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10ssp"
+            android:maxLines="3"
+            android:visibility="gone"
+            android:text="@string/long_text"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/_12ssp"
+            app:layout_constraintTop_toBottomOf="@+id/recyclerViewPortableBarList" />
+
+        <me.zhanghai.android.materialratingbar.MaterialRatingBar
+            android:id="@+id/ratingBarPortableBar"
+            style="@style/Widget.MaterialRatingBar.RatingBar.Indicator.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:maxHeight="@dimen/_15sdp"
+            android:visibility="gone"
+            android:minHeight="@dimen/_18sdp"
+            android:progressDrawable="@drawable/food_rating_bar_full"
+            android:rating="4"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewDescription"
+            app:mrb_progressBackgroundTint="@color/dark_gray"
+            app:mrb_progressTint="@color/orange" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/inputLayoutSelectDate"
+            style="@style/AuthTextInputLayout.Black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_15sdp"
+            app:layout_constraintTop_toBottomOf="@+id/ratingBarPortableBar">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextSelectDate"
+                style="@style/AuthEditText.Disable.Black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableEnd="@drawable/ic_calander"
+                android:drawablePadding="@dimen/_5sdp"
+                android:hint="@string/select_date"
+                android:inputType="none"
+                android:paddingBottom="@dimen/_15sdp"
+                android:theme="@style/AuthEditTextColor" />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/inputLayoutSelectTime"
+            style="@style/AuthTextInputLayout.Black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_15sdp"
+            app:layout_constraintTop_toBottomOf="@+id/inputLayoutSelectDate">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextSelectTime"
+                style="@style/AuthEditText.Disable.Black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableEnd="@drawable/ic_time"
+                android:drawablePadding="@dimen/_5sdp"
+                android:hint="@string/select_time"
+                android:inputType="none"
+                android:paddingBottom="@dimen/_15sdp"
+                android:theme="@style/AuthEditTextColor" />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/inputLayoutNumberHours"
+            style="@style/AuthTextInputLayout.Black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_15sdp"
+            app:layout_constraintTop_toBottomOf="@+id/inputLayoutSelectTime">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextNumberHours"
+                style="@style/AuthEditText.Disable.Black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableEnd="@drawable/ic_down_arrow"
+                android:drawablePadding="@dimen/_5sdp"
+                android:hint="@string/number_of_hours"
+                android:inputType="none"
+                android:paddingBottom="@dimen/_15sdp"
+                android:theme="@style/AuthEditTextColor" />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <include
+            android:id="@+id/applyCode"
+            layout="@layout/layout_apply_code_tip"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/inputLayoutNumberHours" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewAddressLabel"
+            style="@style/CartTextView"
+            android:text="@string/address"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/applyCode" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewChange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/work_sans_medium"
+            android:text="@string/change"
+            android:textColor="@color/light_blue"
+            android:textSize="@dimen/_12ssp"
+            app:layout_constraintBottom_toBottomOf="@+id/textViewAddressLabel"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textViewAddressLabel" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewAddressType"
+            style="@style/AuthHeadingTextView.TextViewCommonLayoutMedium"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:text="Home"
+            android:textSize="@dimen/_14ssp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewAddressLabel" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewAddress"
+            style="@style/AuthHeadingTextView.TextViewCommonLayout"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:text="51 Buttrnut Lan Haisburg IL 2946"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewAddressType" />
+
+        <include
+            android:id="@+id/address"
+            layout="@layout/common_cart_layout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewAddress" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

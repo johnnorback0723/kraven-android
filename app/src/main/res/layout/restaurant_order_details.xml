@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:paddingStart="@dimen/_15sdp"
+    android:paddingEnd="@dimen/_15sdp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewOrderId"
+            style="@style/AuthHeadingTextView.TextViewCommonLayoutMedium"
+            android:text="@string/order_id"
+            android:textSize="@dimen/_13ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewAddressLabel"
+            style="@style/CartTextView"
+            android:text="@string/restaurant"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewOrderId" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imageViewRestaurant"
+            android:layout_width="@dimen/_90sdp"
+            android:layout_height="@dimen/_90sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewAddressLabel" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imageViewFav"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_5sdp"
+            app:srcCompat="@drawable/fav_unfav_selector"
+            app:layout_constraintEnd_toEndOf="@id/imageViewRestaurant"
+            app:layout_constraintTop_toTopOf="@id/imageViewRestaurant" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewRestaurantName"
+            style="@style/AuthHeadingTextView.TextViewCommonLayoutMedium"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:text="The French Room"
+            app:layout_constraintBottom_toTopOf="@+id/textViewRestaurantItem"
+            app:layout_constraintStart_toEndOf="@id/imageViewRestaurant"
+            app:layout_constraintTop_toTopOf="@id/imageViewRestaurant"
+            app:layout_constraintVertical_chainStyle="spread" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewRestaurantItem"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/work_sans_regular"
+
+            android:text="Noodles,Sandwich,Burger"
+            android:textColor="@color/dark_gray"
+            android:textSize="@dimen/_12ssp"
+            app:layout_constraintBottom_toTopOf="@id/ratingBarRestaurant"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/textViewRestaurantName"
+            app:layout_constraintTop_toBottomOf="@+id/textViewRestaurantName" />
+
+
+        <com.kraven.utils.RatingBar
+            android:id="@+id/ratingBarRestaurant"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_10sdp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageViewRestaurant"
+            app:layout_constraintStart_toStartOf="@+id/textViewRestaurantItem"
+            app:layout_constraintTop_toBottomOf="@+id/textViewRestaurantItem"
+            app:rb_click_rating="false"
+            app:rb_count="4"
+            app:rb_empty="@drawable/ic_raitng_empty"
+            app:rb_fill="@drawable/ic_rating"
+            app:rb_max_count="5"
+            app:rb_space="@dimen/_5sdp"
+            app:rb_touch_rating="true" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewReviewCount"
+            style="@style/AuthHeadingTextView.TextViewCommonLayout"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:text="(450 Reviews)"
+            android:textSize="@dimen/_11ssp"
+            app:layout_constraintBottom_toBottomOf="@+id/ratingBarRestaurant"
+            app:layout_constraintStart_toEndOf="@+id/ratingBarRestaurant"
+            app:layout_constraintTop_toTopOf="@+id/ratingBarRestaurant" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewTableDetails"
+            style="@style/CartTextView"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:text="@string/table_details"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageViewRestaurant" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewNumberOfPeopleLabel"
+            style="@style/AuthHeadingTextView.TextViewCommonLayout"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="@string/number_of_people"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewTableDetails" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewNumberOfPeople"
+            style="@style/AuthHeadingTextView.TextViewCommonLayoutBold"
+            android:text="04"
+            app:layout_constraintBottom_toBottomOf="@+id/textViewNumberOfPeopleLabel"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textViewNumberOfPeopleLabel" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewNumberDateLabel"
+            style="@style/AuthHeadingTextView.TextViewCommonLayout"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:text="@string/date"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewNumberOfPeopleLabel" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewDate"
+            style="@style/AuthHeadingTextView.TextViewCommonLayoutBold"
+            android:text="16 Aug 2018"
+            app:layout_constraintBottom_toBottomOf="@+id/textViewNumberDateLabel"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textViewNumberDateLabel" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewNumberTimeLabel"
+            style="@style/AuthHeadingTextView.TextViewCommonLayout"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:text="@string/time"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewNumberDateLabel" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewTime"
+            style="@style/AuthHeadingTextView.TextViewCommonLayoutBold"
+            android:text="12:00 AM"
+            app:layout_constraintBottom_toBottomOf="@+id/textViewNumberTimeLabel"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textViewNumberTimeLabel" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewNumberHoursLabel"
+            style="@style/AuthHeadingTextView.TextViewCommonLayout"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:text="@string/time"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewNumberTimeLabel" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewHours"
+            style="@style/AuthHeadingTextView.TextViewCommonLayoutBold"
+            android:text="2 Hours"
+            app:layout_constraintBottom_toBottomOf="@+id/textViewNumberHoursLabel"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textViewNumberHoursLabel" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonCancel"
+            style="@style/CommonButton.Cancel"
+            app:layout_constraintEnd_toStartOf="@id/buttonOk"
+            android:text="@string/cancel"
+            app:backgroundTint="@color/white"
+            android:paddingStart="0dp"
+            android:paddingEnd="0dp"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_width="0dp"
+            app:cornerRadius="@dimen/_20sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewNumberHoursLabel"
+            app:strokeColor="@color/orange"
+            app:strokeWidth="@dimen/_1sdp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonOk"
+            style="@style/CommonButton"
+            android:paddingStart="0dp"
+            android:layout_width="0dp"
+            android:paddingEnd="0dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:text="@string/ok"
+            android:layout_marginStart="@dimen/_10sdp"
+            app:layout_constraintStart_toEndOf="@id/buttonCancel"
+            app:cornerRadius="@dimen/_20sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewNumberHoursLabel" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/constrainLayoutCode"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:layout_marginTop="@dimen/_10sdp"
+	android:gravity="center"
+	android:orientation="horizontal">
+	
+	<androidx.constraintlayout.widget.ConstraintLayout
+		android:id="@+id/layoutPromocode"
+		style="@style/DashButtonStyle"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginEnd="@dimen/_3sdp"
+		android:layout_weight="1"
+		android:background="@drawable/button_dash_bg"
+		android:focusableInTouchMode="true"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent">
+		
+		<androidx.appcompat.widget.AppCompatEditText
+			android:id="@+id/editTextPromoCode"
+			style="@style/AuthEditText"
+			android:layout_width="0dp"
+			android:layout_marginEnd="@dimen/_2sdp"
+			android:drawableStart="@drawable/ic_discount"
+			android:hint="@string/apply_promo_code"
+			android:imeOptions="actionDone"
+			android:inputType="text"
+			android:textAlignment="center"
+			android:textColor="@color/light_blue"
+			android:textColorHint="@color/light_blue"
+			app:layout_constraintBottom_toBottomOf="parent"
+			app:layout_constraintEnd_toStartOf="@+id/imageViewCancelPromocode"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toTopOf="parent" />
+		
+		<androidx.appcompat.widget.AppCompatImageView
+			android:id="@+id/imageViewCancelPromocode"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textSize="@dimen/_10ssp"
+			android:visibility="gone"
+			app:layout_constraintBottom_toBottomOf="parent"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintStart_toEndOf="@+id/editTextPromoCode"
+			app:layout_constraintTop_toTopOf="parent"
+			app:srcCompat="@drawable/ic_close" />
+	</androidx.constraintlayout.widget.ConstraintLayout>
+	
+	<androidx.constraintlayout.widget.ConstraintLayout
+		android:id="@+id/layoutWallet"
+		style="@style/DashButtonStyle"
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_marginTop="@dimen/_5sdp"
+		android:layout_weight="1"
+		android:background="@color/colorAccent"
+		android:focusableInTouchMode="true"
+		android:paddingTop="@dimen/_5sdp"
+		android:paddingBottom="@dimen/_5sdp"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/layoutPromocode">
+		
+		
+		<androidx.appcompat.widget.AppCompatEditText
+			android:id="@+id/editTextWallet"
+			style="@style/AuthEditText"
+			android:layout_width="wrap_content"
+			android:imeOptions="actionDone"
+			android:inputType="numberDecimal"
+			android:textAlignment="center"
+			android:background="@null"
+			android:textColor="@color/white"
+			android:textColorHint="@color/white"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toTopOf="parent"
+			tools:text="@string/wallet_balance" />
+		
+		<androidx.appcompat.widget.AppCompatTextView
+			android:id="@+id/textViewTapToRedeem"
+			android:layout_width="wrap_content"
+			android:text="Tap to Redeem"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintEnd_toEndOf="parent"
+			android:textSize="@dimen/_12ssp"
+			android:visibility="gone"
+			android:textColor="@color/white"
+			android:paddingBottom="@dimen/_5sdp"
+			app:layout_constraintTop_toBottomOf="@+id/editTextWallet"
+			android:fontFamily="@font/work_sans_italic"
+			android:layout_height="wrap_content"/>
+		
+		<androidx.appcompat.widget.AppCompatImageView
+			android:id="@+id/imageViewCancelWallet"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:background="@drawable/ic_close"
+			android:backgroundTint="@color/white"
+			android:layout_marginEnd="@dimen/_5sdp"
+			android:visibility="gone"
+			app:layout_constraintBottom_toBottomOf="parent"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintTop_toTopOf="parent" />
+	</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

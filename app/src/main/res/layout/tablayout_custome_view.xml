@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/custom_text"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:fontFamily="@font/work_sans_regular"
+	android:gravity="center"
+	android:maxHeight="@dimen/_500sdp"
+	android:maxWidth="@dimen/_150sdp"
+	android:maxLines="2"
+	android:textAllCaps="false"
+	android:textColor="@color/black"
+	android:textSize="@dimen/_12ssp"
+	tools:text="Test text" />

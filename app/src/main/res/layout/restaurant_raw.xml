@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:layout_marginTop="@dimen/_10sdp"
+	android:layout_marginBottom="@dimen/_10sdp">
+	
+	<androidx.appcompat.widget.AppCompatImageView
+		android:id="@+id/imageViewRestaurant"
+		android:layout_width="@dimen/_100sdp"
+		android:layout_height="@dimen/_100sdp"
+		android:scaleType="fitXY"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent" />
+	
+	<androidx.appcompat.widget.AppCompatImageView
+		android:id="@+id/imageViewFav"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_margin="@dimen/_5sdp"
+		android:src="@drawable/fav_unfav_selector"
+		app:layout_constraintEnd_toEndOf="@+id/imageViewRestaurant"
+		app:layout_constraintTop_toTopOf="@+id/imageViewRestaurant" />
+	
+	<androidx.appcompat.widget.AppCompatTextView
+		android:id="@+id/textViewRestaurantName"
+		style="@style/AuthHeadingTextView.TextViewCommonLayoutMedium"
+		android:layout_width="0dp"
+		android:layout_marginStart="@dimen/_10sdp"
+		app:layout_constraintBottom_toTopOf="@+id/textViewRestaurantItem"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toEndOf="@+id/imageViewRestaurant"
+		app:layout_constraintTop_toTopOf="@id/imageViewRestaurant"
+		app:layout_constraintVertical_chainStyle="spread"
+		tools:text="The Poop Deck (East Bay Street) The Poop Deck (East Bay Street)" />
+	
+	<androidx.appcompat.widget.AppCompatTextView
+		android:id="@+id/textViewRestaurantItem"
+		style="@style/AuthHeadingTextView.TextViewCommonLayout"
+		android:layout_width="0dp"
+		android:layout_marginTop="@dimen/_5sdp"
+		android:ellipsize="end"
+		android:textColor="@color/dark_gray"
+		android:visibility="gone"
+		app:layout_constraintBottom_toTopOf="@+id/ratingBarRestaurant"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="@+id/textViewRestaurantName"
+		app:layout_constraintTop_toBottomOf="@+id/textViewRestaurantName"
+		tools:text="Restaurant Lorena's,Restaurant Lorena's,Restaurant Lorena's" />
+	
+	<com.kraven.utils.RatingBar
+		android:id="@+id/ratingBarRestaurant"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="@dimen/_5sdp"
+		app:layout_constraintBottom_toTopOf="@+id/textViewDetailsStatus"
+		app:layout_constraintStart_toStartOf="@+id/textViewRestaurantName"
+		app:layout_constraintTop_toBottomOf="@+id/textViewRestaurantItem"
+		app:rb_click_rating="false"
+		app:rb_count="3"
+		app:rb_empty="@drawable/ic_raitng_empty"
+		app:rb_fill="@drawable/ic_rating"
+		app:rb_max_count="5"
+		app:rb_space="@dimen/_5sdp"
+		app:rb_touch_rating="false"
+		tools:layout_editor_absoluteX="90dp"
+		tools:layout_editor_absoluteY="89dp" />
+	
+	<androidx.appcompat.widget.AppCompatTextView
+		android:id="@+id/textViewReviewCount"
+		style="@style/AuthHeadingTextView.TextViewCommonLayout"
+		android:layout_marginStart="@dimen/_10sdp"
+		app:layout_constraintBottom_toBottomOf="@+id/ratingBarRestaurant"
+		app:layout_constraintStart_toEndOf="@+id/ratingBarRestaurant"
+		app:layout_constraintTop_toTopOf="@+id/ratingBarRestaurant"
+		tools:text="(500 Reviews)" />
+	
+	<androidx.appcompat.widget.AppCompatTextView
+		android:id="@+id/textViewDetailsStatus"
+		android:layout_width="wrap_content"
+		android:layout_height="match_parent"
+		android:layout_marginTop="@dimen/_5sdp"
+		android:fontFamily="@font/work_sans_regular"
+		android:textColor="@color/green"
+		android:textSize="@dimen/_11ssp"
+		app:layout_constraintBottom_toTopOf="@+id/textViewMiles"
+		app:layout_constraintStart_toStartOf="@+id/textViewRestaurantName"
+		app:layout_constraintTop_toBottomOf="@+id/ratingBarRestaurant"
+		tools:text="@string/currentlyUnavailable" />
+	
+	<androidx.appcompat.widget.AppCompatTextView
+		android:id="@+id/textViewMiles"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="@dimen/_5sdp"
+		android:textColor="@color/black"
+		android:textSize="@dimen/_11ssp"
+		app:fontFamily="@font/work_sans_regular"
+		app:layout_constraintBottom_toTopOf="@+id/textViewDeliveryType"
+		app:layout_constraintStart_toStartOf="@+id/textViewRestaurantName"
+		app:layout_constraintTop_toBottomOf="@+id/textViewDetailsStatus"
+		tools:text="(0.14 Miles)" />
+	
+	<androidx.appcompat.widget.AppCompatTextView
+		android:id="@+id/textViewDeliveryType"
+		android:layout_width="wrap_content"
+		android:layout_height="match_parent"
+		android:layout_marginTop="@dimen/_5sdp"
+		android:fontFamily="@font/work_sans_medium"
+		android:textColor="@color/black"
+		android:textSize="@dimen/_12ssp"
+		app:layout_constraintBottom_toTopOf="@+id/textViewAvrPrpTime"
+		app:layout_constraintStart_toStartOf="@+id/textViewRestaurantName"
+		app:layout_constraintTop_toBottomOf="@+id/textViewMiles"
+		tools:text="text" />
+	
+	<androidx.appcompat.widget.AppCompatTextView
+		android:id="@+id/textViewAvrPrpTime"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:textSize="@dimen/_9ssp"
+		android:layout_marginTop="@dimen/_5sdp"
+		android:fontFamily="@font/work_sans_medium"
+		android:text="@string/app_name"
+		app:layout_constraintBottom_toBottomOf="@id/imageViewRestaurant"
+		app:layout_constraintStart_toStartOf="@+id/textViewRestaurantName"
+		app:layout_constraintTop_toBottomOf="@+id/textViewDeliveryType" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

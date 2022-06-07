@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:animateLayoutChanges="true"
+    android:animationCache="true"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/_10sdp"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imageViewBeverage"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_80sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textViewBeverageName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:fontFamily="@font/work_sans_medium"
+        android:text="Restaurant Lorena's"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_12ssp"
+        app:layout_constraintBottom_toTopOf="@id/textViewBeverageItem"
+        app:layout_constraintStart_toEndOf="@id/imageViewBeverage"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textViewBeverageItem"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_7sdp"
+        android:fontFamily="@font/work_sans_regular"
+        android:maxLines="1"
+        android:text="Restaurant Lorena's,Restaurant Lorena's,Restaurant Lorena's"
+        android:textColor="@color/dark_gray"
+        android:textSize="@dimen/_12ssp"
+        app:layout_constraintBottom_toTopOf="@id/textViewBeveragePrice"
+        app:layout_constraintEnd_toStartOf="@id/imageViewAdd"
+        app:layout_constraintStart_toStartOf="@+id/textViewBeverageName"
+        app:layout_constraintTop_toBottomOf="@+id/textViewBeverageName" />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textViewBeveragePrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_7sdp"
+        android:fontFamily="@font/work_sans_medium"
+        android:text="$55"
+        android:textColor="@color/orange"
+        android:textSize="@dimen/_12ssp"
+        app:layout_constraintBottom_toTopOf="@id/textViewAddSpecialNote"
+        app:layout_constraintStart_toStartOf="@+id/textViewBeverageName"
+        app:layout_constraintTop_toBottomOf="@+id/textViewBeverageItem" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textViewItemMl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:fontFamily="@font/work_sans_medium"
+        android:text="(250 ml)"
+        android:textColor="@color/orange"
+        android:textSize="@dimen/_12ssp"
+        app:layout_constraintBottom_toBottomOf="@id/textViewBeveragePrice"
+        app:layout_constraintStart_toEndOf="@id/textViewBeveragePrice"
+        app:layout_constraintTop_toBottomOf="@+id/textViewBeverageItem"
+        app:layout_constraintTop_toTopOf="@+id/textViewBeveragePrice" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textViewAddSpecialNote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:fontFamily="@font/work_sans_medium"
+        android:hint="@string/enter_here"
+        android:text="@string/add_special_note"
+        android:textColor="@color/light_blue"
+        android:textSize="@dimen/_12ssp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewBeverage" />
+
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/editTextAddNote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:background="@null"
+        android:fontFamily="@font/work_sans_regular"
+        android:gravity="top"
+        android:maxLength="200"
+        android:maxLines="3"
+        android:text="Test add special note"
+        android:textColor="@color/dark_gray"
+        android:textSize="@dimen/_11ssp"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewAddSpecialNote"
+        tools:text="Test add special note" />
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imageViewAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_add_item"
+        app:layout_constraintBottom_toTopOf="@+id/textVieBeverageCount"
+        app:layout_constraintEnd_toStartOf="@id/imageViewDelete"
+        app:layout_constraintTop_toTopOf="@id/imageViewBeverage"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textVieBeverageCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:fontFamily="@font/work_sans_medium"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_12ssp"
+        app:layout_constraintEnd_toStartOf="@id/imageViewDelete"
+        app:layout_constraintStart_toStartOf="@id/imageViewAdd"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewAdd" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imageViewDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_delete"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@id/imageViewSubtract"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/imageViewAdd" />
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imageViewSubtract"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_substact_item"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewBeverage"
+        app:layout_constraintEnd_toStartOf="@id/imageViewDelete"
+        app:layout_constraintTop_toBottomOf="@+id/textVieBeverageCount" />
+
+    <View
+        android:id="@+id/viewDivider"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:alpha="0.5"
+        android:background="@color/black"
+        app:layout_constraintTop_toBottomOf="@+id/editTextAddNote" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

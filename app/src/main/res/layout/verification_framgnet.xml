@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingStart="@dimen/_15sdp"
+    android:paddingTop="@dimen/_10sdp"
+    android:paddingEnd="@dimen/_15sdp">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textViewVerification"
+        style="@style/AuthHeadingTextView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="@string/verification" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textViewInstruction"
+        style="@style/AuthHeadingTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="@dimen/_10ssp"
+        android:fontFamily="@font/work_sans_regular"
+        android:lineSpacingExtra="@dimen/_5sdp"
+        android:text="@string/verification_instruction"
+        android:textColor="@color/black_transparent"
+        android:textSize="@dimen/_12ssp"
+        app:layout_constraintTop_toBottomOf="@+id/textViewVerification" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/inputLayoutCode"
+        style="@style/AuthTextInputLayout.Black"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:theme="@style/AuthEditTextColorBlack"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewInstruction">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextCode"
+            style="@style/AuthEditText.Black"
+            android:background="@drawable/edt_bg_normal"
+            android:hint="@string/code"
+            android:inputType="numberPassword"
+            android:maxLength="4"
+            android:theme="@style/AuthEditTextColorBlack" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textViewNotReceived"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:fontFamily="@font/work_sans_regular"
+        android:text="@string/not_received"
+        android:textSize="@dimen/_12ssp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputLayoutCode" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonSend"
+        style="@style/CommonButton"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:text="Continue"
+        app:cornerRadius="@dimen/_30sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewNotReceived"
+        app:layout_constraintWidth_percent="0.50" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

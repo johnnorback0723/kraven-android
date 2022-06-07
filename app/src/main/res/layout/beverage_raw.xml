@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:layout_marginTop="@dimen/_10sdp"
+	android:layout_marginBottom="@dimen/_10sdp"
+	android:orientation="vertical">
+	
+	<androidx.appcompat.widget.AppCompatImageView
+		android:id="@+id/imageViewBeverage"
+		android:layout_width="@dimen/_50sdp"
+		android:layout_height="@dimen/_80sdp"
+		android:transitionName="profile"
+		app:srcCompat="@drawable/order_food"
+		app:layout_constraintBottom_toTopOf="@id/textViewItemNotAvailable"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent" />
+	
+	<androidx.appcompat.widget.AppCompatTextView
+		android:id="@+id/textViewBeverageName"
+		android:paddingEnd="@dimen/_10sdp"
+		android:paddingStart="0dp"
+		style="@style/AuthHeadingTextView.TextViewCommonLayoutMedium"
+		android:layout_width="0dp"
+		android:layout_marginStart="@dimen/_10sdp"
+		app:layout_constraintBottom_toTopOf="@+id/textViewBeverageItem"
+		app:layout_constraintEnd_toStartOf="@id/textViewOffPrice"
+		app:layout_constraintStart_toEndOf="@id/imageViewBeverage"
+		app:layout_constraintTop_toTopOf="@+id/imageViewBeverage"
+		app:layout_constraintVertical_chainStyle="packed"
+		tools:text="Beer" />
+	
+	
+	<androidx.appcompat.widget.AppCompatTextView
+		android:id="@+id/textViewBeverageItem"
+		android:layout_width="0dp"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="@dimen/_5sdp"
+		android:fontFamily="@font/work_sans_regular"
+		android:textColor="@color/dark_gray"
+		android:textSize="@dimen/_12ssp"
+		app:layout_constraintBottom_toBottomOf="@+id/imageViewBeverage"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="@+id/textViewBeverageName"
+		app:layout_constraintTop_toBottomOf="@+id/textViewBeverageName"
+		tools:text="Restaurant Lorena's,Restaurant" />
+	
+	
+	<androidx.appcompat.widget.AppCompatTextView
+		android:id="@+id/textViewOffPrice"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:fontFamily="@font/work_sans_medium"
+		android:gravity="fill_horizontal"
+		android:paddingStart="0dp"
+		android:paddingEnd="@dimen/_3sdp"
+		android:textColor="@color/black"
+		android:textSize="@dimen/_10ssp"
+		app:layout_constraintBottom_toBottomOf="@+id/textViewBeveragePrice"
+		app:layout_constraintEnd_toEndOf="@+id/textViewBeverageName"
+		app:layout_constraintEnd_toStartOf="@id/textViewBeveragePrice"
+		app:layout_constraintTop_toTopOf="@+id/textViewBeveragePrice"
+		tools:text="$25" />
+	
+	<androidx.appcompat.widget.AppCompatTextView
+		android:id="@+id/textViewBeveragePrice"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:fontFamily="@font/work_sans_medium"
+		android:textColor="@color/orange"
+		android:textSize="@dimen/_12ssp"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintTop_toTopOf="@+id/textViewBeverageName"
+		tools:text="$55" />
+	
+	<androidx.appcompat.widget.AppCompatImageView
+		android:id="@+id/imageViewSpecialOffer"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="@dimen/_5sdp"
+		android:layout_marginEnd="8dp"
+		android:background="@drawable/special_offer"
+		android:visibility="gone"
+		app:layout_constraintBottom_toTopOf="@+id/textViewItemNotAvailable"
+		app:layout_constraintStart_toStartOf="@+id/textViewBeverageName"
+		app:layout_constraintTop_toBottomOf="@+id/textViewBeverageItem" />
+	
+	
+	<androidx.appcompat.widget.AppCompatTextView
+		android:id="@+id/textViewItemMl"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="@dimen/_5sdp"
+		android:fontFamily="@font/work_sans_medium"
+		android:textColor="@color/orange"
+		android:textSize="@dimen/_12ssp"
+		android:visibility="gone"
+		app:layout_constraintBottom_toTopOf="@+id/textViewItemNotAvailable"
+		app:layout_constraintStart_toEndOf="@id/imageViewSpecialOffer"
+		app:layout_constraintTop_toBottomOf="@+id/textViewBeverageItem"
+		tools:text="(250 ml)" />
+	
+	<androidx.appcompat.widget.AppCompatTextView
+		android:id="@+id/textViewItemNotAvailable"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="@dimen/_10sdp"
+		android:fontFamily="@font/work_sans_regular"
+		android:maxLines="1"
+		android:text="@string/itemNotAvailable"
+		android:textColor="@color/red"
+		android:textSize="@dimen/_12ssp"
+		
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@id/textViewItemMl" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

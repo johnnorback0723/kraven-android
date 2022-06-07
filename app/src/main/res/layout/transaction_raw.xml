@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/_5sdp">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textViewBookingType"
+        style="@style/AuthHeadingTextView.TextViewCommonLayoutMedium"
+        android:layout_width="0dp"
+        android:paddingEnd="@dimen/_10sdp"
+        android:paddingStart="0dp"
+        android:textSize="@dimen/_12ssp"
+        app:layout_constraintEnd_toStartOf="@id/textViewAmount"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Your wallet amount 338.33 was debited for food order(#192) charges" />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textViewAmount"
+        style="@style/AuthHeadingTextView.TextViewCommonLayoutBold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="-$20" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textViewDateTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:fontFamily="@font/work_sans_regular"
+        android:textColor="@color/dark_gray"
+        android:textSize="@dimen/_13ssp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewBookingType"
+        tools:text="16 Aug 2018, 12:45 AM" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textViewTransactionId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:fontFamily="@font/work_sans_regular"
+        android:textColor="@color/dark_gray"
+        android:textSize="@dimen/_13ssp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDateTime"
+        tools:text="Transaction ID: 123456" />
+    
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textViewTransactionStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:fontFamily="@font/work_sans_regular"
+        android:textColor="@color/dark_gray"
+        android:textSize="@dimen/_13ssp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTransactionId"
+        android:text="Transaction Status :" />
+    
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textViewTransactionStatusValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/work_sans_medium"
+        android:textColor="@color/dark_gray"
+        android:textSize="@dimen/_13ssp"
+        app:layout_constraintStart_toEndOf="@+id/textViewTransactionStatus"
+        app:layout_constraintTop_toTopOf="@+id/textViewTransactionStatus"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewTransactionStatus"
+        android:text="Payment Processing" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:alpha="0.5"
+        android:background="@color/black"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTransactionStatus" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

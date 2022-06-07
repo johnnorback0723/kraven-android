@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Created by Dilip Singh on 11/2/21 12:09 PM
+  ~ Copyright (c) 2021 . All rights reserved.
+  ~ Last modified 4/2/21 6:49 PM
+  -->
+
+<network-security-config>
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="true">test-delivery.kravenbahamas.com</domain>
+    </domain-config>
+    <base-config cleartextTrafficPermitted="true" />
+</network-security-config>

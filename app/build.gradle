@@ -1,0 +1,186 @@
+apply plugin: 'com.android.application'
+
+apply plugin: 'kotlin-android'
+
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+
+apply plugin: 'com.google.firebase.crashlytics'
+
+android {
+
+    compileSdkVersion 30
+    defaultConfig {
+        applicationId "com.kraven"
+        minSdkVersion 26
+        targetSdkVersion 30
+        versionCode 49
+        versionName "1.2.24"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        resValue("string", "google_maps_key", "${GOOGLE_MAPS_API_KEY}")
+        resValue("string", "google_maps_broswer_key", "${GOOGLE_MAPS_BROSWER_KEY}")
+
+        resValue("string", "SCHEME", "${SCHEME}")
+        resValue("string", "HOST_IS_LOCAL", "${HOST_IS_LOCAL}")
+        /*resValue("string", "HOST_IS_HYPERLINK", "${HOST_IS_HYPERLINK}")*/
+        resValue("string", "API_PATH", "${API_PATH}")
+        resValue("string", "API_PATH_LOCAL", "${API_PATH_LOCAL}")
+        resValue("string", "PORT", "${PORT}")
+
+        resValue("string", "aes_key", "${AES_KEY}")
+
+        resValue("string", "access_key", "${ACCESS_KEY}")
+        resValue("string", "secret_access_key", "${SECRET_ACCESS_KEY}")
+        resValue("string", "facebook_id", "${FACEBOOK_ID}")
+        resValue("string", "HOST_IS_SERVER", "${HOST_IS_SERVER}")
+        resValue("string", "API_KEY", "${API_KEY}")
+
+        resValue("string", "CRASH_LOG", "${CRASH_LOG}")
+        resValue("string", "test_host_server", "${TEST_HOST_SERVER}")
+
+        resValue("string", "privacy_policy_customer", "${PRIVACY_POLICY_CUSTOMER}")
+        resValue("string", "terms_and_conditions_customer", "${TERMS_AND_CONDITIONS_CUSTOMER}")
+        resValue("string", "faqs_customer", "${FAQS_CUSTOMER}")
+
+        resValue("string", "MERCHANT_ID_TESTING", "${MERCHANT_ID_TESTING}")
+
+        resValue("string", "MERCHANT_ID_LIVE", "${MERCHANT_ID_LIVE}")
+
+        vectorDrawables.useSupportLibrary = true
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    androidExtensions {
+        experimental = true
+    }
+    dataBinding {
+        enabled = true
+    }
+    buildFeatures {
+        viewBinding = true
+    }
+    compileOptions {
+        sourceCompatibility = '1.8'
+        targetCompatibility = '1.8'
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+    useLibrary 'org.apache.http.legacy'
+
+}
+
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
+    implementation 'androidx.appcompat:appcompat:1.3.0'
+    implementation 'com.google.android.material:material:1.3.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    implementation 'com.google.dagger:dagger-android-support:2.36'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.3.1'
+    kapt 'com.google.dagger:dagger-android-processor:2.33'
+    kapt 'com.google.dagger:dagger-compiler:2.36'
+    implementation 'androidx.lifecycle:lifecycle-runtime-ktx:2.3.1'
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
+    implementation 'androidx.lifecycle:lifecycle-reactivestreams-ktx:2.3.1'
+    implementation "androidx.lifecycle:lifecycle-common-java8:2.3.1"
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+    implementation 'com.squareup.okhttp3:logging-interceptor:5.0.0-alpha.2'
+    implementation 'io.reactivex.rxjava2:rxjava:2.2.21'
+    implementation 'com.squareup.retrofit2:adapter-rxjava2:2.9.0'
+    //Permission Utils
+    //Google Location
+    //implementation 'com.google.android.gms:play-services-places:16.1.0'
+    //implementation 'com.google.android.libraries.places:places-compat:2.0.0'
+    implementation 'com.google.android.libraries.places:places:2.4.0'
+    implementation 'com.google.android.gms:play-services-location:18.0.0'
+    implementation 'com.google.android.gms:play-services-maps:17.0.1'
+    implementation 'com.google.maps.android:android-maps-utils:2.2.3'
+
+    //Glide
+    implementation 'com.github.bumptech.glide:glide:4.12.0'
+    kapt "com.github.bumptech.glide:compiler:4.12.0"
+    implementation "com.github.bumptech.glide:okhttp3-integration:4.12.0@aar"
+    implementation 'jp.wasabeef:glide-transformations:4.0.0'
+    implementation 'me.zhanghai.android.materialratingbar:library:1.4.0'
+    implementation 'com.daimajia.androidanimations:library:2.4@aar'
+
+    implementation 'androidx.legacy:legacy-support-v13:1.0.0'
+
+    implementation 'io.reactivex.rxjava2:rxandroid:2.1.1'
+
+    implementation('com.amazonaws:aws-android-sdk-mobile-client:2.6.7@aar') { transitive = true }
+    implementation 'com.amazonaws:aws-android-sdk-s3:2.12.6'
+    implementation 'com.amazonaws:aws-android-sdk-cognito:2.8.0'
+
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.5.0-native-mt'
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.5.0-native-mt'
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.5.0-native-mt'
+
+    implementation 'com.beloo.widget:ChipsLayoutManager:0.3.7@aar'
+
+    //implementation 'com.facebook.android:facebook-login:5.0.0'
+    implementation 'com.facebook.android:facebook-login:9.1.1'
+
+    implementation 'com.google.android.gms:play-services-auth:19.0.0'
+    implementation 'com.google.firebase:firebase-auth:19.3.1'
+    implementation 'org.greenrobot:eventbus:3.2.0'
+/*
+    implementation 'com.firebaseui:firebase-ui-auth:4.3.1'
+*/
+
+    implementation 'com.applandeo:material-calendar-view:1.7.0'
+
+    implementation 'com.google.firebase:firebase-messaging:20.1.7'
+
+
+    implementation "androidx.core:core-ktx:1.5.0"
+
+    api 'com.github.fondesa:kpermissions:3.2.1'
+
+
+    implementation 'com.wrapp.floatlabelededittext:library:0.0.6'
+
+    implementation "com.wdullaer:materialdatetimepicker:4.2.3"
+    implementation 'com.googlecode.libphonenumber:libphonenumber:8.12.24'
+    implementation 'androidx.fragment:fragment-ktx:1.3.5'
+
+
+    //Loader
+    implementation 'com.wang.avi:library:2.1.3'
+
+    implementation 'me.relex:circleindicator:2.1.6'
+
+    //debugImplementation 'com.squareup.leakcanary:leakcanary-android:2.0-beta-3'
+
+    implementation 'com.github.yeriomin:play-store-api:0.19'
+
+
+    implementation 'com.github.eggheadgames:Siren:1.5.2'
+
+    implementation 'com.google.android.play:core:1.10.0'
+
+    implementation 'org.sufficientlysecure:html-textview:3.7'
+
+    //Permission
+    implementation 'com.github.fondesa:kpermissions:3.2.1'
+
+    implementation 'com.google.firebase:firebase-analytics-ktx:17.4.1'
+
+    api "com.jakewharton.timber:timber:4.7.1"
+
+    implementation 'com.google.android.gms:play-services-auth:19.0.0'
+    implementation 'com.google.android.gms:play-services-auth-api-phone:17.5.0'
+
+
+}
+apply plugin: "com.google.gms.google-services"

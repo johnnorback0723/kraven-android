@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/nestedScrollView"
+
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <View
+            android:id="@+id/viewTopBg"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@drawable/rating_bg"
+            app:layout_constraintHeight_percent="0.3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imageViewUser"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="@dimen/_60sdp"
+            android:layout_marginBottom="@dimen/_30sdp"
+            android:background="@drawable/rating_circle_bg"
+            android:padding="@dimen/_2sdp"
+            android:scaleType="centerCrop"
+            android:tint="#80000000"
+            app:layout_constraintBottom_toBottomOf="@+id/viewTopBg"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_pencial"
+            app:layout_constraintBottom_toBottomOf="@id/imageViewUser"
+            app:layout_constraintEnd_toEndOf="@id/imageViewUser"
+            app:layout_constraintStart_toStartOf="@id/imageViewUser"
+            app:layout_constraintTop_toTopOf="@id/imageViewUser" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:fontFamily="@font/work_sans_medium"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_13ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageViewUser"
+            tools:text="Julia Robert" />
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/inputLayoutFirstName"
+            style="@style/AuthTextInputLayout.Black"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:hint="@string/first_name"
+            android:theme="@style/AuthEditTextColorBlack"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/viewTopBg">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextFirstNameEdit"
+                style="@style/AuthEditText.Gray"
+                android:inputType="textCapWords"
+                tools:text="Julia" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/inputLayoutLastName"
+            style="@style/AuthTextInputLayout.Black"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:hint="@string/last_name"
+            android:theme="@style/AuthEditTextColorBlack"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/inputLayoutFirstName">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextLastName"
+                style="@style/AuthEditText.Gray"
+                android:inputType="textCapWords"
+                tools:text="Robert" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/inputLayoutEmail"
+            style="@style/AuthTextInputLayout.Black"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:hint="@string/email"
+            android:theme="@style/AuthEditTextColorBlack"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/inputLayoutLastName">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextEmail"
+                style="@style/AuthEditText.Gray"
+                android:background="@drawable/edt_bg_normal"
+
+                android:inputType="textEmailAddress"
+                tools:text="Julia@gmail.com" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/inputLayoutGender"
+            style="@style/AuthTextInputLayout.Black"
+            android:layout_width="match_parent"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="17dp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:hint="@string/gender"
+            android:theme="@style/AuthEditTextColorBlack"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/inputLayoutEmail">
+
+            <TextView
+                android:id="@+id/header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/gender" />
+
+            <RadioGroup
+                android:id="@+id/radioGender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="fill_horizontal"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioMale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:text="@string/male" />
+
+                <RadioButton
+                    android:id="@+id/radioFemale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:text="@string/female" />
+
+                <RadioButton
+                    android:id="@+id/radioRatherNotSay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/rathernotsay" />
+            </RadioGroup>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/inputLayoutDOB"
+            style="@style/AuthTextInputLayout.Black"
+            android:layout_width="match_parent"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="22dp"
+            android:layout_marginEnd="13dp"
+            android:hint="@string/dob"
+            android:theme="@style/AuthEditTextColorBlack"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/inputLayoutGender">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextDOB"
+                style="@style/AuthEditText.Disable.Black"
+                android:background="@drawable/edt_bg_normal"
+                android:clickable="true"
+                tools:text="2001-01-01" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/inputLayoutCountryCode"
+            style="@style/AuthTextInputLayout.Black"
+            android:layout_width="0dp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:hint="@string/country_code"
+            android:theme="@style/AuthEditTextColorBlack"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/inputLayoutDOB"
+            app:layout_constraintWidth_percent="0.35">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextCountryCode"
+                style="@style/AuthEditText.Disable.Black"
+                android:background="@drawable/edt_bg_normal"
+                android:drawableEnd="@drawable/ic_down_arrow"
+                android:drawablePadding="@dimen/_5sdp"
+                android:inputType="textEmailAddress"
+                android:theme="@style/AuthEditTextColor"
+                tools:text="+91" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/inputLayoutMobileNumber"
+            style="@style/AuthTextInputLayout.Black"
+            android:layout_width="0dp"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:theme="@style/AuthEditTextColorBlack"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/inputLayoutCountryCode"
+            app:layout_constraintTop_toBottomOf="@+id/inputLayoutDOB"
+            app:layout_constraintWidth_percent="0.55">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextMobileNumber"
+                style="@style/AuthEditText.Gray"
+                android:background="@drawable/edt_bg_normal"
+                android:inputType="phone"
+                tools:text="123 155 1564" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewChangePassword"
+            style="@style/EditProfileTextView"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:text="@string/change_password"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/inputLayoutMobileNumber" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewManageAddress"
+            style="@style/EditProfileTextView"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:text="@string/manage_address"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewChangePassword" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewNotification"
+            style="@style/EditProfileTextView"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:text="@string/notification"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewManageAddress" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewSavedCards"
+            style="@style/EditProfileTextView"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:text="Saved Cards"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewNotification" />
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonUpdate"
+            style="@style/CommonButton"
+            android:text="@string/update"
+            app:cornerRadius="@dimen/_30sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewSavedCards" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

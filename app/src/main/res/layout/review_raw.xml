@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginBottom="@dimen/_10sdp"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imageViewUser"
+        android:layout_width="@dimen/_60sdp"
+        android:layout_height="@dimen/_60sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textViewUserName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        tools:text="Test Customer Android This"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:fontFamily="@font/work_sans_medium"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_13ssp"
+        app:layout_constraintBottom_toTopOf="@id/ratingBarRestaurant"
+        app:layout_constraintStart_toEndOf="@id/imageViewUser"
+        app:layout_constraintEnd_toStartOf="@+id/textViewDate"
+        app:layout_constraintTop_toTopOf="@+id/imageViewUser"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textViewDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="26 Jul 2020"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:fontFamily="@font/work_sans_regular"
+        android:textSize="@dimen/_10ssp"
+        app:layout_constraintEnd_toEndOf="@id/textViewComments"
+        app:layout_constraintTop_toTopOf="@id/textViewUserName" />
+
+    <com.kraven.utils.RatingBar
+        android:id="@+id/ratingBarRestaurant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_5sdp"
+        app:layout_constraintBottom_toBottomOf="@id/imageViewUser"
+        app:layout_constraintStart_toStartOf="@+id/textViewUserName"
+        app:layout_constraintTop_toBottomOf="@+id/textViewUserName"
+        app:rb_click_rating="false"
+        app:rb_count="3"
+        app:rb_empty="@drawable/ic_raitng_empty"
+        app:rb_fill="@drawable/ic_rating"
+        app:rb_max_count="5"
+        app:rb_space="@dimen/_10sdp"
+        app:rb_touch_rating="false" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textViewComments"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:fontFamily="@font/work_sans_regular"
+        android:lineSpacingExtra="5dp"
+        android:maxLength="200"
+        android:maxLines="3"
+        android:textAlignment="viewStart"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_10ssp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/imageViewUser"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewUser" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:alpha="0.5"
+        android:background="@color/black_transparent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewComments" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

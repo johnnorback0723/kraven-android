@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textViewBeverage"
+        style="@style/CartTextView"
+        android:text="@string/beverage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textViewBeverageDateLabel"
+        style="@style/AuthHeadingTextView.TextViewCommonLayout"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:text="@string/beverage_delivery_date"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewBeverage" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textViewDate"
+        style="@style/AuthHeadingTextView.TextViewCommonLayoutBold"
+        android:text="16 Aug 2018"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewBeverageDateLabel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textViewBeverageDateLabel" />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textViewBeverageLabel"
+        style="@style/AuthHeadingTextView.TextViewCommonLayout"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:text="@string/beverage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewBeverageDateLabel" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textViewBeverageType"
+        style="@style/AuthHeadingTextView.TextViewCommonLayoutBold"
+        android:text="Beer"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewBeverageLabel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textViewBeverageLabel" />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textViewBeverageBrandLabel"
+        style="@style/AuthHeadingTextView.TextViewCommonLayout"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:text="@string/brand"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewBeverageLabel" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textViewBeverageBrand"
+        style="@style/AuthHeadingTextView.TextViewCommonLayoutBold"
+        android:text="Heineken"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewBeverageBrandLabel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textViewBeverageBrandLabel" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textViewAddressLabel"
+        style="@style/CartTextView"
+        android:text="@string/address"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewBeverageBrandLabel" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textViewChange"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/work_sans_medium"
+        android:text="@string/change"
+        android:textColor="@color/light_blue"
+        android:textSize="@dimen/_12ssp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewAddressLabel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textViewAddressLabel" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textViewAddress"
+        style="@style/AuthHeadingTextView.TextViewCommonLayout"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:text="51 Buttrnut Lan Haisburg IL 2946"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewAddressType" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        app:layout_constraintStart_toStartOf="parent"
+        android:id="@+id/textViewAddressType"
+        style="@style/AuthHeadingTextView.TextViewCommonLayoutMedium"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:text="Home"
+        android:textSize="@dimen/_14ssp"
+        app:layout_constraintTop_toBottomOf="@+id/textViewAddressLabel" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textViewPaymentLabel"
+        app:layout_constraintStart_toStartOf="parent"
+        style="@style/CartTextView"
+        android:text="@string/payment_method"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTotalLabel" />
+
+    <androidx.appcompat.widget.AppCompatRadioButton
+        android:id="@+id/radioButtonDebitCard"
+        style="@style/RadioButtonStyle"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="@string/debit_card"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@+id/textViewPaymentLabel" />
+
+    <androidx.appcompat.widget.AppCompatRadioButton
+        android:id="@+id/radioButtonCreditCard"
+        style="@style/RadioButtonStyle"
+        android:text="@string/credit_card"
+        app:layout_constraintStart_toStartOf="parent"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@+id/radioButtonDebitCard" />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textViewCashOn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        android:fontFamily="@font/work_sans_medium"
+        android:text="@string/cash_on_delivery"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_12ssp"
+        android:visibility="gone" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imageViewCashInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@drawable/ic_info"
+        android:padding="@dimen/_5sdp"
+        android:visibility="gone"
+        app:layout_constraintStart_toEndOf="@id/textViewCashOn" />
+
+    <androidx.appcompat.widget.AppCompatRadioButton
+        android:id="@+id/radioButtonCashOn"
+        android:layout_width="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_height="wrap_content"
+        android:button="@drawable/radio_button_payment_type"
+        android:gravity="start"
+        android:layoutDirection="rtl"
+        android:text=""
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/imageViewCashInfo" />
+
+    <ToggleButton
+        android:id="@+id/radioButtonWallet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_13sdp"
+        android:background="@android:color/transparent"
+        android:button="@drawable/radio_button_payment_type"
+        android:fontFamily="@font/work_sans_medium"
+        android:gravity="start"
+        android:layoutDirection="rtl"
+        android:minWidth="0dp"
+        android:minHeight="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="@string/wallet"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textOff="@string/wallet"
+        android:textOn="@string/wallet"
+        android:textSize="@dimen/_12ssp"
+        android:visibility="gone" />
+
+    <!--   </RadioGroup>-->
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonCheckout"
+        style="@style/CommonButton"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:text="@string/checkout"
+        android:visibility="gone"
+        app:cornerRadius="@dimen/_20sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioButtonWallet" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

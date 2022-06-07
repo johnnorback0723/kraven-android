@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/_30sdp"
+    android:focusableInTouchMode="true"
+    android:descendantFocusability="beforeDescendants"
+    android:layout_marginStart="@dimen/_10sdp"
+    android:gravity="start|center">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textViewTip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/text_view_tip_bg_gray"
+        android:fontFamily="@font/work_sans_medium"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/_12ssp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="10%" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/editTextTip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="@dimen/_2sdp"
+        android:background="@drawable/text_view_tip_bg_gray"
+        android:focusableInTouchMode="true"
+        android:fontFamily="@font/work_sans_medium"
+        android:hint="$"
+        android:inputType="numberDecimal"
+        android:maxLength="5"
+        android:padding="@dimen/_5sdp"
+        android:paddingStart="@dimen/_15ssp"
+        android:paddingEnd="@dimen/_15ssp"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_12ssp"
+        android:visibility="gone" />
+
+</LinearLayout>

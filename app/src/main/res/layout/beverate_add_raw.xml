@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/_5sdp"
+    android:layout_marginBottom="@dimen/_5sdp">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textViewDateLabel"
+        style="@style/NormalTextView"
+        android:text="@string/date"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textViewDate"
+        style="@style/NormalTextView.SetTextView"
+        app:layout_constraintStart_toEndOf="@id/textViewDateLabel"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text=" : 23-May-2019" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textViewNameLabel"
+        style="@style/NormalTextView"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:text="@string/name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewDateLabel" />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textViewName"
+        style="@style/NormalTextView.SetTextView"
+        android:layout_marginTop="@dimen/_5sdp"
+        app:layout_constraintStart_toEndOf="@id/textViewNameLabel"
+        app:layout_constraintTop_toBottomOf="@id/textViewDateLabel"
+        tools:text=" : Beer" />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textViewBrandLabel"
+        style="@style/NormalTextView"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:text="@string/brand"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewName" />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textViewBrand"
+        style="@style/NormalTextView.SetTextView"
+        android:layout_marginTop="@dimen/_5sdp"
+        app:layout_constraintStart_toEndOf="@id/textViewBrandLabel"
+        app:layout_constraintTop_toBottomOf="@id/textViewName"
+        tools:text=" : Heineken" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textViewQuantityTypeLabel"
+        style="@style/NormalTextView"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:text="@string/quantity_type"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewBrandLabel" />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textViewQuantityType"
+        style="@style/NormalTextView.SetTextView"
+        android:layout_marginTop="@dimen/_5sdp"
+        app:layout_constraintStart_toEndOf="@id/textViewQuantityTypeLabel"
+        app:layout_constraintTop_toBottomOf="@id/textViewBrandLabel"
+        tools:text=" : 250 ml" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textViewQuantityLabel"
+        style="@style/NormalTextView"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:text="@string/quantity"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewQuantityTypeLabel" />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textViewQuantity"
+        style="@style/NormalTextView.SetTextView"
+        android:layout_marginTop="@dimen/_5sdp"
+        app:layout_constraintStart_toEndOf="@id/textViewQuantityLabel"
+        app:layout_constraintTop_toBottomOf="@id/textViewQuantityTypeLabel"
+        tools:text=" : 10" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textViewEditAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:fontFamily="@font/work_sans_medium"
+        android:text="@string/edit"
+        android:textColor="@color/orange"
+        android:textSize="@dimen/_14ssp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewQuantity" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textViewDeleteAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:fontFamily="@font/work_sans_medium"
+        android:text="@string/delete"
+        android:textColor="@color/orange"
+        android:textSize="@dimen/_14ssp"
+        app:layout_constraintStart_toEndOf="@id/textViewEditAddress"
+        app:layout_constraintTop_toBottomOf="@id/textViewQuantity" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

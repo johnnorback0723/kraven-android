@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textViewAdminCommentLabel"
+        style="@style/CartTextView"
+        android:text="@string/admin_comments"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textViewAdminComment"
+        style="@style/AuthHeadingTextView.TextViewCommonLayout"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:maxLines="3"
+        android:text="@string/long_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewAdminCommentLabel" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textViewPriceDetails"
+        style="@style/CartTextView"
+        android:text="@string/price_details"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewAdminComment" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textViewSubTotal"
+        style="@style/AuthHeadingTextView.TextViewCommonLayoutMedium"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:text="@string/sub_total"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewPriceDetails" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        style="@style/AuthHeadingTextView.TextViewCommonLayoutMedium"
+        android:text="$165"
+        app:layout_constraintBottom_toBottomOf="@id/textViewSubTotal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textViewSubTotal" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textViewDeliveryCharge"
+        style="@style/AuthHeadingTextView.TextViewCommonLayoutMedium"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:text="@string/delivery_charge"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSubTotal" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imageViewDeliveryInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_7sdp"
+        android:background="@drawable/ic_info"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewDeliveryCharge"
+        app:layout_constraintStart_toEndOf="@id/textViewDeliveryCharge"
+        app:layout_constraintTop_toTopOf="@+id/textViewDeliveryCharge" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        style="@style/AuthHeadingTextView.TextViewCommonLayoutMedium"
+        android:text="$10"
+        app:layout_constraintBottom_toBottomOf="@id/textViewDeliveryCharge"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textViewDeliveryCharge" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textViewVat"
+        style="@style/AuthHeadingTextView.TextViewCommonLayoutMedium"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:text="@string/vat"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDeliveryCharge" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        style="@style/AuthHeadingTextView.TextViewCommonLayoutMedium"
+        android:text="$10"
+        app:layout_constraintBottom_toBottomOf="@id/textViewVat"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textViewVat" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textViewTotalLabel"
+        style="@style/AuthHeadingTextView.TextViewCommonLayoutMedium"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:text="@string/total"
+        android:textSize="@dimen/_15ssp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewVat" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textViewTotal"
+        style="@style/AuthHeadingTextView.TextViewCommonLayoutBold"
+        android:fontFamily="@font/work_sans_bold"
+        android:text="$185"
+        android:textSize="@dimen/_15ssp"
+        app:layout_constraintBottom_toBottomOf="@id/textViewTotalLabel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/textViewTotalLabel" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

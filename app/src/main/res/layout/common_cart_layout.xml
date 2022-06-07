@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:animateLayoutChanges="true"
+	android:orientation="vertical">
+	
+	<androidx.appcompat.widget.AppCompatTextView
+		android:id="@+id/textViewPriceLabel"
+		style="@style/CartTextView"
+		android:text="@string/price_details"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent" />
+	
+	
+	<androidx.appcompat.widget.AppCompatTextView
+		android:id="@+id/textViewSubTotal"
+		style="@style/AuthHeadingTextView.TextViewCommonLayoutMedium"
+		android:layout_marginTop="@dimen/_15sdp"
+		android:text="@string/sub_total"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/textViewPriceLabel" />
+	
+	<androidx.appcompat.widget.AppCompatTextView
+		android:id="@+id/textViewSubTotalValue"
+		style="@style/AuthHeadingTextView.TextViewCommonLayoutMedium"
+		app:layout_constraintBottom_toBottomOf="@id/textViewSubTotal"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintTop_toTopOf="@+id/textViewSubTotal"
+		tools:text="$165" />
+	
+	<androidx.appcompat.widget.AppCompatTextView
+		android:id="@+id/textViewVat"
+		style="@style/AuthHeadingTextView.TextViewCommonLayoutMedium"
+		android:layout_marginTop="@dimen/_15sdp"
+		android:text="@string/vat"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/textViewSubTotal" />
+	
+	<androidx.appcompat.widget.AppCompatTextView
+		android:id="@+id/textViewVatValue"
+		style="@style/AuthHeadingTextView.TextViewCommonLayoutMedium"
+		app:layout_constraintBottom_toBottomOf="@id/textViewVat"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintTop_toTopOf="@+id/textViewVat"
+		tools:text="$185" />
+	
+	<androidx.appcompat.widget.AppCompatTextView
+		android:id="@+id/textViewDeliveryCharge"
+		style="@style/AuthHeadingTextView.TextViewCommonLayoutMedium"
+		android:layout_marginTop="@dimen/_15sdp"
+		android:text="@string/delivery_charge"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/textViewVat" />
+	
+	<androidx.appcompat.widget.AppCompatImageView
+		android:id="@+id/imageViewDeliveryInfo"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginStart="@dimen/_7sdp"
+		android:background="@drawable/ic_info"
+		app:layout_constraintBottom_toBottomOf="@+id/textViewDeliveryCharge"
+		app:layout_constraintStart_toEndOf="@id/textViewDeliveryCharge"
+		app:layout_constraintTop_toTopOf="@+id/textViewDeliveryCharge" />
+	
+	<androidx.appcompat.widget.AppCompatTextView
+		android:id="@+id/textViewDeliveryChargeValue"
+		style="@style/AuthHeadingTextView.TextViewCommonLayoutMedium"
+		app:layout_constraintBottom_toBottomOf="@id/textViewDeliveryCharge"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintTop_toTopOf="@+id/textViewDeliveryCharge"
+		tools:text="$185" />
+	
+	<androidx.appcompat.widget.AppCompatTextView
+		android:id="@+id/textViewWallet"
+		style="@style/AuthHeadingTextView.TextViewCommonLayoutMedium"
+		android:layout_marginTop="@dimen/_15sdp"
+		android:text="@string/wallet"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/textViewDeliveryCharge" />
+	
+	<androidx.appcompat.widget.AppCompatTextView
+		android:id="@+id/textViewWalletValue"
+		style="@style/AuthHeadingTextView.TextViewCommonLayoutMedium"
+		app:layout_constraintBottom_toBottomOf="@id/textViewWallet"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintTop_toTopOf="@+id/textViewWallet"
+		tools:text="$185" />
+	
+	<androidx.appcompat.widget.AppCompatTextView
+		android:id="@+id/textViewDiscount"
+		style="@style/AuthHeadingTextView.TextViewCommonLayoutMedium"
+		android:layout_marginTop="@dimen/_15sdp"
+		android:text="@string/discount"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/textViewWallet" />
+	
+	
+	<androidx.appcompat.widget.AppCompatTextView
+		android:id="@+id/textViewDiscountValue"
+		style="@style/AuthHeadingTextView.TextViewCommonLayoutMedium"
+		app:layout_constraintBottom_toBottomOf="@id/textViewDiscount"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintTop_toTopOf="@+id/textViewDiscount"
+		tools:text="$185" />
+	
+	
+	<androidx.appcompat.widget.AppCompatTextView
+		android:id="@+id/textViewTip"
+		style="@style/AuthHeadingTextView.TextViewCommonLayoutMedium"
+		android:layout_marginTop="@dimen/_15sdp"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/textViewDiscount"
+		tools:text="@string/tip" />
+	
+	<androidx.appcompat.widget.AppCompatTextView
+		android:id="@+id/textViewTipValue"
+		style="@style/AuthHeadingTextView.TextViewCommonLayoutMedium"
+		app:layout_constraintBottom_toBottomOf="@id/textViewTip"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintTop_toTopOf="@+id/textViewTip"
+		tools:text="$185" />
+	
+	<androidx.appcompat.widget.AppCompatTextView
+		android:id="@+id/textViewTollFee"
+		style="@style/AuthHeadingTextView.TextViewCommonLayoutMedium"
+		android:layout_marginTop="@dimen/_15sdp"
+		android:text="Toll Fee"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/textViewTip" />
+	
+	<androidx.appcompat.widget.AppCompatTextView
+		android:id="@+id/textViewTollFeeValue"
+		style="@style/AuthHeadingTextView.TextViewCommonLayoutMedium"
+		app:layout_constraintBottom_toBottomOf="@id/textViewTollFee"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintTop_toTopOf="@+id/textViewTollFee"
+		tools:text="$185" />
+	
+	<androidx.constraintlayout.widget.Group
+		android:id="@+id/groupTollFee"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:visibility="gone"
+		app:constraint_referenced_ids="textViewTollFee,textViewTollFeeValue" />
+	
+	<androidx.appcompat.widget.AppCompatTextView
+		android:id="@+id/textViewTotalLabel"
+		style="@style/AuthHeadingTextView.TextViewCommonLayoutMedium"
+		android:layout_marginTop="@dimen/_15sdp"
+		android:text="@string/total"
+		android:textSize="@dimen/_15ssp"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/textViewTollFee" />
+	
+	<androidx.appcompat.widget.AppCompatTextView
+		android:id="@+id/textViewTotal"
+		style="@style/AuthHeadingTextView.TextViewCommonLayoutBold"
+		android:textSize="@dimen/_15ssp"
+		app:layout_constraintBottom_toBottomOf="@id/textViewTotalLabel"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintTop_toTopOf="@id/textViewTotalLabel"
+		tools:text="$185" />
+	
+	<androidx.appcompat.widget.AppCompatTextView
+		android:id="@+id/textViewPaymentLabel"
+		style="@style/CartTextView"
+		android:text="@string/payment_method"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/textViewTotalLabel" />
+	
+	
+	<RadioGroup
+		android:id="@+id/radioGroupPaymentMethod"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		app:layout_constraintTop_toBottomOf="@+id/llCashOn">
+		
+		<androidx.appcompat.widget.AppCompatRadioButton
+			android:id="@+id/radioButtonCashPickup"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:background="@android:color/transparent"
+			android:button="@null"
+			android:drawableEnd="@drawable/radio_button_payment_type_cart"
+			android:fontFamily="@font/work_sans_medium"
+			android:paddingTop="@dimen/_7sdp"
+			android:paddingBottom="@dimen/_7sdp"
+			android:text="Cash on pickup"
+			android:textAllCaps="false"
+			android:textSize="@dimen/_12ssp"
+			android:visibility="gone"
+			app:layout_constraintStart_toStartOf="parent" />
+		
+		
+		<androidx.appcompat.widget.AppCompatRadioButton
+			android:id="@+id/radioButtonDebitCard"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:background="@android:color/transparent"
+			android:button="@null"
+			android:drawableEnd="@null"
+			android:fontFamily="@font/work_sans_medium"
+			android:paddingTop="@dimen/_7sdp"
+			android:paddingBottom="@dimen/_7sdp"
+			android:text="@string/debit_card"
+			android:textAllCaps="false"
+			android:textSize="@dimen/_12ssp" />
+	</RadioGroup>
+	
+	<include
+		android:id="@+id/commonPaymentMethod"
+		layout="@layout/common_payment_method"
+		android:layout_width="0dp"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="@dimen/_10sdp"
+		android:visibility="gone"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@id/textViewPaymentLabel" />
+	
+	<androidx.constraintlayout.widget.Group
+		android:id="@+id/groupPaymentVisible"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		app:constraint_referenced_ids="textViewPaymentLabel,radioGroupPaymentMethod" />
+	
+	<androidx.appcompat.widget.AppCompatRadioButton
+		android:id="@+id/radioButtonCreditCard"
+		style="@style/RadioButtonStyle"
+		android:text="@string/credit_card"
+		android:visibility="gone"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/radioGroupPaymentMethod" />
+	
+	<RelativeLayout
+		android:id="@+id/linearLayoutTip"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_weight="1"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@id/radioGroupPaymentMethod">
+		
+		<RelativeLayout
+			android:id="@+id/llTip"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginStart="@dimen/_5sdp"
+			android:layout_marginTop="@dimen/_10sdp"
+			android:background="@drawable/button_dash_bg">
+			
+			<androidx.appcompat.widget.AppCompatButton
+				android:id="@+id/buttonTip"
+				style="@style/DashButtonStyle"
+				android:layout_centerInParent="true"
+				android:layout_gravity="center"
+				android:layout_marginStart="@dimen/_10sdp"
+				android:layout_marginEnd="@dimen/_10sdp"
+				android:drawableStart="@drawable/ic_tip"
+				android:drawablePadding="@dimen/_10sdp"
+				android:gravity="center"
+				android:maxLines="2"
+				android:text="@string/add_tip" />
+			
+			<androidx.appcompat.widget.AppCompatImageView
+				android:id="@+id/imageViewCloseTip"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignParentEnd="true"
+				android:layout_centerInParent="true"
+				android:layout_gravity="center"
+				android:layout_marginStart="@dimen/_10sdp"
+				android:layout_marginEnd="@dimen/_5sdp"
+				android:background="@drawable/ic_close"
+				android:visibility="gone" />
+		
+		
+		</RelativeLayout>
+		
+		<LinearLayout
+			android:id="@+id/llEnterTip"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginStart="@dimen/_5sdp"
+			android:layout_marginTop="@dimen/_10sdp"
+			android:background="@drawable/button_dash_bg"
+			android:orientation="horizontal"
+			android:visibility="gone">
+			
+			<androidx.appcompat.widget.AppCompatImageView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center"
+				android:background="@drawable/ic_tip" />
+			
+			<androidx.recyclerview.widget.RecyclerView
+				android:id="@+id/recyclerViewTip"
+				android:layout_width="0dp"
+				android:layout_height="@dimen/_70sdp"
+				android:layout_gravity="center"
+				android:layout_marginStart="@dimen/_10sdp"
+				android:layout_weight="1"
+				android:padding="@dimen/_5sdp" />
+			
+			<androidx.appcompat.widget.AppCompatTextView
+				android:id="@+id/buttonDoneTip"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center"
+				android:layout_marginStart="@dimen/_10sdp"
+				android:layout_marginEnd="@dimen/_5sdp"
+				android:background="@android:color/transparent"
+				android:fontFamily="@font/work_sans_medium"
+				android:text="@string/done"
+				android:textAllCaps="false"
+				android:textColor="@color/orange"
+				android:textSize="@dimen/_12ssp" />
+		
+		
+		</LinearLayout>
+	
+	</RelativeLayout>
+	
+	<RelativeLayout
+		android:id="@+id/llCashOn"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="@dimen/_15sdp"
+		android:orientation="horizontal"
+		android:visibility="gone"
+		app:layout_constraintTop_toBottomOf="@+id/textViewPaymentLabel">
+		
+		<androidx.appcompat.widget.AppCompatTextView
+			android:id="@+id/textViewCashOn"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:fontFamily="@font/work_sans_medium"
+			android:text="@string/cash_on_delivery"
+			android:textColor="@color/black"
+			android:textSize="@dimen/_12ssp"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toTopOf="parent" />
+		
+		<androidx.appcompat.widget.AppCompatImageView
+			android:id="@+id/imageViewCashInfo"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginStart="@dimen/_10sdp"
+			android:layout_toEndOf="@+id/textViewCashOn"
+			android:background="@drawable/ic_info"
+			android:padding="@dimen/_5sdp"
+			app:layout_constraintBottom_toBottomOf="@id/textViewCashOn"
+			app:layout_constraintStart_toEndOf="@id/textViewCashOn"
+			app:layout_constraintTop_toTopOf="@id/radioButtonCashOn" />
+		
+		<androidx.appcompat.widget.AppCompatImageView
+			android:id="@+id/radioButtonCashOn"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentEnd="true"
+			android:layout_gravity="end"
+			android:text=""
+			app:layout_constraintBottom_toBottomOf="parent"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintStart_toEndOf="@id/imageViewCashInfo"
+			app:layout_constraintTop_toTopOf="parent"
+			app:srcCompat="@drawable/radio_button_payment_type" />
+	
+	
+	</RelativeLayout>
+	
+	<ToggleButton
+		android:id="@+id/radioButtonWallet"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="@dimen/_13sdp"
+		android:background="@android:color/transparent"
+		android:button="@drawable/radio_button_payment_type"
+		android:fontFamily="@font/work_sans_medium"
+		android:gravity="start"
+		android:layoutDirection="rtl"
+		android:minWidth="0dp"
+		android:minHeight="0dp"
+		android:text="@string/wallet"
+		android:textAlignment="textStart"
+		android:textAllCaps="false"
+		android:textColor="@color/black"
+		android:textOff="@string/wallet"
+		android:textOn="@string/wallet"
+		android:textSize="@dimen/_12ssp"
+		android:visibility="gone"
+		app:layout_constraintTop_toBottomOf="@+id/llCashOn" />
+	
+	<!--   </RadioGroup>-->
+	
+	<com.google.android.material.button.MaterialButton
+		android:id="@+id/buttonCheckout"
+		style="@style/CommonButton"
+		android:layout_marginTop="@dimen/_30sdp"
+		android:layout_marginBottom="@dimen/_10sdp"
+		android:text="@string/checkout"
+		app:cornerRadius="@dimen/_20sdp"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/linearLayoutTip" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

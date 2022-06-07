@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:fillViewport="true">
+	
+	<androidx.constraintlayout.widget.ConstraintLayout
+		android:id="@+id/constraintLayout"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:paddingStart="@dimen/_15sdp"
+		android:paddingEnd="@dimen/_15sdp">
+		
+		<androidx.appcompat.widget.AppCompatTextView
+			android:id="@+id/textViewSignUp"
+			style="@style/AuthHeadingTextView"
+			android:text="@string/address"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toTopOf="parent" />
+
+		<com.google.android.material.button.MaterialButton
+			android:id="@+id/buttonLocation"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="4dp"
+			android:fontFamily="@font/work_sans_medium"
+			android:paddingStart="@dimen/_20sdp"
+			android:paddingTop="@dimen/_10sdp"
+			android:paddingEnd="@dimen/_20sdp"
+			android:paddingBottom="@dimen/_10sdp"
+			android:text="@string/auto_detect_location"
+			android:textAllCaps="false"
+			android:textColor="@color/light_blue"
+			android:textSize="@dimen/_12ssp"
+			app:backgroundTint="@color/white"
+			app:cornerRadius="@dimen/_30sdp"
+			app:icon="@drawable/ic_my_location"
+			app:iconPadding="@dimen/_10sdp"
+			app:iconTint="@color/light_blue"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintHorizontal_bias="0.495"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toBottomOf="@+id/textViewSignUp"
+			app:strokeColor="@color/light_blue"
+			app:strokeWidth="0.6dp" />
+
+		<com.google.android.material.textfield.TextInputLayout
+			android:id="@+id/inputLayoutAddress"
+			style="@style/AuthTextInputLayout.Black"
+			android:layout_marginTop="@dimen/_25sdp"
+			android:hint="@string/address"
+			android:theme="@style/AuthEditTextColorBlack"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toBottomOf="@+id/spinner_cay_list">
+
+			<com.google.android.material.textfield.TextInputEditText
+				android:id="@+id/editTextAddress"
+				style="@style/AuthEditText.Disable.Black"
+				android:background="@drawable/edt_bg_normal"
+				android:drawableEnd="@drawable/ic_location_black"
+				android:editable="false"
+				android:ellipsize="end"
+				android:singleLine="true" />
+
+		</com.google.android.material.textfield.TextInputLayout>
+
+		<com.google.android.material.textfield.TextInputLayout
+			android:id="@+id/inputLayoutStreetName"
+			style="@style/AuthTextInputLayout.Black"
+			android:layout_marginTop="@dimen/_25sdp"
+			android:hint="Street Name"
+			android:theme="@style/AuthEditTextColorBlack"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toBottomOf="@+id/inputLayoutAddress">
+
+			<com.google.android.material.textfield.TextInputEditText
+				android:id="@+id/editTextStreetName"
+				style="@style/AuthEditText.Black"
+				android:background="@drawable/edt_bg_normal"
+				android:inputType="textCapWords" />
+
+		</com.google.android.material.textfield.TextInputLayout>
+		
+		<com.google.android.material.textfield.TextInputLayout
+			android:id="@+id/inputLayoutAddressType"
+			style="@style/AuthTextInputLayout.Black"
+			android:layout_marginTop="@dimen/_25sdp"
+			android:hint="@string/address_type"
+			android:theme="@style/AuthEditTextColorBlack"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toBottomOf="@+id/inputLayoutStreetName">
+
+			<com.google.android.material.textfield.TextInputEditText
+				android:id="@+id/editTextAddressType"
+				style="@style/AuthEditText.Black"
+				android:background="@drawable/edt_bg_normal"
+				android:inputType="textCapWords" />
+
+		</com.google.android.material.textfield.TextInputLayout>
+		
+		<com.google.android.material.textfield.TextInputLayout
+			android:id="@+id/inputLayoutCountry"
+			style="@style/AuthTextInputLayout.Black"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="@dimen/_25sdp"
+			android:hint="@string/country"
+			android:theme="@style/AuthEditTextColorBlack"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toBottomOf="@+id/inputLayoutAddressType">
+
+			<com.google.android.material.textfield.TextInputEditText
+				android:id="@+id/editTextCountry"
+				style="@style/AuthEditText.Black"
+				android:background="@drawable/edt_bg_normal"
+				android:inputType="textCapWords" />
+
+		</com.google.android.material.textfield.TextInputLayout>
+		
+		<com.google.android.material.textfield.TextInputLayout
+			android:id="@+id/inputLayoutCity"
+			style="@style/AuthTextInputLayout.Black"
+			android:layout_marginTop="@dimen/_25sdp"
+			android:hint="@string/city"
+			android:theme="@style/AuthEditTextColorBlack"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toBottomOf="@+id/inputLayoutCountry">
+
+			<com.google.android.material.textfield.TextInputEditText
+				android:id="@+id/editTextCity"
+				style="@style/AuthEditText.Black"
+				android:background="@drawable/edt_bg_normal"
+				android:inputType="textCapWords"
+				android:theme="@style/AuthEditTextColor" />
+
+		</com.google.android.material.textfield.TextInputLayout>
+		
+		<com.google.android.material.textfield.TextInputLayout
+			android:id="@+id/inputLayoutLocality"
+			style="@style/AuthTextInputLayout.Black"
+			android:layout_marginTop="@dimen/_25sdp"
+			android:hint="@string/locality"
+			android:theme="@style/AuthEditTextColorBlack"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toBottomOf="@+id/inputLayoutCity">
+
+			<com.google.android.material.textfield.TextInputEditText
+				android:id="@+id/editTextLocality"
+				style="@style/AuthEditText.Black"
+				android:background="@drawable/edt_bg_normal"
+				android:inputType="textCapWords"
+				android:theme="@style/AuthEditTextColorBlack" />
+
+		</com.google.android.material.textfield.TextInputLayout>
+		
+		<com.google.android.material.textfield.TextInputLayout
+			android:id="@+id/inputLayoutHouse"
+			style="@style/AuthTextInputLayout.Black"
+			android:layout_marginTop="@dimen/_25sdp"
+			android:hint="@string/house_no"
+			android:theme="@style/AuthEditTextColorBlack"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toBottomOf="@+id/inputLayoutLocality">
+
+			<com.google.android.material.textfield.TextInputEditText
+				android:id="@+id/editTextHouse"
+				style="@style/AuthEditText.Black"
+				android:background="@drawable/edt_bg_normal"
+				android:inputType="textCapWords"
+				android:theme="@style/AuthEditTextColorBlack" />
+
+		</com.google.android.material.textfield.TextInputLayout>
+		
+		<com.google.android.material.textfield.TextInputLayout
+			android:id="@+id/inputLayoutLandmark"
+			style="@style/AuthTextInputLayout.Black"
+			android:layout_marginTop="@dimen/_25sdp"
+			android:hint="@string/landmark"
+			android:theme="@style/AuthEditTextColorBlack"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toBottomOf="@+id/inputLayoutHouse">
+
+			<com.google.android.material.textfield.TextInputEditText
+				android:id="@+id/editTextLandmark"
+				style="@style/AuthEditText.Black"
+				android:background="@drawable/edt_bg_normal"
+				android:imeOptions="actionDone"
+				android:inputType="textMultiLine"
+				android:maxLines="4"
+				android:theme="@style/AuthEditTextColorBlack" />
+
+		</com.google.android.material.textfield.TextInputLayout>
+
+		<com.google.android.material.button.MaterialButton
+			android:id="@+id/buttonSave"
+			style="@style/CommonButton"
+			android:layout_marginTop="100dp"
+			android:layout_marginBottom="@dimen/_20sdp"
+			android:text="@string/save"
+			app:cornerRadius="@dimen/_30sdp"
+			app:layout_constraintBottom_toBottomOf="parent"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintHeight_percent="0.08"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toBottomOf="@+id/inputLayoutLandmark"
+			app:layout_constraintWidth_percent="0.50" />
+
+		<Spinner
+			android:id="@+id/spinner_cay_list"
+			style="@style/Widget.AppCompat.Spinner.Underlined"
+			android:layout_width="0dp"
+			android:layout_height="40dp"
+			android:layout_marginTop="20dp"
+			android:layout_marginBottom="3dp"
+			android:backgroundTint="@color/dark_gray"
+			android:dropDownWidth="match_parent"
+			android:spinnerMode="dropdown"
+			android:visibility="gone"
+			app:layout_constraintBottom_toTopOf="@+id/inputLayoutAddress"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toBottomOf="@+id/buttonLocation" />
+
+
+	</androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

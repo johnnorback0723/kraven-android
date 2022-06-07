@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textViewMenuPrice"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:fontFamily="@font/work_sans_medium"
+        android:gravity="center"
+        android:text="This vendor limits deliveries within a specific mile radius.  Please select delivery address to see if you are within the distance mile radius."
+        android:textColor="@color/red"
+        android:textSize="@dimen/_12ssp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonAddAddress"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:fontFamily="@font/work_sans_medium"
+        android:paddingTop="@dimen/_10sdp"
+        android:paddingBottom="@dimen/_10sdp"
+        android:text="@string/add_address"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/light_blue"
+        android:textSize="@dimen/_12ssp"
+        app:backgroundTint="@color/white"
+        app:cornerRadius="@dimen/_30sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewMenuPrice"
+        app:layout_constraintWidth_percent="0.6"
+        app:strokeColor="@color/light_blue"
+        app:strokeWidth="0.6dp" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewAddress"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/buttonAddAddress" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

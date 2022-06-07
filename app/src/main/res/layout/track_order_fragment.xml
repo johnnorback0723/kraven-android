@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10sdp">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewOrderIdLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:fontFamily="@font/work_sans_medium"
+            android:gravity="end"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_14ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Order ID :" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewEstimatedLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:fontFamily="@font/work_sans_medium"
+            android:gravity="end"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_14ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewOrderIdLabel"
+            tools:text="Estimated Time :" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewEstimatedMilesLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:visibility="gone"
+            android:fontFamily="@font/work_sans_medium"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_14ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewEstimatedLabel"
+            tools:text="Estimated Miles :" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewPlacedTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:fontFamily="@font/work_sans_regular"
+            android:textSize="@dimen/_11ssp"
+            app:layout_constraintBottom_toBottomOf="@id/imageViewOrderPlaced"
+            app:layout_constraintEnd_toStartOf="@id/imageViewOrderPlaced"
+            app:layout_constraintTop_toTopOf="@id/imageViewOrderPlaced"
+            tools:text="1:00 pm" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imageViewOrderPlaced"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:backgroundTint="@color/pin_normal"
+            app:srcCompat="@drawable/order_place_selector"
+            app:layout_constraintEnd_toEndOf="@id/textViewOrderPlaced"
+            app:layout_constraintEnd_toStartOf="@id/textViewOrderPlaced"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewEstimatedMilesLabel" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewOrderPlaced"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_30sdp"
+            android:fontFamily="@font/work_sans_regular"
+            android:text="@string/order_placed"
+            android:textColor="@color/order_text_selector"
+            android:textSize="@dimen/_12ssp"
+            app:layout_constraintBottom_toTopOf="@+id/textViewLabel1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/imageViewOrderPlaced"
+            app:layout_constraintTop_toTopOf="@id/imageViewOrderPlaced"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewLabel1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:fontFamily="@font/work_sans_regular"
+            android:text="@string/we_have_received_your_order"
+            android:textColor="@color/pin_normal"
+            android:textSize="@dimen/_12ssp"
+            app:layout_constraintBottom_toBottomOf="@id/imageViewOrderPlaced"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/textViewOrderPlaced"
+            app:layout_constraintTop_toBottomOf="@+id/textViewOrderPlaced" />
+
+        <View
+            android:id="@+id/viewLineOne"
+            android:layout_width="@dimen/_2sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:background="@drawable/order_view_selector"
+            app:layout_constraintEnd_toEndOf="@id/imageViewOrderPlaced"
+            app:layout_constraintStart_toStartOf="@id/imageViewOrderPlaced"
+            app:layout_constraintTop_toBottomOf="@id/imageViewOrderPlaced" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewConfirmTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:fontFamily="@font/work_sans_regular"
+            android:textSize="@dimen/_11ssp"
+            app:layout_constraintBottom_toBottomOf="@id/imageViewOrderConfirm"
+            app:layout_constraintEnd_toStartOf="@id/imageViewOrderConfirm"
+            app:layout_constraintTop_toTopOf="@id/imageViewOrderConfirm"
+            tools:text="1:05 pm" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imageViewOrderConfirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/pin_normal"
+            app:srcCompat="@drawable/order_confirm_selector"
+            app:layout_constraintEnd_toEndOf="@id/viewLineOne"
+            app:layout_constraintStart_toStartOf="@id/viewLineOne"
+            app:layout_constraintTop_toBottomOf="@+id/viewLineOne" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewOrderConfirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_30sdp"
+            android:fontFamily="@font/work_sans_regular"
+            android:text="@string/order_confirmed"
+            android:textColor="@color/order_text_selector"
+            android:textSize="@dimen/_12ssp"
+            app:layout_constraintStart_toEndOf="@id/imageViewOrderConfirm"
+            app:layout_constraintTop_toTopOf="@id/imageViewOrderConfirm"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewLabel2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:fontFamily="@font/work_sans_regular"
+            android:text="@string/your_order_has_been_confirmed"
+            android:textColor="@color/pin_normal"
+            android:textSize="@dimen/_12ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/textViewOrderConfirm"
+            app:layout_constraintTop_toBottomOf="@+id/textViewOrderConfirm" />
+
+
+        <View
+            android:id="@+id/viewLineTwo"
+            android:layout_width="@dimen/_2sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:background="@drawable/order_view_selector"
+            app:layout_constraintEnd_toEndOf="@id/imageViewOrderConfirm"
+            app:layout_constraintStart_toStartOf="@id/imageViewOrderConfirm"
+            app:layout_constraintTop_toBottomOf="@id/imageViewOrderConfirm" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewProcess"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:fontFamily="@font/work_sans_regular"
+            android:textSize="@dimen/_11ssp"
+            app:layout_constraintBottom_toBottomOf="@id/imageViewOrderProcess"
+
+            app:layout_constraintEnd_toStartOf="@id/imageViewOrderProcess"
+            app:layout_constraintTop_toTopOf="@id/imageViewOrderProcess"
+            tools:text="1:30 pm" />
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imageViewOrderProcess"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/pin_normal"
+            app:srcCompat="@drawable/order_process_selector"
+            app:layout_constraintEnd_toEndOf="@id/viewLineTwo"
+            app:layout_constraintStart_toStartOf="@id/viewLineTwo"
+            app:layout_constraintTop_toBottomOf="@+id/viewLineTwo" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewOrderProcess"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:fontFamily="@font/work_sans_regular"
+            tools:text="@string/order_process"
+            android:textColor="@color/order_text_selector"
+            android:textSize="@dimen/_12ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/imageViewOrderProcess"
+            app:layout_constraintTop_toTopOf="@id/imageViewOrderProcess"
+            app:layout_constraintVertical_chainStyle="spread" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewLabel3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:fontFamily="@font/work_sans_regular"
+            android:text="@string/we_are_preparing_your_food"
+            android:textColor="@color/pin_normal"
+            android:textSize="@dimen/_12ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/textViewOrderProcess"
+            app:layout_constraintTop_toBottomOf="@+id/textViewOrderProcess" />
+
+        <View
+            android:id="@+id/viewLineThree"
+            android:layout_width="@dimen/_2sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:background="@drawable/order_view_selector"
+            app:layout_constraintEnd_toEndOf="@id/imageViewOrderProcess"
+            app:layout_constraintStart_toStartOf="@id/imageViewOrderProcess"
+            app:layout_constraintTop_toBottomOf="@id/imageViewOrderProcess" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imageViewOrderOnTheWay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/pin_normal"
+            app:srcCompat="@drawable/order_on_way_selector"
+            app:layout_constraintEnd_toEndOf="@id/viewLineThree"
+            app:layout_constraintStart_toStartOf="@id/viewLineThree"
+            app:layout_constraintTop_toBottomOf="@+id/viewLineThree" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewOnTheWay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:fontFamily="@font/work_sans_regular"
+            android:textSize="@dimen/_11ssp"
+            app:layout_constraintBottom_toBottomOf="@id/imageViewOrderOnTheWay"
+            app:layout_constraintEnd_toStartOf="@id/imageViewOrderOnTheWay"
+            app:layout_constraintTop_toTopOf="@id/imageViewOrderOnTheWay"
+            tools:text="1:45 pm" />
+
+
+        <androidx.constraintlayout.widget.Group
+            android:id="@+id/groupFoodOnTheWay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:constraint_referenced_ids="textViewOrderOnTheWay,textViewOnTheWay,imageViewOrderOnTheWay,textViewLabel4,viewLineFour" />
+        
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewOrderOnTheWay"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:fontFamily="@font/work_sans_regular"
+            android:text="@string/food_on_the_way"
+            android:textColor="@color/order_text_selector"
+            android:textSize="@dimen/_12ssp"
+            app:layout_constraintBottom_toTopOf="@+id/textViewLabel4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/imageViewOrderOnTheWay"
+            app:layout_constraintTop_toTopOf="@id/imageViewOrderOnTheWay"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewLabel4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:fontFamily="@font/work_sans_regular"
+            tools:text="@string/_20_mins_estimated_delivery_time"
+            android:textColor="@color/pin_normal"
+            android:textSize="@dimen/_12ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/textViewOrderOnTheWay"
+            app:layout_constraintTop_toBottomOf="@+id/textViewOrderOnTheWay" />
+
+
+        <View
+            android:id="@+id/viewLineFour"
+            android:layout_width="@dimen/_2sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:background="@drawable/order_view_selector"
+            app:layout_constraintEnd_toEndOf="@id/imageViewOrderOnTheWay"
+            app:layout_constraintStart_toStartOf="@id/imageViewOrderOnTheWay"
+            app:layout_constraintTop_toBottomOf="@id/imageViewOrderOnTheWay" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imageViewOrderDelivered"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/pin_normal"
+            android:src="@drawable/order_delivered_selector"
+            app:layout_constraintEnd_toEndOf="@id/viewLineFour"
+            app:layout_constraintStart_toStartOf="@id/viewLineFour"
+            app:layout_constraintTop_toBottomOf="@+id/viewLineFour" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewDelivered"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:fontFamily="@font/work_sans_regular"
+            android:textSize="@dimen/_11ssp"
+            app:layout_constraintBottom_toBottomOf="@id/imageViewOrderDelivered"
+            app:layout_constraintEnd_toStartOf="@id/imageViewOrderDelivered"
+            app:layout_constraintTop_toTopOf="@id/imageViewOrderDelivered"
+            tools:text="2:00 pm" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewOrderDelivered"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:fontFamily="@font/work_sans_regular"
+            android:text="@string/delivered"
+            android:textColor="@color/order_text_selector"
+            android:textSize="@dimen/_12ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/imageViewOrderDelivered"
+            app:layout_constraintTop_toTopOf="@id/imageViewOrderDelivered"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewLabel5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:fontFamily="@font/work_sans_regular"
+            android:text="@string/your_order_has_been_delivered"
+            android:textColor="@color/pin_normal"
+            android:textSize="@dimen/_12ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/textViewOrderDelivered"
+            app:layout_constraintTop_toBottomOf="@+id/textViewOrderDelivered" />
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonTrack"
+            android:visibility="gone"
+            style="@style/CommonButton"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:text="@string/track"
+            app:cornerRadius="@dimen/_20sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageViewOrderDelivered" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textViewOrderId"
+        style="@style/AuthHeadingTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/work_sans_medium"
+        android:text="Order ID: 123456"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_13ssp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textViewDateLabel"
+        style="@style/AuthHeadingTextView.TextViewCommonLayout"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:text="@string/date"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewOrderId" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textViewDate"
+        style="@style/AuthHeadingTextView.TextViewCommonLayoutBold"
+        android:text="16 Aug 2018"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewDateLabel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textViewDateLabel" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textViewTimeLabel"
+        style="@style/AuthHeadingTextView.TextViewCommonLayout"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:text="@string/time"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDateLabel" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textViewTime"
+        style="@style/AuthHeadingTextView.TextViewCommonLayoutBold"
+        android:text="12:00 AM"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewTimeLabel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textViewTimeLabel" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textViewBookingHoursLabel"
+        style="@style/AuthHeadingTextView.TextViewCommonLayout"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:text="@string/booking_hours"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTimeLabel" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textViewBookingHours"
+        style="@style/AuthHeadingTextView.TextViewCommonLayoutBold"
+        android:text="5 Hours"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewBookingHoursLabel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textViewBookingHoursLabel" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textViewEventLabel"
+        style="@style/AuthHeadingTextView.TextViewCommonLayout"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:text="@string/type_of_event"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewBookingHoursLabel" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textViewEvent"
+        style="@style/AuthHeadingTextView.TextViewCommonLayoutBold"
+        android:text="Wedding"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewEventLabel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textViewEventLabel" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textViewDressCodeLabel"
+        style="@style/AuthHeadingTextView.TextViewCommonLayout"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:text="@string/bartender_dress_code"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewEventLabel" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textViewDressCode"
+        style="@style/AuthHeadingTextView.TextViewCommonLayoutBold"
+        android:text="Formal"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewDressCodeLabel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textViewDressCodeLabel" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

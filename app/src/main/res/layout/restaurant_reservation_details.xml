@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/includeToolbar"
+        layout="@layout/restaurant_toolbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/_30sdp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:id="@+id/linearLayoutMain"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:descendantFocusability="blocksDescendants"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:orientation="vertical">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:background="@android:color/transparent">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/cardViewName"
+                    style="@style/cardView"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="@dimen/_5sdp"
+                    app:cardMaxElevation="@dimen/_20sdp"
+                    app:contentPadding="@dimen/_10sdp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/textViewRestaurantName"
+                            style="@style/AuthHeadingTextView.TextViewCommonLayoutMedium"
+                            android:text="The French Room"
+                            android:textSize="@dimen/_14ssp"
+                            app:layout_constraintBottom_toTopOf="@id/textViewRestaurantItem"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_chainStyle="spread" />
+
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/textViewRestaurantItem"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:fontFamily="@font/work_sans_regular"
+                            android:text="Noodles, Sandwich, Burger"
+                            android:textColor="@color/dark_gray"
+                            android:textSize="@dimen/_12ssp"
+                            app:layout_constraintBottom_toTopOf="@id/ratingBarRestaurant"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="@+id/textViewRestaurantName"
+                            app:layout_constraintTop_toBottomOf="@+id/textViewRestaurantName" />
+
+                        <me.zhanghai.android.materialratingbar.MaterialRatingBar
+                            android:id="@+id/ratingBarRestaurant"
+                            style="@style/Widget.MaterialRatingBar.RatingBar.Indicator.Small"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:maxHeight="@dimen/_15sdp"
+                            android:minHeight="@dimen/_18sdp"
+                            android:progressDrawable="@drawable/food_rating_bar_full"
+                            android:rating="4"
+                            app:layout_constraintBottom_toTopOf="@id/textViewDetailsStatus"
+                            app:layout_constraintStart_toStartOf="@+id/textViewRestaurantItem"
+                            app:layout_constraintTop_toBottomOf="@+id/textViewRestaurantItem"
+                            app:mrb_progressBackgroundTint="@color/dark_gray"
+                            app:mrb_progressTint="@color/orange" />
+
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/textViewReviewCount"
+                            style="@style/AuthHeadingTextView.TextViewCommonLayout"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:text="(500 Reviews)"
+                            android:textSize="@dimen/_11ssp"
+                            app:layout_constraintBottom_toBottomOf="@+id/ratingBarRestaurant"
+                            app:layout_constraintStart_toEndOf="@+id/ratingBarRestaurant"
+                            app:layout_constraintTop_toTopOf="@+id/ratingBarRestaurant" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/textViewDetailsStatus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:fontFamily="@font/work_sans_regular"
+                            android:textColor="@color/green"
+                            android:textSize="@dimen/_12ssp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="@+id/textViewRestaurantItem"
+                            app:layout_constraintTop_toBottomOf="@+id/ratingBarRestaurant"
+                            tools:text="Avilable" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/textViewMiles"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:fontFamily="@font/work_sans_medium"
+                            android:text="(5 Miles)"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_12ssp"
+                            app:layout_constraintBottom_toBottomOf="@+id/textViewDetailsStatus"
+                            app:layout_constraintStart_toEndOf="@id/textViewDetailsStatus"
+                            app:layout_constraintTop_toTopOf="@+id/textViewDetailsStatus" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/cardViewTwo"
+                    style="@style/cardView"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="@dimen/_10sdp"
+                    app:cardMaxElevation="@dimen/_20sdp"
+                    app:contentPadding="@dimen/_10sdp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/cardViewName">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/textViewAddress"
+                            style="@style/AuthHeadingTextView.TextViewCommonLayout"
+                            android:text="@string/address"
+                            android:textSize="@dimen/_12ssp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/imageViewNavigate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/ic_navigate"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/textViewAddressName"
+                            style="@style/AuthHeadingTextView.TextViewCommonLayoutMedium"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:text="1459 Massachusetts Avenue Washington, DC 20036"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textViewAddress" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/textViewOpenHours"
+                            style="@style/AuthHeadingTextView.TextViewCommonLayout"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:text="@string/open_hour"
+                            android:textColor="@color/dark_gray"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textViewAddressName" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/textViewHoursTime"
+                            style="@style/AuthHeadingTextView.TextViewCommonLayoutMedium"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:text="10:00 AM - 11:00 PM"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textViewOpenHours" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/textViewMinOrder"
+                            style="@style/AuthHeadingTextView.TextViewCommonLayout"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:text="@string/minimum_order"
+                            android:textColor="@color/dark_gray"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textViewHoursTime" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/textViewMinOrderAmount"
+                            style="@style/AuthHeadingTextView.TextViewCommonLayoutMedium"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:fontFamily="@font/work_sans_medium"
+                            android:text="$200"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textViewMinOrder" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/textViewDeliveryTypeLabel"
+                            style="@style/AuthHeadingTextView.TextViewCommonLayoutMedium"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:text="@string/delivery_type"
+                            android:textColor="@color/dark_gray"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textViewMinOrderAmount" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/textViewDeliveryType"
+                            style="@style/AuthHeadingTextView.TextViewCommonLayoutMedium"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:fontFamily="@font/work_sans_medium"
+                            android:text="@string/delivery_pickup"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textViewDeliveryTypeLabel" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/buttonBookTable"
+                    style="@style/CommonButton"
+                    android:layout_marginTop="@dimen/_30sdp"
+                    android:text="@string/book_table"
+                    app:cornerRadius="@dimen/_20sdp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/cardViewTwo" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

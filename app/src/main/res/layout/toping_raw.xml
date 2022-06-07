@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/constraintTopping"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:layout_marginTop="@dimen/_8sdp"
+	android:layout_marginBottom="@dimen/_8sdp">
+	
+	<androidx.appcompat.widget.AppCompatTextView
+		android:id="@+id/textViewNameTopping"
+		android:layout_width="0dp"
+		android:layout_height="wrap_content"
+		android:layout_marginEnd="@dimen/_10sdp"
+		android:fontFamily="@font/work_sans_medium"
+		android:textColor="@color/black"
+		android:textSize="@dimen/_13ssp"
+		app:layout_constraintEnd_toStartOf="@+id/checkBoxSelectTopping"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent"
+		tools:text="123" />
+	
+	<androidx.appcompat.widget.AppCompatTextView
+		android:id="@+id/textViewPrice"
+		android:layout_width="0dp"
+		android:layout_height="wrap_content"
+		android:fontFamily="@font/work_sans_medium"
+		android:textColor="@color/orange"
+		android:textSize="@dimen/_12ssp"
+		app:layout_constraintEnd_toStartOf="@+id/checkBoxSelectTopping"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@id/textViewNameTopping"
+		tools:text="$123.00" />
+	
+	<androidx.appcompat.widget.AppCompatImageView
+		android:id="@+id/checkBoxSelectTopping"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:background="@drawable/check_box_selector"
+		
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintTop_toTopOf="parent" />
+	
+	<androidx.appcompat.widget.AppCompatTextView
+		android:id="@+id/textViewCurrentlyUnavailable"
+		android:layout_width="0dp"
+		android:layout_height="wrap_content"
+		android:fontFamily="@font/work_sans_medium"
+		android:text="@string/currentlyUnavailable"
+		android:textColor="@color/red"
+		android:textSize="@dimen/_12ssp"
+		app:layout_constraintEnd_toStartOf="@+id/checkBoxSelectTopping"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@id/textViewPrice"
+		tools:text="currentlyUnavailable" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

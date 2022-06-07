@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingStart="@dimen/_15sdp"
+    android:paddingEnd="@dimen/_15sdp">
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/inputLayoutName"
+        style="@style/AuthTextInputLayout.Black"
+        android:layout_marginTop="@dimen/_25sdp"
+        android:theme="@style/AuthEditTextColorBlack"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextName"
+            style="@style/AuthEditText.Black"
+            android:background="@drawable/edt_bg_normal"
+            android:hint="@string/name"
+            android:inputType="textEmailAddress"
+             />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/inputLayoutEmail"
+        style="@style/AuthTextInputLayout.Black"
+        android:layout_marginTop="@dimen/_25sdp"
+        android:theme="@style/AuthEditTextColorBlack"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputLayoutName">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextEmail"
+            style="@style/AuthEditText.Black"
+            android:background="@drawable/edt_bg_normal"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/inputLayoutCountryCode"
+        style="@style/AuthTextInputLayout.Black"
+        android:layout_width="0dp"
+        android:layout_marginTop="@dimen/_25sdp"
+        android:theme="@style/AuthEditTextColorBlack"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputLayoutEmail"
+        app:layout_constraintWidth_percent="0.35">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextCountryCode"
+            style="@style/AuthEditText.Disable.Black"
+            android:background="@drawable/edt_bg_normal"
+            android:drawableEnd="@drawable/ic_down_arrow"
+            android:drawablePadding="@dimen/_5sdp"
+            android:hint="@string/country_code"
+            android:inputType="textEmailAddress"
+            android:theme="@style/AuthEditTextColor"
+            tools:text="+91" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/inputLayoutMobileNumber"
+        style="@style/AuthTextInputLayout.Black"
+        android:layout_width="0dp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_25sdp"
+        android:theme="@style/AuthEditTextColorBlack"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/inputLayoutCountryCode"
+        app:layout_constraintTop_toBottomOf="@+id/inputLayoutEmail">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextMobileNumber"
+            style="@style/AuthEditText.Gray"
+            android:background="@drawable/edt_bg_normal"
+            android:inputType="phone"
+            tools:text="123 155 1564" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/inputLayoutTitle"
+        style="@style/AuthTextInputLayout.Black"
+        android:layout_marginTop="@dimen/_25sdp"
+        android:theme="@style/AuthEditTextColorBlack"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputLayoutCountryCode">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextTitle"
+            style="@style/AuthEditText.Disable.Black"
+            android:background="@drawable/edt_bg_normal"
+            android:hint="@string/title"
+            android:inputType="textEmailAddress"
+            android:theme="@style/AuthEditTextColor" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/inputLayoutMessage"
+        style="@style/AuthTextInputLayout.Black"
+        android:layout_marginTop="@dimen/_25sdp"
+        android:theme="@style/AuthEditTextColorBlack"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputLayoutTitle">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextMessage"
+            style="@style/AuthEditText.Black"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edt_bg_normal"
+            android:gravity="top"
+            android:hint="@string/your_message"
+            android:inputType="textMultiLine"
+            android:lines="3" />
+
+        <!--<com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edt_bg_normal"
+            android:fontFamily="@font/work_sans_medium"
+            android:gravity="top"
+            android:hint="@string/your_message"
+            android:lines="3"
+
+            android:textSize="@dimen/_12ssp"
+            android:theme="@style/AuthEditTextColor" />-->
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonSend"
+        style="@style/CommonButton"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:text="@string/send"
+        app:cornerRadius="@dimen/_20sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputLayoutMessage" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:fillViewport="true">
+	
+	<androidx.constraintlayout.widget.ConstraintLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="@android:color/white">
+		
+		<View
+			android:id="@+id/viewTopBg"
+			android:layout_width="match_parent"
+			android:layout_height="0dp"
+			android:background="@drawable/rating_bg"
+			app:layout_constraintHeight_percent="0.4"
+			app:layout_constraintTop_toTopOf="parent" />
+		
+		<androidx.appcompat.widget.AppCompatImageView
+			android:id="@+id/imageViewDriver"
+			android:layout_width="@dimen/_60sdp"
+			android:layout_height="@dimen/_60sdp"
+			android:layout_marginBottom="@dimen/_30sdp"
+			android:background="@drawable/rating_circle_bg"
+			android:padding="@dimen/_2sdp"
+			app:layout_constraintBottom_toBottomOf="@+id/viewTopBg"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toTopOf="parent"
+			app:layout_constraintVertical_bias="0.35" />
+		
+		<androidx.appcompat.widget.AppCompatTextView
+			android:id="@+id/textViewName"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginStart="@dimen/_10sdp"
+			android:layout_marginTop="@dimen/_5sdp"
+			android:fontFamily="@font/work_sans_medium"
+			android:textColor="@color/white"
+			android:textSize="@dimen/_13ssp"
+			android:maxWidth="@dimen/_170sdp"
+			android:textAlignment="center"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toBottomOf="@+id/imageViewDriver"
+			tools:text="Kraven Restaurant Vendor" />
+		
+		<com.kraven.utils.RatingBar
+			android:id="@+id/ratingBar"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginStart="@dimen/_15sdp"
+			android:layout_marginEnd="@dimen/_15sdp"
+			app:layout_constraintBottom_toTopOf="@+id/editTextComment"
+			app:layout_constraintTop_toBottomOf="@id/viewTopBg"
+			app:rb_click_rating="true"
+			app:rb_count="5"
+			app:rb_empty="@drawable/ic_raitng_empty_big"
+			app:rb_fill="@drawable/ic_rating_big"
+			app:rb_max_count="5"
+			app:rb_touch_rating="true" />
+		
+		<androidx.appcompat.widget.AppCompatEditText
+			android:id="@+id/editTextComment"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginStart="@dimen/_15sdp"
+			android:layout_marginTop="@dimen/_10sdp"
+			android:layout_marginEnd="@dimen/_15sdp"
+			android:fontFamily="@font/work_sans_medium"
+			android:gravity="top"
+			android:hint="@string/write_comment"
+			android:lines="3"
+			android:textColor="@color/black"
+			android:textSize="@dimen/_12ssp"
+			app:layout_constraintBottom_toTopOf="@+id/buttonSubmit"
+			app:layout_constraintTop_toBottomOf="@+id/ratingBar" />
+		
+		<com.google.android.material.button.MaterialButton
+			android:id="@+id/buttonSubmit"
+			style="@style/CommonButton"
+			android:layout_marginTop="@dimen/_30sdp"
+			android:text="@string/submit"
+			app:cornerRadius="@dimen/_20sdp"
+			
+			app:layout_constraintBottom_toBottomOf="parent"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toBottomOf="@+id/editTextComment" />
+	
+	</androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

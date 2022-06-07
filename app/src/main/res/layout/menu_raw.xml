@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:animateLayoutChanges="true"
+	android:orientation="vertical"
+	android:paddingTop="@dimen/_8sdp"
+	android:paddingBottom="@dimen/_8sdp">
+	
+	<androidx.appcompat.widget.AppCompatImageView
+		android:id="@+id/imageViewVegNonVeg"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginStart="@dimen/_5sdp"
+		android:background="@drawable/ic_veg"
+		app:layout_constraintBottom_toBottomOf="@id/textViewFoodName"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="@id/textViewFoodName" />
+	
+	<androidx.appcompat.widget.AppCompatTextView
+		android:id="@+id/textViewFoodName"
+		android:layout_width="0dp"
+		android:layout_height="wrap_content"
+		android:layout_marginStart="@dimen/_10sdp"
+		android:paddingEnd="@dimen/_10sdp"
+		android:paddingStart="0dp"
+		android:fontFamily="@font/work_sans_medium"
+		android:textColor="@color/black"
+		android:textSize="@dimen/_12ssp"
+		app:layout_constrainedWidth="true"
+		app:layout_constraintEnd_toStartOf="@+id/textViewOffPrice"
+		app:layout_constraintStart_toEndOf="@+id/imageViewVegNonVeg"
+		app:layout_constraintTop_toTopOf="parent"
+		tools:text="Pineapple Juice dfd t Pineapple Juice dfd t Pin Pineapple Juice dfd t Pineapple Juice dfd t Pin " />
+	
+	<androidx.appcompat.widget.AppCompatImageView
+		android:id="@+id/imageViewSpecialOffer"
+		android:layout_width="wrap_content"
+		android:visibility="gone"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="@dimen/_5ssp"
+		android:layout_marginEnd="8dp"
+		android:background="@drawable/special_offer"
+		app:layout_constraintStart_toEndOf="@+id/textViewFoodName"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/textViewDescription" />
+	
+	<androidx.appcompat.widget.AppCompatTextView
+		android:id="@+id/textViewDescription"
+		android:layout_width="0dp"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="@dimen/_5ssp"
+		android:fontFamily="@font/work_sans_regular"
+		android:text="@string/long_text"
+		android:textColor="@color/dark_gray"
+		android:textSize="@dimen/_10ssp"
+		android:visibility="gone"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="@+id/imageViewVegNonVeg"
+		app:layout_constraintTop_toBottomOf="@+id/textViewFoodName" />
+	
+	
+	<androidx.appcompat.widget.AppCompatTextView
+		android:id="@+id/textViewFoodPrice"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:fontFamily="@font/work_sans_medium"
+		android:textColor="@color/orange"
+		android:textSize="@dimen/_14ssp"
+		app:layout_constraintBottom_toBottomOf="@+id/textViewFoodName"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintTop_toTopOf="@+id/textViewFoodName"
+		tools:text="$25" />
+	
+	<androidx.appcompat.widget.AppCompatTextView
+		android:id="@+id/textViewOffPrice"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:fontFamily="@font/work_sans_medium"
+		android:gravity="fill_horizontal"
+		android:paddingStart="0dp"
+		android:paddingEnd="@dimen/_3sdp"
+		android:textColor="@color/black"
+		android:textSize="@dimen/_10ssp"
+		android:visibility="gone"
+		app:layout_constraintBottom_toBottomOf="@+id/textViewFoodPrice"
+		app:layout_constraintEnd_toStartOf="@id/textViewFoodPrice"
+		tools:text="$25" />
+	
+	<androidx.appcompat.widget.AppCompatTextView
+		android:id="@+id/textViewItemNotAvailable"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="@dimen/_10sdp"
+		android:fontFamily="@font/work_sans_regular"
+		android:maxLines="1"
+		android:text="@string/itemNotAvailable"
+		android:textColor="@color/red"
+		android:textSize="@dimen/_12ssp"
+		android:visibility="gone"
+		app:layout_constraintStart_toStartOf="@+id/imageViewVegNonVeg"
+		app:layout_constraintTop_toBottomOf="@+id/imageViewSpecialOffer" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

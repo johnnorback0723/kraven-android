@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:animateLayoutChanges="true"
+    android:id="@+id/constraintLayoutCart"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/_8sdp"
+    android:paddingBottom="@dimen/_8sdp">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imageViewVegNonVeg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_veg"
+        app:layout_constraintBottom_toBottomOf="@id/textViewFoodName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/textViewFoodName" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imageViewBeverage"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_80sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textViewFoodName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:fontFamily="@font/work_sans_medium"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_12ssp"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintEnd_toStartOf="@id/imageViewSpecialOffer"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toEndOf="@+id/imageViewVegNonVeg"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Pineapple Juice dfd t" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imageViewSpecialOffer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/special_offer"
+        android:visibility="gone"
+        app:layout_constraintEnd_toStartOf="@id/imageViewAdd"
+        app:layout_constraintStart_toEndOf="@+id/textViewFoodName"
+        app:layout_constraintTop_toTopOf="@id/textViewFoodName" />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textViewFoodType"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:fontFamily="@font/work_sans_regular"
+        android:maxLines="3"
+        android:text="@string/long_text"
+        android:textColor="@color/dark_gray"
+        android:textSize="@dimen/_12ssp"
+        app:layout_constraintEnd_toStartOf="@id/imageViewAdd"
+        app:layout_constraintStart_toStartOf="@+id/imageViewVegNonVeg"
+        app:layout_constraintTop_toBottomOf="@+id/textViewFoodName" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textViewFoodPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:fontFamily="@font/work_sans_medium"
+        android:textColor="@color/orange"
+        android:textSize="@dimen/_12ssp"
+        app:layout_constraintStart_toEndOf="@+id/textViewOffPrice"
+        app:layout_constraintTop_toBottomOf="@+id/textViewFoodType"
+        tools:text="$25" />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textViewOffPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/work_sans_medium"
+        android:gravity="fill_horizontal"
+        android:paddingStart="0dp"
+        android:paddingEnd="@dimen/_5sdp"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_10ssp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@id/textViewFoodPrice"
+        app:layout_constraintStart_toStartOf="@+id/imageViewVegNonVeg"
+        tools:text="$25" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imageViewAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:background="@drawable/ic_add_item"
+        app:layout_constraintBottom_toTopOf="@+id/textVieFoodCount"
+        app:layout_constraintEnd_toStartOf="@id/imageViewDelete"
+        app:layout_constraintTop_toTopOf="@id/textViewFoodName" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textVieFoodCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:fontFamily="@font/work_sans_medium"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_12ssp"
+        app:layout_constraintEnd_toStartOf="@id/imageViewDelete"
+        app:layout_constraintStart_toStartOf="@id/imageViewAdd"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewAdd"
+        tools:text="1" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imageViewDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_delete"
+        app:layout_constraintBottom_toBottomOf="@id/imageViewSubtract"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/imageViewAdd" />
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imageViewSubtract"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:background="@drawable/ic_substact_item_cart"
+        app:layout_constraintEnd_toStartOf="@id/imageViewDelete"
+        app:layout_constraintTop_toBottomOf="@+id/textVieFoodCount" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewToopingList"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_5sdp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewAddSpecialNote"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/imageViewVegNonVeg"
+        app:layout_constraintTop_toBottomOf="@+id/textViewFoodPrice" />
+
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:id="@+id/viewClickable"
+        app:layout_constraintTop_toTopOf="@id/recyclerViewToopingList"
+        app:layout_constraintBottom_toBottomOf="@id/recyclerViewToopingList"
+        app:layout_constraintStart_toStartOf="@id/recyclerViewToopingList"
+        app:layout_constraintEnd_toEndOf="@id/recyclerViewToopingList"
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textViewAddSpecialNote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:fontFamily="@font/work_sans_medium"
+        android:hint="@string/enter_here"
+        android:text="Edit"
+        android:textColor="@color/light_blue"
+        android:textSize="@dimen/_12ssp"
+        app:layout_constraintStart_toStartOf="@id/imageViewVegNonVeg"
+        app:layout_constraintTop_toBottomOf="@+id/recyclerViewToopingList" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/editTextAddNote"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:background="@drawable/edt_bg_cart"
+        android:fontFamily="@font/work_sans_regular"
+        android:gravity="top"
+        android:imeOptions="actionDone"
+        android:inputType="text"
+        android:maxLength="200"
+        android:maxLines="3"
+        android:textColor="@color/dark_gray"
+        android:textSize="@dimen/_11ssp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/textViewAddSpecialNote"
+        app:layout_constraintTop_toBottomOf="@+id/textViewAddSpecialNote"
+        tools:text="Test add special note " />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

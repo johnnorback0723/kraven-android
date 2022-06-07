@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fillViewport="true"
+    android:paddingBottom="@dimen/_20sdp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!--  <LinearLayout
+              android:id="@+id/linearLayoutDateTime"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginStart="@dimen/_20sdp"
+              android:layout_marginTop="@dimen/_25sdp"
+              android:layout_marginEnd="@dimen/_20sdp"
+              android:background="@drawable/date_time_bg"
+              android:padding="@dimen/_1sdp"
+              android:visibility="gone"
+              android:weightSum="2"
+              app:layout_constraintTop_toTopOf="parent">
+
+              <androidx.appcompat.widget.AppCompatButton
+                  android:id="@+id/buttonDate"
+                  android:layout_width="0dp"
+                  android:layout_height="wrap_content"
+                  android:layout_weight="1"
+                  android:background="@drawable/date_selector"
+                  android:fontFamily="@font/work_sans_medium"
+                  android:text="@string/date"
+                  android:textAllCaps="false"
+                  android:textColor="@color/date_seletor"
+                  android:textSize="@dimen/_12ssp" />
+
+              <androidx.appcompat.widget.AppCompatButton
+                  android:id="@+id/buttonTime"
+                  android:layout_width="0dp"
+                  android:layout_height="wrap_content"
+                  android:layout_weight="1"
+                  android:background="@drawable/times_selector"
+                  android:fontFamily="@font/work_sans_medium"
+                  android:text="@string/time"
+                  android:textAllCaps="false"
+                  android:textColor="@color/time_seletor"
+                  android:textSize="@dimen/_12ssp" />
+
+          </LinearLayout>
+
+          <androidx.constraintlayout.widget.ConstraintLayout
+              android:id="@+id/constraintLayoutHoursTime"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center"
+              android:layout_marginTop="@dimen/_20sdp"
+              android:visibility="gone"
+              app:layout_constraintBottom_toTopOf="@id/buttonSubmit"
+              app:layout_constraintTop_toBottomOf="@+id/linearLayoutDateTime">
+
+              <androidx.appcompat.widget.AppCompatTextView
+                  android:id="@+id/textViewHours"
+                  android:layout_width="@dimen/_50sdp"
+                  android:layout_height="@dimen/_50sdp"
+                  android:background="@drawable/clock_bg"
+                  android:gravity="center"
+                  android:text="00"
+                  android:textColor="@color/black"
+                  android:textSize="@dimen/_20ssp"
+                  app:layout_constraintEnd_toStartOf="@id/textViewColume"
+                  app:layout_constraintHorizontal_chainStyle="packed"
+                  app:layout_constraintStart_toStartOf="parent"
+                  app:layout_constraintTop_toTopOf="parent" />
+
+              <androidx.appcompat.widget.AppCompatTextView
+                  android:id="@+id/textViewColume"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginStart="@dimen/_10sdp"
+                  android:layout_marginEnd="@dimen/_10sdp"
+                  android:paddingBottom="@dimen/_5sdp"
+                  android:text=":"
+                  android:textColor="@color/black"
+                  android:textSize="@dimen/_20ssp"
+                  app:layout_constraintBottom_toBottomOf="@+id/textViewHours"
+                  app:layout_constraintEnd_toStartOf="@id/textViewMin"
+                  app:layout_constraintStart_toEndOf="@id/textViewHours"
+                  app:layout_constraintTop_toTopOf="@+id/textViewHours" />
+
+
+              <androidx.appcompat.widget.AppCompatTextView
+                  android:id="@+id/textViewMin"
+                  android:layout_width="@dimen/_50sdp"
+                  android:layout_height="@dimen/_50sdp"
+                  android:background="@drawable/clock_bg"
+                  android:gravity="center"
+                  android:text="00"
+                  android:textColor="@color/black"
+                  android:textSize="@dimen/_20ssp"
+                  app:layout_constraintEnd_toStartOf="@id/textViewPmAM"
+                  app:layout_constraintStart_toEndOf="@id/textViewColume"
+                  app:layout_constraintTop_toTopOf="@+id/textViewHours" />
+
+
+              <androidx.appcompat.widget.AppCompatTextView
+                  android:id="@+id/textViewPmAM"
+                  android:layout_width="@dimen/_50sdp"
+                  android:layout_height="@dimen/_50sdp"
+                  android:layout_marginStart="@dimen/_10sdp"
+                  android:background="@drawable/clock_bg"
+                  android:gravity="center"
+                  android:text="AM"
+                  android:textColor="@color/black"
+                  android:textSize="@dimen/_20ssp"
+                  app:layout_constraintEnd_toEndOf="parent"
+                  app:layout_constraintStart_toEndOf="@id/textViewMin"
+                  app:layout_constraintTop_toTopOf="@+id/textViewHours" />
+
+
+              <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginStart="@dimen/_10sdp"
+                  android:layout_marginTop="@dimen/_15sdp"
+                  android:layout_marginEnd="@dimen/_10sdp"
+                  android:orientation="vertical"
+                  app:layout_constraintEnd_toEndOf="parent"
+                  app:layout_constraintStart_toStartOf="@id/textViewHours"
+                  app:layout_constraintTop_toBottomOf="@+id/textViewHours">
+
+
+                  <androidx.appcompat.widget.AppCompatTextView
+                      android:id="@+id/textViewHoursLabel"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_marginStart="@dimen/_10sdp"
+                      android:layout_marginTop="@dimen/_15sdp"
+                      android:fontFamily="@font/work_sans_regular"
+                      android:text="@string/hours"
+                      android:textColor="@color/black"
+                      android:textSize="@dimen/_14ssp"
+                      app:layout_constraintStart_toStartOf="parent"
+                      app:layout_constraintTop_toBottomOf="@+id/textViewHours" />
+
+                  <SeekBar
+                      android:id="@+id/seekBarHours"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_marginTop="@dimen/_15sdp"
+                      android:maxHeight="@dimen/_6sdp"
+                      android:minHeight="@dimen/_6sdp"
+                      android:progress="0"
+                      android:progressDrawable="@drawable/seekbar_background"
+                      android:splitTrack="false"
+                      android:thumb="@drawable/oval_seekbar_thumb" />
+
+
+                  <androidx.appcompat.widget.AppCompatTextView
+                      android:id="@+id/textViewMinutesLabel"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_marginStart="@dimen/_10sdp"
+                      android:layout_marginTop="@dimen/_15sdp"
+                      android:fontFamily="@font/work_sans_regular"
+                      android:text="@string/minutes"
+                      android:textColor="@color/black"
+                      android:textSize="@dimen/_14ssp"
+                      app:layout_constraintStart_toStartOf="parent"
+                      app:layout_constraintTop_toBottomOf="@+id/textViewHours" />
+
+                  <SeekBar
+                      android:id="@+id/seekBarMinutes"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_marginTop="@dimen/_15sdp"
+                      android:maxHeight="@dimen/_6sdp"
+                      android:minHeight="@dimen/_6sdp"
+
+                      android:progress="0"
+                      android:progressDrawable="@drawable/seekbar_background"
+                      android:splitTrack="false"
+                      android:thumb="@drawable/oval_seekbar_thumb" />
+
+              </LinearLayout>
+
+
+          </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+        <com.applandeo.materialcalendarview.CalendarView
+            android:id="@+id/calendarView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            app:anotherMonthsDaysLabelsColor="@color/dark_gray"
+            app:layout_constraintBottom_toTopOf="@+id/inputLayoutSelectTime"
+            app:layout_constraintTop_toTopOf="parent"
+            app:selectionColor="@color/orange"
+            app:todayLabelColor="@color/orange"
+            app:type="one_day_picker" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/inputLayoutSelectTime"
+            style="@style/AuthTextInputLayout.Black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            app:layout_constraintTop_toBottomOf="@+id/calendarView">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextSelectTime"
+                style="@style/AuthEditText.Disable.Black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableEnd="@drawable/ic_time"
+                android:drawablePadding="@dimen/_5sdp"
+                android:hint="@string/select_time"
+                android:inputType="none"
+                android:paddingBottom="@dimen/_15sdp"
+                android:theme="@style/AuthEditTextColor" />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonNext"
+            style="@style/CommonButton"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginBottom="@dimen/_30sdp"
+            android:text="@string/next"
+            app:cornerRadius="@dimen/_20sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/inputLayoutSelectTime" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.core.widget.NestedScrollView>

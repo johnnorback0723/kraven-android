@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:paddingStart="@dimen/_15sdp"
+    android:paddingTop="@dimen/_10sdp"
+    android:paddingEnd="@dimen/_15sdp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewBeverage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonPay"
+            style="@style/CommonButton"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:text="@string/place_order"
+            android:visibility="gone"
+            app:cornerRadius="@dimen/_20sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/recyclerViewBeverage" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/inputLayoutDeliveryDate"
+            style="@style/AuthTextInputLayout.Black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            app:layout_constraintTop_toBottomOf="@id/buttonPay">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextBeverageDate"
+                style="@style/AuthEditText.Disable.Black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableEnd="@drawable/ic_calander"
+                android:drawablePadding="@dimen/_5sdp"
+                android:hint="@string/set_beverage"
+                android:inputType="none"
+                android:paddingBottom="@dimen/_15sdp"
+                android:theme="@style/EditTextTheme" />
+        </com.google.android.material.textfield.TextInputLayout>
+        
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewAdvanced"
+            app:layout_constraintTop_toBottomOf="@+id/inputLayoutDeliveryDate"
+            app:layout_constraintStart_toStartOf="parent"
+            android:text="@string/order_must_be_placed_6_days_in_advanced"
+            android:textSize="@dimen/_10ssp"
+            android:fontFamily="@font/work_sans_regular"
+            android:textColor="@color/red"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/inputLayoutBeverage"
+            style="@style/AuthTextInputLayout.Black"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:theme="@style/AuthEditTextColorBlack"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewAdvanced">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextBeverage"
+                style="@style/AuthEditText.Disable.Black"
+                android:background="@drawable/edt_bg_normal"
+                android:hint="@string/beverage"
+                android:inputType="textCapWords"
+                android:theme="@style/AuthEditTextColorBlack" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/inputLayoutBrand"
+            style="@style/AuthTextInputLayout.Black"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:theme="@style/AuthEditTextColorBlack"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/inputLayoutBeverage">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextBrand"
+                style="@style/AuthEditText.Black"
+                android:background="@drawable/edt_bg_normal"
+                android:hint="@string/brand"
+                android:inputType="textCapWords"
+                android:theme="@style/AuthEditTextColorBlack" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/inputLayoutQuantityType"
+            style="@style/AuthTextInputLayout.Black"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:theme="@style/AuthEditTextColorBlack"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/inputLayoutBrand">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextQuantityType"
+                style="@style/AuthEditText.Disable.Black"
+                android:background="@drawable/edt_bg_normal"
+                android:hint="@string/quantity_type"
+                android:inputType="textCapWords"
+                android:theme="@style/AuthEditTextColorBlack" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/inputLayoutQuantity"
+            style="@style/AuthTextInputLayout.Black"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:theme="@style/AuthEditTextColorBlack"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/inputLayoutQuantityType">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextQuantity"
+                style="@style/AuthEditText.Black"
+
+                android:background="@drawable/edt_bg_normal"
+                android:hint="@string/quantity"
+                android:inputType="number"
+                android:theme="@style/AuthEditTextColorBlack" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/inputLayoutSpecialNote"
+            style="@style/AuthTextInputLayout.Black"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:theme="@style/AuthEditTextColorBlack"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/inputLayoutQuantity">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextSpecialNote"
+                style="@style/AuthEditText.Black"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/edt_bg_normal"
+                android:fontFamily="@font/work_sans_medium"
+                android:gravity="top"
+                android:hint="@string/special_notes"
+                android:inputType="textCapWords|textMultiLine"
+                android:lines="3"
+                android:textSize="@dimen/_12ssp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/inputLayoutQuantity" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewYouMust"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:fontFamily="@font/work_sans_medium"
+            android:text="@string/you_must_be_18"
+            android:textColor="@color/orange"
+            android:textSize="@dimen/_12ssp"
+            app:layout_constraintTop_toBottomOf="@id/inputLayoutSpecialNote" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonAdd"
+            style="@style/CommonButton"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:text="Add Item"
+            app:cornerRadius="@dimen/_20sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewYouMust" />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

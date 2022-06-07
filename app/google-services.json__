@@ -1,0 +1,113 @@
+{
+  "project_info": {
+    "project_number": "214517342274",
+    "firebase_url": "https://kraven-app.firebaseio.com",
+    "project_id": "kraven-app",
+    "storage_bucket": "kraven-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:214517342274:android:ade76adc3e45e31b",
+        "android_client_info": {
+          "package_name": "com.kraven"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "214517342274-4h6af4nek28cmhh76e5enlb3o57gtjsb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.kraven",
+            "certificate_hash": "4b2ac29f47b22ed177ca1fb9e252bdd67ce544bd"
+          }
+        },
+        {
+          "client_id": "214517342274-7tavva5o3jdfecaookaoj89h8dmkpung.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD5PxqOWdTge9t-WdYFHcybNUmn4Kiz6UM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "214517342274-7tavva5o3jdfecaookaoj89h8dmkpung.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "214517342274-73ibd7sku4l9d5foh3ni7m1g1lsjoiej.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.Hyperlink.Development"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:214517342274:android:895737ed85391164",
+        "android_client_info": {
+          "package_name": "com.kraven.delivery"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "214517342274-9veqld4q1ttu02armirsrh8qbpvqdbbh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.kraven.delivery",
+            "certificate_hash": "4b2ac29f47b22ed177ca1fb9e252bdd67ce544bd"
+          }
+        },
+        {
+          "client_id": "214517342274-7tavva5o3jdfecaookaoj89h8dmkpung.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD5PxqOWdTge9t-WdYFHcybNUmn4Kiz6UM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "214517342274-7tavva5o3jdfecaookaoj89h8dmkpung.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "214517342274-73ibd7sku4l9d5foh3ni7m1g1lsjoiej.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.Hyperlink.Development"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

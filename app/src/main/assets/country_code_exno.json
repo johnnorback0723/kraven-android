@@ -1,0 +1,1908 @@
+{
+    "countries": [
+        {
+            "leadingDigits": null,
+            "dial": "+376",
+            "name": "Andorra",
+            "exampleNumber": "312345",
+            "id": "AD",
+            "countryCode": "376"
+        },
+        {
+            "name": "United Arab Emirates",
+            "leadingDigits": null,
+            "countryCode": "971",
+            "exampleNumber": "501234567",
+            "id": "AE",
+            "dial": "+971"
+        },
+        {
+            "id": "AF",
+            "leadingDigits": null,
+            "name": "Afghanistan",
+            "exampleNumber": "701234567",
+            "countryCode": "93",
+            "dial": "+93"
+        },
+        {
+            "exampleNumber": "2684641234",
+            "countryCode": "1",
+            "name": "Antigua and Barbuda",
+            "id": "AG",
+            "leadingDigits": "268",
+            "dial": "+1268"
+        },
+        {
+            "name": "Anguilla",
+            "leadingDigits": "264",
+            "countryCode": "1",
+            "exampleNumber": "2642351234",
+            "id": "AI",
+            "dial": "+1264"
+        },
+        {
+            "name": "Albania",
+            "leadingDigits": null,
+            "dial": "+355",
+            "countryCode": "355",
+            "id": "AL",
+            "exampleNumber": "662123456"
+        },
+        {
+            "dial": "+374",
+            "leadingDigits": null,
+            "name": "Armenia",
+            "countryCode": "374",
+            "exampleNumber": "77123456",
+            "id": "AM"
+        },
+        {
+            "dial": "+244",
+            "name": "Angola",
+            "countryCode": "244",
+            "exampleNumber": "923123456",
+            "id": "AO",
+            "leadingDigits": null
+        },
+        {
+            "id": "AR",
+            "countryCode": "54",
+            "exampleNumber": "91123456789",
+            "dial": "+54",
+            "name": "Argentina",
+            "leadingDigits": null
+        },
+        {
+            "name": "AmericanSamoa",
+            "leadingDigits": "684",
+            "countryCode": "1",
+            "id": "AS",
+            "exampleNumber": "6847331234",
+            "dial": "+1684"
+        },
+        {
+            "exampleNumber": "664123456",
+            "name": "Austria",
+            "leadingDigits": null,
+            "dial": "+43",
+            "id": "AT",
+            "countryCode": "43"
+        },
+        {
+            "id": "AU",
+            "exampleNumber": "412345678",
+            "name": "Australia",
+            "leadingDigits": null,
+            "dial": "+61",
+            "countryCode": "61"
+        },
+        {
+            "leadingDigits": null,
+            "countryCode": "297",
+            "dial": "+297",
+            "id": "AW",
+            "exampleNumber": "5601234",
+            "name": "Aruba"
+        },
+        {
+            "countryCode": "358",
+            "id": "AX",
+            "leadingDigits": null,
+            "name": "Aland Islands",
+            "dial": "+358",
+            "exampleNumber": "412345678"
+        },
+        {
+            "leadingDigits": null,
+            "id": "AZ",
+            "exampleNumber": "401234567",
+            "dial": "+994",
+            "countryCode": "994",
+            "name": "Azerbaijan"
+        },
+        {
+            "exampleNumber": "61123456",
+            "dial": "+387",
+            "id": "BA",
+            "name": "Bosnia and Herzegovina",
+            "leadingDigits": null,
+            "countryCode": "387"
+        },
+        {
+            "countryCode": "1",
+            "dial": "+1246",
+            "id": "BB",
+            "name": "Barbados",
+            "leadingDigits": "246",
+            "exampleNumber": "2462501234"
+        },
+        {
+            "exampleNumber": "1812345678",
+            "countryCode": "880",
+            "name": "Bangladesh",
+            "leadingDigits": null,
+            "dial": "+880",
+            "id": "BD"
+        },
+        {
+            "exampleNumber": "470123456",
+            "name": "Belgium",
+            "dial": "+32",
+            "leadingDigits": null,
+            "id": "BE",
+            "countryCode": "32"
+        },
+        {
+            "leadingDigits": null,
+            "exampleNumber": "70123456",
+            "dial": "+226",
+            "countryCode": "226",
+            "id": "BF",
+            "name": "Burkina Faso"
+        },
+        {
+            "leadingDigits": null,
+            "name": "Bulgaria",
+            "id": "BG",
+            "exampleNumber": "48123456",
+            "countryCode": "359",
+            "dial": "+359"
+        },
+        {
+            "name": "Bahrain",
+            "leadingDigits": null,
+            "exampleNumber": "36001234",
+            "countryCode": "973",
+            "dial": "+973",
+            "id": "BH"
+        },
+        {
+            "countryCode": "257",
+            "id": "BI",
+            "leadingDigits": null,
+            "exampleNumber": "79561234",
+            "name": "Burundi",
+            "dial": "+257"
+        },
+        {
+            "dial": "+229",
+            "leadingDigits": null,
+            "exampleNumber": "90011234",
+            "name": "Benin",
+            "id": "BJ",
+            "countryCode": "229"
+        },
+        {
+            "id": "BL",
+            "countryCode": "590",
+            "name": "Saint Barthelemy",
+            "exampleNumber": "690001234",
+            "leadingDigits": null,
+            "dial": "+590"
+        },
+        {
+            "id": "BM",
+            "exampleNumber": "4413701234",
+            "dial": "+1441",
+            "name": "Bermuda",
+            "countryCode": "1",
+            "leadingDigits": "441"
+        },
+        {
+            "leadingDigits": null,
+            "countryCode": "673",
+            "id": "BN",
+            "name": "Brunei Darussalam",
+            "dial": "+673",
+            "exampleNumber": "7123456"
+        },
+        {
+            "name": "Bolivia, Plurinational State of",
+            "dial": "+591",
+            "countryCode": "591",
+            "id": "BO",
+            "exampleNumber": "71234567",
+            "leadingDigits": null
+        },
+        {
+            "countryCode": "55",
+            "exampleNumber": "11961234567",
+            "id": "BR",
+            "dial": "+55",
+            "name": "Brazil",
+            "leadingDigits": null
+        },
+        {
+            "exampleNumber": "2423591234",
+            "name": "Bahamas",
+            "leadingDigits": "242",
+            "id": "BS",
+            "countryCode": "1",
+            "dial": "+1242"
+        },
+        {
+            "name": "Bhutan",
+            "dial": "+975",
+            "exampleNumber": "17123456",
+            "id": "BT",
+            "countryCode": "975",
+            "leadingDigits": null
+        },
+        {
+            "name": "Botswana",
+            "id": "BW",
+            "exampleNumber": "71123456",
+            "dial": "+267",
+            "countryCode": "267",
+            "leadingDigits": null
+        },
+        {
+            "countryCode": "375",
+            "exampleNumber": "294911911",
+            "leadingDigits": null,
+            "id": "BY",
+            "name": "Belarus",
+            "dial": "+375"
+        },
+        {
+            "id": "BZ",
+            "name": "Belize",
+            "leadingDigits": null,
+            "countryCode": "501",
+            "exampleNumber": "6221234",
+            "dial": "+501"
+        },
+        {
+            "name": "Canada",
+            "countryCode": "1",
+            "id": "CA",
+            "dial": "+1",
+            "leadingDigits": null,
+            "exampleNumber": "2042345678"
+        },
+        {
+            "exampleNumber": "412345678",
+            "countryCode": "61",
+            "leadingDigits": null,
+            "id": "CC",
+            "dial": "+61",
+            "name": "Cocos (Keeling) Islands"
+        },
+        {
+            "id": "CD",
+            "countryCode": "243",
+            "leadingDigits": null,
+            "exampleNumber": "991234567",
+            "dial": "+243",
+            "name": "Congo, The Democratic Republic of the Congo"
+        },
+        {
+            "exampleNumber": "70012345",
+            "leadingDigits": null,
+            "countryCode": "236",
+            "dial": "+236",
+            "id": "CF",
+            "name": "Central African Republic"
+        },
+        {
+            "countryCode": "242",
+            "dial": "+242",
+            "name": "Congo",
+            "id": "CG",
+            "exampleNumber": "061234567",
+            "leadingDigits": null
+        },
+        {
+            "countryCode": "41",
+            "dial": "+41",
+            "name": "Switzerland",
+            "exampleNumber": "781234567",
+            "id": "CH",
+            "leadingDigits": null
+        },
+        {
+            "name": "Cote d'Ivoire",
+            "countryCode": "225",
+            "dial": "+225",
+            "exampleNumber": "01234567",
+            "id": "CI",
+            "leadingDigits": null
+        },
+        {
+            "id": "CK",
+            "countryCode": "682",
+            "dial": "+682",
+            "leadingDigits": null,
+            "name": "Cook Islands",
+            "exampleNumber": "71234"
+        },
+        {
+            "id": "CL",
+            "leadingDigits": null,
+            "countryCode": "56",
+            "exampleNumber": "961234567",
+            "dial": "+56",
+            "name": "Chile"
+        },
+        {
+            "id": "CM",
+            "countryCode": "237",
+            "exampleNumber": "671234567",
+            "dial": "+237",
+            "leadingDigits": null,
+            "name": "Cameroon"
+        },
+        {
+            "name": "China",
+            "id": "CN",
+            "exampleNumber": "13123456789",
+            "countryCode": "86",
+            "dial": "+86",
+            "leadingDigits": null
+        },
+        {
+            "countryCode": "57",
+            "exampleNumber": "3211234567",
+            "dial": "+57",
+            "id": "CO",
+            "leadingDigits": null,
+            "name": "Colombia"
+        },
+        {
+            "countryCode": "506",
+            "leadingDigits": null,
+            "exampleNumber": "83123456",
+            "id": "CR",
+            "dial": "+506",
+            "name": "Costa Rica"
+        },
+        {
+            "exampleNumber": "51234567",
+            "dial": "+53",
+            "name": "Cuba",
+            "leadingDigits": null,
+            "id": "CU",
+            "countryCode": "53"
+        },
+        {
+            "id": "CV",
+            "leadingDigits": null,
+            "countryCode": "238",
+            "dial": "+238",
+            "exampleNumber": "9911234",
+            "name": "Cape Verde"
+        },
+        {
+            "id": "CX",
+            "leadingDigits": null,
+            "dial": "+61",
+            "exampleNumber": "412345678",
+            "name": "Christmas Island",
+            "countryCode": "61"
+        },
+        {
+            "leadingDigits": null,
+            "dial": "+357",
+            "countryCode": "357",
+            "exampleNumber": "96123456",
+            "id": "CY",
+            "name": "Cyprus"
+        },
+        {
+            "countryCode": "420",
+            "leadingDigits": null,
+            "exampleNumber": "601123456",
+            "id": "CZ",
+            "dial": "+420",
+            "name": "Czech Republic"
+        },
+        {
+            "name": "Germany",
+            "dial": "+49",
+            "id": "DE",
+            "exampleNumber": "15123456789",
+            "countryCode": "49",
+            "leadingDigits": null
+        },
+        {
+            "name": "Djibouti",
+            "id": "DJ",
+            "dial": "+253",
+            "leadingDigits": null,
+            "countryCode": "253",
+            "exampleNumber": "77831001"
+        },
+        {
+            "name": "Denmark",
+            "countryCode": "45",
+            "id": "DK",
+            "leadingDigits": null,
+            "exampleNumber": "20123456",
+            "dial": "+45"
+        },
+        {
+            "countryCode": "1",
+            "dial": "+1767",
+            "name": "Dominica",
+            "id": "DM",
+            "exampleNumber": "7672251234",
+            "leadingDigits": "767"
+        },
+        {
+            "leadingDigits": "8[024]9",
+            "dial": "+1849",
+            "name": "Dominican Republic",
+            "countryCode": "1",
+            "exampleNumber": "8092345678",
+            "id": "DO"
+        },
+        {
+            "id": "DZ",
+            "leadingDigits": null,
+            "name": "Algeria",
+            "countryCode": "213",
+            "exampleNumber": "551234567",
+            "dial": "+213"
+        },
+        {
+            "dial": "+593",
+            "id": "EC",
+            "leadingDigits": null,
+            "countryCode": "593",
+            "exampleNumber": "991234567",
+            "name": "Ecuador"
+        },
+        {
+            "name": "Estonia",
+            "leadingDigits": null,
+            "countryCode": "372",
+            "exampleNumber": "51234567",
+            "dial": "+372",
+            "id": "EE"
+        },
+        {
+            "dial": "+20",
+            "leadingDigits": null,
+            "exampleNumber": "1001234567",
+            "name": "Egypt",
+            "countryCode": "20",
+            "id": "EG"
+        },
+        {
+            "exampleNumber": "7123456",
+            "leadingDigits": null,
+            "countryCode": "291",
+            "dial": "+291",
+            "name": "Eritrea",
+            "id": "ER"
+        },
+        {
+            "id": "ES",
+            "leadingDigits": null,
+            "countryCode": "34",
+            "exampleNumber": "612345678",
+            "dial": "+34",
+            "name": "Spain"
+        },
+        {
+            "name": "Ethiopia",
+            "exampleNumber": "911234567",
+            "id": "ET",
+            "countryCode": "251",
+            "leadingDigits": null,
+            "dial": "+251"
+        },
+        {
+            "countryCode": "358",
+            "leadingDigits": null,
+            "exampleNumber": "412345678",
+            "id": "FI",
+            "dial": "+358",
+            "name": "Finland"
+        },
+        {
+            "dial": "+679",
+            "exampleNumber": "7012345",
+            "countryCode": "679",
+            "name": "Fiji",
+            "leadingDigits": null,
+            "id": "FJ"
+        },
+        {
+            "leadingDigits": null,
+            "name": "Falkland Islands (Malvinas)",
+            "exampleNumber": "51234",
+            "dial": "+500",
+            "countryCode": "500",
+            "id": "FK"
+        },
+        {
+            "countryCode": "691",
+            "exampleNumber": "3501234",
+            "dial": "+691",
+            "name": "Micronesia, Federated States of Micronesia",
+            "leadingDigits": null,
+            "id": "FM"
+        },
+        {
+            "exampleNumber": "211234",
+            "countryCode": "298",
+            "dial": "+298",
+            "id": "FO",
+            "name": "Faroe Islands",
+            "leadingDigits": null
+        },
+        {
+            "id": "FR",
+            "leadingDigits": null,
+            "dial": "+33",
+            "countryCode": "33",
+            "name": "France",
+            "exampleNumber": "612345678"
+        },
+        {
+            "dial": "+241",
+            "name": "Gabon",
+            "id": "GA",
+            "countryCode": "241",
+            "leadingDigits": null,
+            "exampleNumber": "06031234"
+        },
+        {
+            "id": "GB",
+            "dial": "+44",
+            "name": "United Kingdom",
+            "countryCode": "44",
+            "exampleNumber": "7400123456",
+            "leadingDigits": null
+        },
+        {
+            "dial": "+1473",
+            "exampleNumber": "4734031234",
+            "countryCode": "1",
+            "id": "GD",
+            "leadingDigits": "473",
+            "name": "Grenada"
+        },
+        {
+            "id": "GE",
+            "name": "Georgia",
+            "leadingDigits": null,
+            "exampleNumber": "555123456",
+            "dial": "+995",
+            "countryCode": "995"
+        },
+        {
+            "countryCode": "594",
+            "exampleNumber": "694201234",
+            "dial": "+594",
+            "name": "French Guiana",
+            "id": "GF",
+            "leadingDigits": null
+        },
+        {
+            "id": "GG",
+            "leadingDigits": null,
+            "countryCode": "44",
+            "name": "Guernsey",
+            "exampleNumber": "7781123456",
+            "dial": "+44"
+        },
+        {
+            "leadingDigits": null,
+            "countryCode": "233",
+            "name": "Ghana",
+            "id": "GH",
+            "exampleNumber": "231234567",
+            "dial": "+233"
+        },
+        {
+            "leadingDigits": null,
+            "countryCode": "350",
+            "id": "GI",
+            "exampleNumber": "57123456",
+            "name": "Gibraltar",
+            "dial": "+350"
+        },
+        {
+            "dial": "+299",
+            "name": "Greenland",
+            "id": "GL",
+            "leadingDigits": null,
+            "countryCode": "299",
+            "exampleNumber": "221234"
+        },
+        {
+            "name": "Gambia",
+            "leadingDigits": null,
+            "countryCode": "220",
+            "exampleNumber": "3012345",
+            "dial": "+220",
+            "id": "GM"
+        },
+        {
+            "countryCode": "224",
+            "name": "Guinea",
+            "id": "GN",
+            "dial": "+224",
+            "leadingDigits": null,
+            "exampleNumber": "601123456"
+        },
+        {
+            "countryCode": "590",
+            "dial": "+590",
+            "exampleNumber": "690001234",
+            "leadingDigits": null,
+            "name": "Guadeloupe",
+            "id": "GP"
+        },
+        {
+            "countryCode": "240",
+            "dial": "+240",
+            "name": "Equatorial Guinea",
+            "exampleNumber": "222123456",
+            "id": "GQ",
+            "leadingDigits": null
+        },
+        {
+            "dial": "+30",
+            "id": "GR",
+            "leadingDigits": null,
+            "exampleNumber": "6912345678",
+            "name": "Greece",
+            "countryCode": "30"
+        },
+        {
+            "leadingDigits": null,
+            "name": "Guatemala",
+            "dial": "+502",
+            "id": "GT",
+            "countryCode": "502",
+            "exampleNumber": "51234567"
+        },
+        {
+            "id": "GU",
+            "leadingDigits": "671",
+            "dial": "+1671",
+            "name": "Guam",
+            "countryCode": "1",
+            "exampleNumber": "6713001234"
+        },
+        {
+            "dial": "+245",
+            "id": "GW",
+            "name": "Guinea-Bissau",
+            "countryCode": "245",
+            "leadingDigits": null,
+            "exampleNumber": "955012345"
+        },
+        {
+            "leadingDigits": null,
+            "exampleNumber": "6091234",
+            "dial": "+595",
+            "name": "Guyana",
+            "id": "GY",
+            "countryCode": "592"
+        },
+        {
+            "dial": "+852",
+            "leadingDigits": null,
+            "countryCode": "852",
+            "name": "Hong Kong",
+            "id": "HK",
+            "exampleNumber": "51234567"
+        },
+        {
+            "dial": "+504",
+            "name": "Honduras",
+            "id": "HN",
+            "countryCode": "504",
+            "exampleNumber": "91234567",
+            "leadingDigits": null
+        },
+        {
+            "name": "Croatia",
+            "id": "HR",
+            "countryCode": "385",
+            "leadingDigits": null,
+            "exampleNumber": "921234567",
+            "dial": "+385"
+        },
+        {
+            "name": "Haiti",
+            "countryCode": "509",
+            "dial": "+509",
+            "id": "HT",
+            "leadingDigits": null,
+            "exampleNumber": "34101234"
+        },
+        {
+            "leadingDigits": null,
+            "dial": "+36",
+            "id": "HU",
+            "countryCode": "36",
+            "name": "Hungary",
+            "exampleNumber": "201234567"
+        },
+        {
+            "exampleNumber": "812345678",
+            "dial": "+62",
+            "name": "Indonesia",
+            "countryCode": "62",
+            "leadingDigits": null,
+            "id": "ID"
+        },
+        {
+            "dial": "+353",
+            "countryCode": "353",
+            "name": "Ireland",
+            "exampleNumber": "850123456",
+            "id": "IE",
+            "leadingDigits": null
+        },
+        {
+            "countryCode": "972",
+            "name": "Israel",
+            "id": "IL",
+            "leadingDigits": null,
+            "exampleNumber": "501234567",
+            "dial": "+972"
+        },
+        {
+            "name": "Isle of Man",
+            "leadingDigits": null,
+            "id": "IM",
+            "exampleNumber": "7924123456",
+            "countryCode": "44",
+            "dial": "+44"
+        },
+        {
+            "name": "India",
+            "countryCode": "91",
+            "id": "IN",
+            "exampleNumber": "8123456789",
+            "dial": "+91",
+            "leadingDigits": null
+        },
+        {
+            "exampleNumber": "3801234",
+            "dial": "+246",
+            "id": "IO",
+            "leadingDigits": null,
+            "name": "British Indian Ocean Territory",
+            "countryCode": "246"
+        },
+        {
+            "name": "Iraq",
+            "id": "IQ",
+            "leadingDigits": null,
+            "exampleNumber": "7912345678",
+            "dial": "+964",
+            "countryCode": "964"
+        },
+        {
+            "name": "Iran",
+            "countryCode": "98",
+            "dial": "+98",
+            "id": "IR",
+            "leadingDigits": null,
+            "exampleNumber": "9123456789"
+        },
+        {
+            "countryCode": "354",
+            "leadingDigits": null,
+            "exampleNumber": "6111234",
+            "dial": "+354",
+            "name": "Iceland",
+            "id": "IS"
+        },
+        {
+            "exampleNumber": "3123456789",
+            "dial": "+39",
+            "countryCode": "39",
+            "id": "IT",
+            "leadingDigits": null,
+            "name": "Italy"
+        },
+        {
+            "name": "Jersey",
+            "leadingDigits": null,
+            "exampleNumber": "7797712345",
+            "dial": "+44",
+            "id": "JE",
+            "countryCode": "44"
+        },
+        {
+            "dial": "+1876",
+            "name": "Jamaica",
+            "leadingDigits": "876",
+            "countryCode": "1",
+            "id": "JM",
+            "exampleNumber": "8762101234"
+        },
+        {
+            "exampleNumber": "790123456",
+            "name": "Jordan",
+            "leadingDigits": null,
+            "countryCode": "962",
+            "dial": "+962",
+            "id": "JO"
+        },
+        {
+            "leadingDigits": null,
+            "countryCode": "81",
+            "name": "Japan",
+            "exampleNumber": "9012345678",
+            "dial": "+81",
+            "id": "JP"
+        },
+        {
+            "name": "Kenya",
+            "leadingDigits": null,
+            "id": "KE",
+            "countryCode": "254",
+            "exampleNumber": "712123456",
+            "dial": "+254"
+        },
+        {
+            "leadingDigits": null,
+            "dial": "+996",
+            "name": "Kyrgyzstan",
+            "countryCode": "996",
+            "id": "KG",
+            "exampleNumber": "700123456"
+        },
+        {
+            "id": "KH",
+            "countryCode": "855",
+            "dial": "+855",
+            "leadingDigits": null,
+            "name": "Cambodia",
+            "exampleNumber": "91234567"
+        },
+        {
+            "exampleNumber": "72001234",
+            "dial": "+686",
+            "name": "Kiribati",
+            "id": "KI",
+            "leadingDigits": null,
+            "countryCode": "686"
+        },
+        {
+            "dial": "+269",
+            "name": "Comoros",
+            "countryCode": "269",
+            "id": "KM",
+            "leadingDigits": null,
+            "exampleNumber": "3212345"
+        },
+        {
+            "leadingDigits": "869",
+            "id": "KN",
+            "countryCode": "1",
+            "dial": "+1869",
+            "exampleNumber": "8697652917",
+            "name": "Saint Kitts and Nevis"
+        },
+        {
+            "id": "KP",
+            "countryCode": "850",
+            "dial": "+850",
+            "name": "Korea, Democratic People's Republic of Korea",
+            "exampleNumber": "1921234567",
+            "leadingDigits": null
+        },
+        {
+            "dial": "+82",
+            "name": "Korea, Republic of South Korea",
+            "leadingDigits": null,
+            "countryCode": "82",
+            "id": "KR",
+            "exampleNumber": "1000000000"
+        },
+        {
+            "dial": "+965",
+            "name": "Kuwait",
+            "leadingDigits": null,
+            "countryCode": "965",
+            "exampleNumber": "50012345",
+            "id": "KW"
+        },
+        {
+            "id": "KY",
+            "name": "Cayman Islands",
+            "exampleNumber": "3453231234",
+            "countryCode": "1",
+            "leadingDigits": "345",
+            "dial": "+ 345"
+        },
+        {
+            "id": "KZ",
+            "leadingDigits": null,
+            "countryCode": "7",
+            "exampleNumber": "7710009998",
+            "dial": "+77",
+            "name": "Kazakhstan"
+        },
+        {
+            "countryCode": "856",
+            "id": "LA",
+            "leadingDigits": null,
+            "dial": "+856",
+            "exampleNumber": "2023123456",
+            "name": "Laos"
+        },
+        {
+            "countryCode": "961",
+            "id": "LB",
+            "name": "Lebanon",
+            "dial": "+961",
+            "exampleNumber": "71123456",
+            "leadingDigits": null
+        },
+        {
+            "dial": "+1758",
+            "exampleNumber": "7582845678",
+            "name": "Saint Lucia",
+            "leadingDigits": "758",
+            "countryCode": "1",
+            "id": "LC"
+        },
+        {
+            "dial": "+423",
+            "id": "LI",
+            "leadingDigits": null,
+            "countryCode": "423",
+            "exampleNumber": "660234567",
+            "name": "Liechtenstein"
+        },
+        {
+            "exampleNumber": "712345678",
+            "dial": "+94",
+            "name": "Sri Lanka",
+            "countryCode": "94",
+            "id": "LK",
+            "leadingDigits": null
+        },
+        {
+            "countryCode": "231",
+            "exampleNumber": "770123456",
+            "dial": "+231",
+            "leadingDigits": null,
+            "name": "Liberia",
+            "id": "LR"
+        },
+        {
+            "exampleNumber": "50123456",
+            "dial": "+266",
+            "countryCode": "266",
+            "name": "Lesotho",
+            "leadingDigits": null,
+            "id": "LS"
+        },
+        {
+            "countryCode": "370",
+            "dial": "+370",
+            "name": "Lithuania",
+            "id": "LT",
+            "leadingDigits": null,
+            "exampleNumber": "61234567"
+        },
+        {
+            "id": "LU",
+            "dial": "+352",
+            "name": "Luxembourg",
+            "exampleNumber": "628123456",
+            "countryCode": "352",
+            "leadingDigits": null
+        },
+        {
+            "name": "Latvia",
+            "exampleNumber": "21234567",
+            "leadingDigits": null,
+            "countryCode": "371",
+            "dial": "+371",
+            "id": "LV"
+        },
+        {
+            "countryCode": "218",
+            "id": "LY",
+            "name": "Libyan Arab Jamahiriya",
+            "exampleNumber": "912345678",
+            "dial": "+218",
+            "leadingDigits": null
+        },
+        {
+            "name": "Morocco",
+            "leadingDigits": null,
+            "countryCode": "212",
+            "id": "MA",
+            "exampleNumber": "650123456",
+            "dial": "+212"
+        },
+        {
+            "countryCode": "377",
+            "id": "MC",
+            "exampleNumber": "612345678",
+            "dial": "+377",
+            "leadingDigits": null,
+            "name": "Monaco"
+        },
+        {
+            "id": "MD",
+            "leadingDigits": null,
+            "name": "Moldova",
+            "countryCode": "373",
+            "exampleNumber": "62112345",
+            "dial": "+373"
+        },
+        {
+            "leadingDigits": null,
+            "dial": "+382",
+            "countryCode": "382",
+            "id": "ME",
+            "exampleNumber": "67622901",
+            "name": "Montenegro"
+        },
+        {
+            "leadingDigits": null,
+            "countryCode": "590",
+            "name": "Saint Martin",
+            "id": "MF",
+            "exampleNumber": "690001234",
+            "dial": "+590"
+        },
+        {
+            "dial": "+261",
+            "countryCode": "261",
+            "leadingDigits": null,
+            "id": "MG",
+            "name": "Madagascar",
+            "exampleNumber": "321234567"
+        },
+        {
+            "exampleNumber": "2351234",
+            "id": "MH",
+            "leadingDigits": null,
+            "countryCode": "692",
+            "dial": "+692",
+            "name": "Marshall Islands"
+        },
+        {
+            "leadingDigits": null,
+            "dial": "+389",
+            "id": "MK",
+            "countryCode": "389",
+            "exampleNumber": "72345678",
+            "name": "Macedonia"
+        },
+        {
+            "name": "Mali",
+            "exampleNumber": "65012345",
+            "leadingDigits": null,
+            "countryCode": "223",
+            "id": "ML",
+            "dial": "+223"
+        },
+        {
+            "id": "MM",
+            "exampleNumber": "92123456",
+            "dial": "+95",
+            "countryCode": "95",
+            "name": "Myanmar",
+            "leadingDigits": null
+        },
+        {
+            "dial": "+976",
+            "countryCode": "976",
+            "leadingDigits": null,
+            "name": "Mongolia",
+            "id": "MN",
+            "exampleNumber": "88123456"
+        },
+        {
+            "leadingDigits": null,
+            "countryCode": "853",
+            "name": "Macao",
+            "dial": "+853",
+            "exampleNumber": "66123456",
+            "id": "MO"
+        },
+        {
+            "countryCode": "1",
+            "id": "MP",
+            "exampleNumber": "6702345678",
+            "leadingDigits": "670",
+            "dial": "+1670",
+            "name": "Northern Mariana Islands"
+        },
+        {
+            "dial": "+596",
+            "leadingDigits": null,
+            "id": "MQ",
+            "countryCode": "596",
+            "name": "Martinique",
+            "exampleNumber": "696201234"
+        },
+        {
+            "name": "Mauritania",
+            "id": "MR",
+            "exampleNumber": "22123456",
+            "leadingDigits": null,
+            "countryCode": "222",
+            "dial": "+222"
+        },
+        {
+            "countryCode": "1",
+            "id": "MS",
+            "exampleNumber": "6644923456",
+            "dial": "+1664",
+            "name": "Montserrat",
+            "leadingDigits": "664"
+        },
+        {
+            "dial": "+356",
+            "name": "Malta",
+            "id": "MT",
+            "leadingDigits": null,
+            "countryCode": "356",
+            "exampleNumber": "96961234"
+        },
+        {
+            "leadingDigits": null,
+            "exampleNumber": "52512345",
+            "name": "Mauritius",
+            "dial": "+230",
+            "countryCode": "230",
+            "id": "MU"
+        },
+        {
+            "dial": "+960",
+            "name": "Maldives",
+            "leadingDigits": null,
+            "id": "MV",
+            "countryCode": "960",
+            "exampleNumber": "7712345"
+        },
+        {
+            "id": "MW",
+            "countryCode": "265",
+            "leadingDigits": null,
+            "dial": "+265",
+            "name": "Malawi",
+            "exampleNumber": "991234567"
+        },
+        {
+            "id": "MX",
+            "leadingDigits": null,
+            "countryCode": "52",
+            "dial": "+52",
+            "exampleNumber": "12221234567",
+            "name": "Mexico"
+        },
+        {
+            "countryCode": "60",
+            "exampleNumber": "123456789",
+            "dial": "+60",
+            "name": "Malaysia",
+            "id": "MY",
+            "leadingDigits": null
+        },
+        {
+            "leadingDigits": null,
+            "id": "MZ",
+            "countryCode": "258",
+            "dial": "+258",
+            "name": "Mozambique",
+            "exampleNumber": "821234567"
+        },
+        {
+            "name": "Namibia",
+            "exampleNumber": "811234567",
+            "countryCode": "264",
+            "dial": "+264",
+            "leadingDigits": null,
+            "id": "NA"
+        },
+        {
+            "countryCode": "687",
+            "name": "New Caledonia",
+            "dial": "+687",
+            "id": "NC",
+            "leadingDigits": null,
+            "exampleNumber": "751234"
+        },
+        {
+            "leadingDigits": null,
+            "id": "NE",
+            "countryCode": "227",
+            "exampleNumber": "93123456",
+            "dial": "+227",
+            "name": "Niger"
+        },
+        {
+            "leadingDigits": null,
+            "name": "Norfolk Island",
+            "exampleNumber": "381234",
+            "id": "NF",
+            "countryCode": "672",
+            "dial": "+672"
+        },
+        {
+            "leadingDigits": null,
+            "name": "Nigeria",
+            "id": "NG",
+            "countryCode": "234",
+            "exampleNumber": "8021234567",
+            "dial": "+234"
+        },
+        {
+            "leadingDigits": null,
+            "countryCode": "505",
+            "name": "Nicaragua",
+            "dial": "+505",
+            "id": "NI",
+            "exampleNumber": "81234567"
+        },
+        {
+            "leadingDigits": null,
+            "dial": "+31",
+            "id": "NL",
+            "countryCode": "31",
+            "exampleNumber": "612345678",
+            "name": "Netherlands"
+        },
+        {
+            "dial": "+47",
+            "id": "NO",
+            "leadingDigits": null,
+            "exampleNumber": "40612345",
+            "countryCode": "47",
+            "name": "Norway"
+        },
+        {
+            "name": "Nepal",
+            "id": "NP",
+            "dial": "+977",
+            "leadingDigits": null,
+            "countryCode": "977",
+            "exampleNumber": "9841234567"
+        },
+        {
+            "countryCode": "674",
+            "dial": "+674",
+            "exampleNumber": "5551234",
+            "name": "Nauru",
+            "leadingDigits": null,
+            "id": "NR"
+        },
+        {
+            "id": "NU",
+            "exampleNumber": "1234",
+            "dial": "+683",
+            "name": "Niue",
+            "leadingDigits": null,
+            "countryCode": "683"
+        },
+        {
+            "id": "NZ",
+            "leadingDigits": null,
+            "countryCode": "64",
+            "dial": "+64",
+            "name": "New Zealand",
+            "exampleNumber": "211234567"
+        },
+        {
+            "leadingDigits": null,
+            "countryCode": "968",
+            "name": "Oman",
+            "exampleNumber": "92123456",
+            "dial": "+968",
+            "id": "OM"
+        },
+        {
+            "countryCode": "507",
+            "name": "Panama",
+            "exampleNumber": "60012345",
+            "id": "PA",
+            "leadingDigits": null,
+            "dial": "+507"
+        },
+        {
+            "dial": "+51",
+            "name": "Peru",
+            "leadingDigits": null,
+            "id": "PE",
+            "exampleNumber": "912345678",
+            "countryCode": "51"
+        },
+        {
+            "leadingDigits": null,
+            "countryCode": "689",
+            "exampleNumber": "87123456",
+            "dial": "+689",
+            "name": "French Polynesia",
+            "id": "PF"
+        },
+        {
+            "id": "PG",
+            "countryCode": "675",
+            "exampleNumber": "70123456",
+            "name": "Papua New Guinea",
+            "dial": "+675",
+            "leadingDigits": null
+        },
+        {
+            "countryCode": "63",
+            "leadingDigits": null,
+            "exampleNumber": "9051234567",
+            "name": "Philippines",
+            "dial": "+63",
+            "id": "PH"
+        },
+        {
+            "countryCode": "92",
+            "dial": "+92",
+            "name": "Pakistan",
+            "exampleNumber": "3012345678",
+            "leadingDigits": null,
+            "id": "PK"
+        },
+        {
+            "dial": "+48",
+            "exampleNumber": "512345678",
+            "name": "Poland",
+            "countryCode": "48",
+            "id": "PL",
+            "leadingDigits": null
+        },
+        {
+            "leadingDigits": null,
+            "exampleNumber": "551234",
+            "dial": "+508",
+            "name": "Saint Pierre and Miquelon",
+            "countryCode": "508",
+            "id": "PM"
+        },
+        {
+            "leadingDigits": null,
+            "countryCode": "1",
+            "exampleNumber": "7872345678",
+            "id": "PR",
+            "dial": "+1939",
+            "name": "Puerto Rico"
+        },
+        {
+            "dial": "+970",
+            "exampleNumber": "599123456",
+            "name": "Palestinian Territory, Occupied",
+            "id": "PS",
+            "leadingDigits": null,
+            "countryCode": "970"
+        },
+        {
+            "leadingDigits": null,
+            "name": "Portugal",
+            "countryCode": "351",
+            "exampleNumber": "912345678",
+            "dial": "+351",
+            "id": "PT"
+        },
+        {
+            "id": "PW",
+            "leadingDigits": null,
+            "countryCode": "680",
+            "dial": "+680",
+            "name": "Palau",
+            "exampleNumber": "6201234"
+        },
+        {
+            "id": "PY",
+            "leadingDigits": null,
+            "name": "Paraguay",
+            "countryCode": "595",
+            "exampleNumber": "961456789",
+            "dial": "+595"
+        },
+        {
+            "id": "QA",
+            "exampleNumber": "33123456",
+            "countryCode": "974",
+            "leadingDigits": null,
+            "name": "Qatar",
+            "dial": "+974"
+        },
+        {
+            "leadingDigits": null,
+            "name": "Reunion",
+            "dial": "+262",
+            "exampleNumber": "692123456",
+            "countryCode": "262",
+            "id": "RE"
+        },
+        {
+            "id": "RO",
+            "countryCode": "40",
+            "exampleNumber": "712345678",
+            "name": "Romania",
+            "dial": "+40",
+            "leadingDigits": null
+        },
+        {
+            "name": "Serbia",
+            "id": "RS",
+            "leadingDigits": null,
+            "countryCode": "381",
+            "exampleNumber": "601234567",
+            "dial": "+381"
+        },
+        {
+            "dial": "+7",
+            "leadingDigits": null,
+            "exampleNumber": "9123456789",
+            "name": "Russia",
+            "id": "RU",
+            "countryCode": "7"
+        },
+        {
+            "countryCode": "250",
+            "id": "RW",
+            "dial": "+250",
+            "name": "Rwanda",
+            "exampleNumber": "720123456",
+            "leadingDigits": null
+        },
+        {
+            "id": "SA",
+            "name": "Saudi Arabia",
+            "exampleNumber": "512345678",
+            "dial": "+966",
+            "leadingDigits": null,
+            "countryCode": "966"
+        },
+        {
+            "countryCode": "677",
+            "dial": "+677",
+            "exampleNumber": "7421234",
+            "leadingDigits": null,
+            "name": "Solomon Islands",
+            "id": "SB"
+        },
+        {
+            "id": "SC",
+            "leadingDigits": null,
+            "countryCode": "248",
+            "dial": "+248",
+            "exampleNumber": "2510123",
+            "name": "Seychelles"
+        },
+        {
+            "dial": "+249",
+            "exampleNumber": "911231234",
+            "countryCode": "249",
+            "id": "SD",
+            "leadingDigits": null,
+            "name": "Sudan"
+        },
+        {
+            "dial": "+46",
+            "exampleNumber": "701234567",
+            "name": "Sweden",
+            "id": "SE",
+            "countryCode": "46",
+            "leadingDigits": null
+        },
+        {
+            "id": "SG",
+            "leadingDigits": null,
+            "exampleNumber": "81234567",
+            "countryCode": "65",
+            "dial": "+65",
+            "name": "Singapore"
+        },
+        {
+            "id": "SH",
+            "leadingDigits": null,
+            "countryCode": "290",
+            "exampleNumber": "51234",
+            "dial": "+290",
+            "name": "Saint Helena, Ascension and Tristan Da Cunha"
+        },
+        {
+            "leadingDigits": null,
+            "countryCode": "386",
+            "id": "SI",
+            "exampleNumber": "31234567",
+            "name": "Slovenia",
+            "dial": "+386"
+        },
+        {
+            "countryCode": "47",
+            "name": "Svalbard and Jan Mayen",
+            "exampleNumber": "41234567",
+            "id": "SJ",
+            "dial": "+47",
+            "leadingDigits": null
+        },
+        {
+            "leadingDigits": null,
+            "countryCode": "421",
+            "id": "SK",
+            "name": "Slovakia",
+            "dial": "+421",
+            "exampleNumber": "912123456"
+        },
+        {
+            "id": "SL",
+            "exampleNumber": "25123456",
+            "leadingDigits": null,
+            "countryCode": "232",
+            "dial": "+232",
+            "name": "Sierra Leone"
+        },
+        {
+            "exampleNumber": "66661212",
+            "leadingDigits": null,
+            "dial": "+378",
+            "countryCode": "378",
+            "name": "San Marino",
+            "id": "SM"
+        },
+        {
+            "exampleNumber": "701234567",
+            "leadingDigits": null,
+            "name": "Senegal",
+            "id": "SN",
+            "countryCode": "221",
+            "dial": "+221"
+        },
+        {
+            "exampleNumber": "71123456",
+            "leadingDigits": null,
+            "dial": "+252",
+            "countryCode": "252",
+            "id": "SO",
+            "name": "Somalia"
+        },
+        {
+            "exampleNumber": "7412345",
+            "name": "Suriname",
+            "dial": "+597",
+            "leadingDigits": null,
+            "countryCode": "597",
+            "id": "SR"
+        },
+        {
+            "exampleNumber": "977123456",
+            "name": "South Sudan",
+            "leadingDigits": null,
+            "countryCode": "211",
+            "dial": "+211",
+            "id": "SS"
+        },
+        {
+            "leadingDigits": null,
+            "name": "Sao Tome and Principe",
+            "countryCode": "239",
+            "id": "ST",
+            "exampleNumber": "9812345",
+            "dial": "+239"
+        },
+        {
+            "id": "SV",
+            "leadingDigits": null,
+            "exampleNumber": "70123456",
+            "name": "El Salvador",
+            "countryCode": "503",
+            "dial": "+503"
+        },
+        {
+            "countryCode": "963",
+            "exampleNumber": "944567890",
+            "leadingDigits": null,
+            "dial": "+963",
+            "name": "Syrian Arab Republic",
+            "id": "SY"
+        },
+        {
+            "leadingDigits": null,
+            "name": "Swaziland",
+            "dial": "+268",
+            "id": "SZ",
+            "countryCode": "268",
+            "exampleNumber": "76123456"
+        },
+        {
+            "dial": "+1649",
+            "countryCode": "1",
+            "leadingDigits": "649",
+            "id": "TC",
+            "exampleNumber": "6492311234",
+            "name": "Turks and Caicos Islands"
+        },
+        {
+            "dial": "+235",
+            "name": "Chad",
+            "leadingDigits": null,
+            "exampleNumber": "63012345",
+            "countryCode": "235",
+            "id": "TD"
+        },
+        {
+            "id": "TG",
+            "leadingDigits": null,
+            "exampleNumber": "90112345",
+            "countryCode": "228",
+            "dial": "+228",
+            "name": "Togo"
+        },
+        {
+            "dial": "+66",
+            "leadingDigits": null,
+            "id": "TH",
+            "name": "Thailand",
+            "countryCode": "66",
+            "exampleNumber": "812345678"
+        },
+        {
+            "leadingDigits": null,
+            "id": "TJ",
+            "countryCode": "992",
+            "exampleNumber": "917123456",
+            "dial": "+992",
+            "name": "Tajikistan"
+        },
+        {
+            "exampleNumber": "7290",
+            "dial": "+690",
+            "countryCode": "690",
+            "id": "TK",
+            "name": "Tokelau",
+            "leadingDigits": null
+        },
+        {
+            "leadingDigits": null,
+            "name": "Timor-Leste",
+            "id": "TL",
+            "dial": "+670",
+            "exampleNumber": "77212345",
+            "countryCode": "670"
+        },
+        {
+            "exampleNumber": "66123456",
+            "name": "Turkmenistan",
+            "dial": "+993",
+            "id": "TM",
+            "leadingDigits": null,
+            "countryCode": "993"
+        },
+        {
+            "leadingDigits": null,
+            "id": "TN",
+            "name": "Tunisia",
+            "exampleNumber": "20123456",
+            "dial": "+216",
+            "countryCode": "216"
+        },
+        {
+            "id": "TO",
+            "name": "Tonga",
+            "leadingDigits": null,
+            "countryCode": "676",
+            "exampleNumber": "7715123",
+            "dial": "+676"
+        },
+        {
+            "name": "Turkey",
+            "id": "TR",
+            "leadingDigits": null,
+            "exampleNumber": "5012345678",
+            "countryCode": "90",
+            "dial": "+90"
+        },
+        {
+            "leadingDigits": "868",
+            "name": "Trinidad and Tobago",
+            "dial": "+1868",
+            "countryCode": "1",
+            "id": "TT",
+            "exampleNumber": "8682911234"
+        },
+        {
+            "exampleNumber": "901234",
+            "id": "TV",
+            "dial": "+688",
+            "leadingDigits": null,
+            "name": "Tuvalu",
+            "countryCode": "688"
+        },
+        {
+            "name": "Taiwan",
+            "countryCode": "886",
+            "exampleNumber": "912345678",
+            "dial": "+886",
+            "id": "TW",
+            "leadingDigits": null
+        },
+        {
+            "exampleNumber": "621234567",
+            "dial": "+255",
+            "id": "TZ",
+            "leadingDigits": null,
+            "countryCode": "255",
+            "name": "Tanzania, United Republic of Tanzania"
+        },
+        {
+            "leadingDigits": null,
+            "countryCode": "380",
+            "name": "Ukraine",
+            "id": "UA",
+            "dial": "+380",
+            "exampleNumber": "391234567"
+        },
+        {
+            "exampleNumber": "712345678",
+            "id": "UG",
+            "dial": "+256",
+            "name": "Uganda",
+            "countryCode": "256",
+            "leadingDigits": null
+        },
+        {
+            "id": "US",
+            "exampleNumber": "2015550123",
+            "countryCode": "1",
+            "leadingDigits": null,
+            "name": "United States",
+            "dial": "+1"
+        },
+        {
+            "name": "Uruguay",
+            "id": "UY",
+            "leadingDigits": null,
+            "exampleNumber": "94231234",
+            "dial": "+598",
+            "countryCode": "598"
+        },
+        {
+            "dial": "+998",
+            "id": "UZ",
+            "countryCode": "998",
+            "name": "Uzbekistan",
+            "exampleNumber": "912345678",
+            "leadingDigits": null
+        },
+        {
+            "dial": "+379",
+            "id": "VA",
+            "name": "Holy See (Vatican City State)",
+            "leadingDigits": null,
+            "countryCode": "39",
+            "exampleNumber": "3123456789"
+        },
+        {
+            "name": "Saint Vincent and the Grenadines",
+            "exampleNumber": "7844301234",
+            "dial": "+1784",
+            "countryCode": "1",
+            "id": "VC",
+            "leadingDigits": "784"
+        },
+        {
+            "name": "Venezuela, Bolivarian Republic of Venezuela",
+            "id": "VE",
+            "countryCode": "58",
+            "leadingDigits": null,
+            "exampleNumber": "4121234567",
+            "dial": "+58"
+        },
+        {
+            "exampleNumber": "2843001234",
+            "leadingDigits": "284",
+            "id": "VG",
+            "name": "Virgin Islands, British",
+            "countryCode": "1",
+            "dial": "+1284"
+        },
+        {
+            "exampleNumber": "3406421234",
+            "id": "VI",
+            "dial": "+1340",
+            "name": "Virgin Islands, U.S.",
+            "countryCode": "1",
+            "leadingDigits": "340"
+        },
+        {
+            "id": "VN",
+            "dial": "+84",
+            "leadingDigits": null,
+            "exampleNumber": "912345678",
+            "name": "Vietnam",
+            "countryCode": "84"
+        },
+        {
+            "exampleNumber": "5912345",
+            "id": "VU",
+            "name": "Vanuatu",
+            "leadingDigits": null,
+            "countryCode": "678",
+            "dial": "+678"
+        },
+        {
+            "countryCode": "681",
+            "dial": "+681",
+            "id": "WF",
+            "exampleNumber": "501234",
+            "leadingDigits": null,
+            "name": "Wallis and Futuna"
+        },
+        {
+            "leadingDigits": null,
+            "exampleNumber": "601234",
+            "countryCode": "685",
+            "name": "Samoa",
+            "dial": "+685",
+            "id": "WS"
+        },
+        {
+            "id": "YE",
+            "leadingDigits": null,
+            "dial": "+967",
+            "exampleNumber": "712345678",
+            "countryCode": "967",
+            "name": "Yemen"
+        },
+        {
+            "dial": "+262",
+            "leadingDigits": null,
+            "countryCode": "262",
+            "id": "YT",
+            "exampleNumber": "639012345",
+            "name": "Mayotte"
+        },
+        {
+            "countryCode": "27",
+            "exampleNumber": "711234567",
+            "dial": "+27",
+            "id": "ZA",
+            "name": "South Africa",
+            "leadingDigits": null
+        },
+        {
+            "leadingDigits": null,
+            "countryCode": "260",
+            "id": "ZM",
+            "exampleNumber": "955123456",
+            "dial": "+260",
+            "name": "Zambia"
+        },
+        {
+            "dial": "+263",
+            "name": "Zimbabwe",
+            "countryCode": "263",
+            "leadingDigits": null,
+            "id": "ZW",
+            "exampleNumber": "712345678"
+        }
+    ]
+}

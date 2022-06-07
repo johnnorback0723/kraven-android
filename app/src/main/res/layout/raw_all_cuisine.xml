@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:layout_marginTop="@dimen/_5sdp">
+	
+	<androidx.appcompat.widget.AppCompatImageView
+		android:id="@+id/imageViewCuisine"
+		android:layout_width="@dimen/_80sdp"
+		android:layout_height="@dimen/_80sdp"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent"
+		app:srcCompat="@drawable/bg" />
+	
+	<androidx.appcompat.widget.AppCompatTextView
+		android:id="@+id/textViewCuisineName"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="@dimen/_5sdp"
+		android:fontFamily="@font/work_sans_bold"
+		android:textAlignment="center"
+		android:textColor="@color/light_blue"
+		android:textSize="@dimen/_11ssp"
+		app:layout_constraintEnd_toEndOf="@+id/imageViewCuisine"
+		app:layout_constraintStart_toStartOf="@+id/imageViewCuisine"
+		app:layout_constraintTop_toBottomOf="@+id/imageViewCuisine"
+		tools:text="Mediterraneannn" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/_16sdp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:gravity="center"
+        tools:ignore="UseCompoundDrawables">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logo_orange_white_wrapper"
+            android:contentDescription="@string/app_name"
+            android:layout_marginEnd="@dimen/_6sdp"
+            android:layout_gravity="center_vertical"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:textAllCaps="true"
+            android:textColor="@color/orange"
+            android:textSize="@dimen/_38ssp"
+            android:fontFamily="@font/typo_round_bold_demo"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_gravity="center_vertical"/>
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imageViewAccepted"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/_80sdp"
+        android:background="@drawable/ic_aceepted"
+        android:fontFamily="@font/work_sans_medium"
+        android:textColor="@color/orange"
+        android:textSize="@dimen/_12ssp" />
+
+    <TextView
+        android:id="@+id/textViewOrderPlaced"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:fontFamily="@font/work_sans_medium"
+        android:gravity="center"
+        android:text="@string/paymentprocess"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_14ssp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/textViewOk"
+        style="@style/CommonButton"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:text="@string/ok"
+        app:cornerRadius="@dimen/_80sdp" />
+
+</LinearLayout>

@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:fillViewport="true">
+	
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+
+		<androidx.constraintlayout.widget.ConstraintLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:clipChildren="true"
+			android:descendantFocusability="blocksDescendants"
+			app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+			<com.google.android.material.button.MaterialButton
+				android:id="@+id/textViewCountryName"
+				android:layout_width="wrap_content"
+				android:layout_height="38dp"
+				android:layout_marginTop="5dp"
+				android:clickable="true"
+				android:fontFamily="@font/work_sans_regular"
+				android:text="The Bahamas"
+				android:textColor="@color/black"
+				android:textSize="@dimen/_12ssp"
+				app:backgroundTint="@color/white"
+				app:cornerRadius="@dimen/_30sdp"
+				app:icon="@drawable/ic_curved_arrow"
+				app:iconGravity="end"
+				app:iconPadding="@dimen/_10sdp"
+				app:iconTint="@color/orange"
+				app:layout_constraintEnd_toEndOf="parent"
+				app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintTop_toTopOf="parent"
+				app:strokeColor="@color/orange"
+				app:strokeWidth="0.6dp"
+				app:textAllCaps="false" />
+
+			<androidx.appcompat.widget.AppCompatImageView
+				android:id="@+id/imageViewLogo"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="30dp"
+				android:layout_marginEnd="@dimen/_6sdp"
+				app:layout_constraintEnd_toStartOf="@id/textViewAppName"
+				app:layout_constraintHorizontal_chainStyle="packed"
+				app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintTop_toBottomOf="@+id/textViewCountryName"
+				app:srcCompat="@drawable/logo_orange_white_wrapper" />
+
+			<androidx.appcompat.widget.AppCompatTextView
+				android:id="@+id/textViewAppName"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:fontFamily="@font/typo_round_bold_demo"
+				android:text="@string/app_name"
+				android:textColor="@color/orange"
+				android:textSize="@dimen/_38ssp"
+				app:layout_constraintBottom_toBottomOf="@+id/imageViewLogo"
+				app:layout_constraintEnd_toEndOf="parent"
+				app:layout_constraintStart_toEndOf="@id/imageViewLogo"
+				app:layout_constraintTop_toTopOf="@+id/imageViewLogo"
+				app:textAllCaps="true" />
+
+
+			<androidx.appcompat.widget.AppCompatTextView
+				android:id="@+id/textViewIslandName"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="@dimen/_5sdp"
+				android:fontFamily="@font/work_sans_bold"
+				android:visibility="gone"
+				android:textColor="@color/orange"
+				android:textSize="@dimen/_20ssp"
+				app:layout_constraintEnd_toEndOf="parent"
+				app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintTop_toBottomOf="@+id/textViewAppName"
+				app:textAllCaps="true"
+				tools:text="Grand Bahama" />
+
+
+			<androidx.constraintlayout.widget.Group
+				android:id="@+id/groupPromoCode"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:visibility="gone"
+				app:constraint_referenced_ids="viewTop,viewPagerFoodImages,buttonSeeAll,viewPagerIndicator" />
+
+			<View
+				android:id="@+id/viewTop"
+				android:layout_width="0dp"
+				android:layout_height="0dp"
+				android:background="@color/white"
+				app:layout_constraintEnd_toEndOf="parent"
+				app:layout_constraintHeight_percent="0.30"
+				app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintTop_toBottomOf="@+id/textViewIslandName" />
+
+			<androidx.viewpager.widget.ViewPager
+				android:id="@+id/viewPagerFoodImages"
+				android:layout_width="0dp"
+				android:layout_height="0dp"
+				app:layout_constraintDimensionRatio="H,16:9"
+				app:layout_constraintEnd_toEndOf="parent"
+				app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintTop_toBottomOf="@+id/textViewIslandName" />
+
+
+			<androidx.appcompat.widget.AppCompatTextView
+				android:id="@+id/buttonSeeAll"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="@dimen/_10sdp"
+				android:layout_marginEnd="@dimen/_10sdp"
+				android:background="@drawable/see_all_background"
+				android:fontFamily="@font/work_sans_medium"
+				android:text="@string/see_all"
+				android:textAllCaps="false"
+				android:textColor="@color/white"
+				android:textSize="@dimen/_12ssp"
+				app:layout_constraintEnd_toEndOf="parent"
+				app:layout_constraintTop_toTopOf="@+id/viewPagerFoodImages" />
+
+			<me.relex.circleindicator.CircleIndicator
+				android:id="@+id/viewPagerIndicator"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="@dimen/_10sdp"
+				app:ci_drawable="@drawable/selecteditem_dot"
+				app:ci_drawable_unselected="@drawable/nonselecteditem_dot"
+				app:ci_orientation="horizontal"
+				app:layout_constraintEnd_toEndOf="parent"
+				app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintTop_toBottomOf="@+id/viewPagerFoodImages"
+				app:layout_constraintWidth_percent="0.5" />
+
+			<!--<View
+				android:id="@+id/viewPagerIndicator"
+				android:layout_width="0dp"
+				android:layout_height="@dimen/_25sdp"
+				android:background="@drawable/shadow_bottom"
+				app:layout_constraintEnd_toEndOf="parent"
+				app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintTop_toBottomOf="@+id/viewPagerFoodImages"
+				app:layout_constraintWidth_percent="0.5" />
+
+			<LinearLayout
+				android:id="@+id/linearLayoutDotsCount"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal"
+				app:layout_constraintBottom_toBottomOf="@+id/viewPagerIndicator"
+				app:layout_constraintEnd_toEndOf="@+id/viewPagerIndicator"
+				app:layout_constraintStart_toStartOf="@+id/viewPagerIndicator"
+				app:layout_constraintTop_toTopOf="@+id/viewPagerIndicator" />-->
+
+
+			<com.google.android.material.button.MaterialButton
+				android:id="@+id/buttonTrackOrder"
+				style="@style/CommonButton"
+				android:text="@string/track_order"
+				android:layout_marginTop="@dimen/_5sdp"
+				app:cornerRadius="@dimen/_20sdp"
+				app:layout_constraintBottom_toTopOf="@+id/textViewServices"
+				app:layout_constraintEnd_toEndOf="parent"
+				app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintTop_toBottomOf="@+id/viewPagerIndicator" />
+
+
+			<androidx.appcompat.widget.AppCompatTextView
+				android:id="@+id/textViewServices"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="@dimen/_10sdp"
+				android:fontFamily="@font/work_sans_regular"
+				android:text="@string/services"
+				android:textColor="@color/black"
+				android:textSize="@dimen/_13ssp"
+				app:layout_constraintEnd_toEndOf="parent"
+				app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintTop_toBottomOf="@+id/buttonTrackOrder" />
+
+			<androidx.recyclerview.widget.RecyclerView
+				android:id="@+id/recyclerViewServices"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="@dimen/_10sdp"
+				android:nestedScrollingEnabled="false"
+				app:layout_constraintTop_toBottomOf="@+id/textViewServices"
+				tools:itemCount="1"
+				tools:listitem="@layout/service_raw" />
+
+			<View
+				android:id="@+id/viewDivider"
+				android:layout_width="0dp"
+				android:layout_height="@dimen/_1sdp"
+				android:layout_marginTop="@dimen/_10sdp"
+				android:background="@color/light_gray"
+				app:layout_constraintEnd_toEndOf="parent"
+				app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintTop_toBottomOf="@+id/recyclerViewServices"
+				app:layout_constraintWidth_percent="0.7" />
+
+			<androidx.appcompat.widget.AppCompatTextView
+				android:id="@+id/textViewNearBy"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="@dimen/_15sdp"
+				android:layout_marginTop="@dimen/_15sdp"
+				android:fontFamily="@font/work_sans_regular"
+				android:text="Browse Cuisines"
+				android:textColor="@color/orange"
+				android:textSize="@dimen/_15ssp"
+				app:layout_constraintEnd_toEndOf="parent"
+				app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintTop_toBottomOf="@+id/viewDivider" />
+
+			<androidx.recyclerview.widget.RecyclerView
+				android:id="@+id/recyclerViewRestaurant"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="@dimen/_10sdp"
+				android:layout_marginTop="@dimen/_10sdp"
+				android:layout_marginEnd="@dimen/_10sdp"
+				android:layout_marginBottom="@dimen/_20sdp"
+				android:clipToPadding="false"
+				android:nestedScrollingEnabled="false"
+				android:visibility="gone"
+				app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+				app:layout_constraintTop_toBottomOf="@+id/textViewNearBy"
+				app:spanCount="3"
+				tools:itemCount="10"
+				tools:listitem="@layout/raw_all_cuisine" />
+
+		</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+	</LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

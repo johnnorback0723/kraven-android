@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imageViewPin"
+        android:layout_width="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@drawable/ic_location_pin"
+        android:layout_height="wrap_content" />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textView"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintHorizontal_bias="0"
+        android:layout_width="wrap_content"
+        app:layout_constraintEnd_toStartOf="@id/viewCenter"
+        android:layout_marginStart="@dimen/_10sdp"
+        app:layout_constraintStart_toEndOf="@+id/imageViewPin"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        android:text="This is text This is  "
+        android:layout_height="wrap_content" />
+
+    <View
+        android:id="@+id/viewCenter"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        android:layout_width="1dp"
+        app:layout_constraintEnd_toStartOf="@id/textViewTwo"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_height="20dp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:background="@color/black"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textViewTwo"
+        app:layout_constraintHorizontal_bias="0"
+        android:layout_width="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="@dimen/_10sdp"
+        app:layout_constraintStart_toEndOf="@+id/viewCenter"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="This is Demo"
+        android:layout_height="wrap_content" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

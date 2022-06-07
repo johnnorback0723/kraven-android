@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:id="@+id/action_search"
+        android:icon="@drawable/ic_search"
+        android:title="Search"
+        android:visible="false"
+        app:showAsAction="always|collapseActionView" />
+
+    <item
+        android:id="@+id/menuFav"
+        android:title="@string/favorite"
+        app:actionLayout="@layout/layout_fav_unfav"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/ic_cart"
+        android:title="Cart"
+        app:actionLayout="@layout/layout_cart"
+        app:showAsAction="always" />
+
+</menu>

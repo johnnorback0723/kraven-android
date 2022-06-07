@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/mainLayout"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+
+	<com.google.android.material.appbar.AppBarLayout
+		android:id="@+id/appBarLayout"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="@android:color/white"
+		android:elevation="0dp"
+		app:elevation="0dp">
+		
+		<androidx.appcompat.widget.Toolbar
+			android:id="@+id/appToolbar"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			app:expandedTitleGravity="center_horizontal"
+			app:navigationIcon="@drawable/ic_menu"
+			app:title="">
+
+			<TextView
+				android:id="@+id/tvButtonTitle"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:fontFamily="@font/work_sans_medium"
+				android:textStyle="normal"
+				android:textSize="@dimen/_10ssp"
+				android:textColor="#000000"
+				android:clickable="true"
+				android:layout_gravity="start"
+				android:focusable="true"
+				android:text="@string/str_cancel"
+				android:visibility="visible"
+				android:translationX="-20dp"/>
+
+			<androidx.appcompat.widget.AppCompatTextView
+				android:id="@+id/textViewMainTitle"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center"
+				android:clickable="false"
+				android:ellipsize="end"
+				android:fontFamily="@font/work_sans_medium"
+				android:gravity="center"
+				android:textColor="@android:color/black"
+				android:textSize="@dimen/_12ssp"
+				app:layout_constraintBottom_toBottomOf="parent"
+				app:layout_constraintEnd_toEndOf="parent"
+				app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintTop_toTopOf="parent"
+				tools:text="Home" />
+		
+		</androidx.appcompat.widget.Toolbar>
+	
+	</com.google.android.material.appbar.AppBarLayout>
+	
+	
+	<FrameLayout
+		android:id="@+id/mainContainer"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:background="@color/white"
+		app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

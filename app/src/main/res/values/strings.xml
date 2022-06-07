@@ -1,0 +1,506 @@
+<resources>
+	<string name="app_name">Kraven</string>
+	
+	
+	<!--Logout Fragment-->
+	<string name="sure_logout">Are your sure you want to logout?</string>
+	<string name="items">Items</string>
+	
+	
+	<!--Dialog string-->
+	<string name="cash_on_delivery_info">Cash on Delivery Info</string>
+	<string name="delivery_charge_info">Delivery Charge Info</string>
+	<string name="cash_delivery_text">Account will be terminated if cash not paid on delivery.</string>
+	<string name="delivery_charger_text_beverage">Delivery charge will be calculated based on the distance between beverage location and delivery location.</string>
+	<string name="delivery_charger_text_restaurant">Delivery charge will be calculated based on the distance between restaurant location and delivery location.</string>
+	<string name="ok">Ok</string>
+	<string name="how_to_apply">To redeem your wallet click on the \“Wallet Balance\” box. Type the amount you want to apply on the keyboard. Once you type the amount press \“Done\" or \"Ok\” and amount will be applied to your total.</string>
+	
+	
+	<!--Drawer Menu-->
+	<!-- <string-array name="drawer_menu">
+		 <item>Home</item>
+		 <item>Order History</item>
+		 <item>Favorite Restaurant</item>
+		 <item>Wallet</item>
+		 <item>My Offers</item>
+		 <item>Refer A Friends</item>
+		 <item>Payment Setting</item>
+		 <item>Notifications</item>
+		 <item>Settings</item>
+		 <item>Logout</item>
+
+	 </string-array>-->
+	
+	<string-array name="drawer_menu">
+		<item>Home</item>
+		<item>Promos</item>
+		<item>Wallet</item>
+		<item>Refer A Friend</item>
+		<item>My Profile</item>
+		<item>Order History</item>
+		<item>Favorites</item>
+		<item>Edit Island</item>
+		<item>Contact Us</item>
+		<item>Support</item>
+		<item>Logout</item>
+	
+	</string-array>
+	
+	<!--Bartender Event Array-->
+	<string-array name="event_array">
+		<item>Wedding</item>
+		<item>Engagement</item>
+	</string-array>
+	
+	<!--Bartender Dress Code Array-->
+	<string-array name="dress_code">
+		<item>Formal</item>
+		<item>Casual</item>
+	</string-array>
+	
+	
+	<!-- Dummy Text -->
+	<string name="long_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</string>
+	
+	<!--<string name="refer_friend">If you enjoy the app, refer your friends and receive a $5 reward in your wallet! You and all of your friends will get $5, share your referral code.</string>-->
+	
+	<string name="refer_friend">If you enjoy the app, refer your friends and receive a reward in your wallet! Share your referral code!</string>
+	
+	
+	<!--Login Fragment-->
+	<string name="email">Email</string>
+	<string name="referral_code">Referral Code (Optional)</string>
+	<string name="password">Password</string>
+	<string name="forgot_password">Forgot Password?</string>
+	<string name="login">Login</string>
+	<string name="dont_acccount">Don\'t have an account?</string>
+	<string name="enter_email_address">Please enter email address</string>
+	<string name="enter_valid_email">Please enter valid email address</string>
+	<string name="enter_password">Please enter password</string>
+	<string name="enter_valid_password">Password should be minimum 8 or maximum 25 characters long. It contains must be at least 1 numbers.</string>
+	<string name="please_enter_referral_code">Please enter referral code</string>
+	
+	
+	<!--Forgot Password Fragment-->
+	<string name="forgot_instruction">Enter your email below and we will send you a link to reset your password.</string>
+	<string name="send">Send</string>
+	
+	<!--Sign Up Fragment-->
+	<string name="sign_up">Sign Up</string>
+	<string name="name">Name</string>
+	<string name="first_name">First Name</string>
+	<string name="last_name">Last Name</string>
+	<string name="country_code">County Code</string>
+	<string name="mobile_number">Mobile Number</string>
+	<string name="confirm_password">Confirm Password</string>
+	<string name="agree">I agree Terms &amp; Conditions</string>
+	<string name="terms_and_conditions">Terms And Conditions</string>
+	<string name="search">Search</string>
+	<string name="enter_name">Please enter name</string>
+	<string name="enter_first_name">Please enter first name</string>
+	<string name="enter_last_name">Please enter last name</string>
+	<string name="enter_valid_name">Please enter valid name</string>
+	<string name="enter_country_code">Enter code</string>
+	<string name="enter_mobile_number">Please enter mobile number</string>
+	<string name="enter_valid_mobile_number">Enter valid number</string>
+	<string name="password_not_match">Password mis match</string>
+	<string name="accept_term_condition">Please accept terms and conditions</string>
+	<string name="gender">Gender</string>
+	<string name="male">Male</string>
+	<string name="female">Female</string>
+	<string name="rathernotsay">Rather not say</string>
+	<string name="dob">DOB</string>
+	<string name="profile_incompletion">Profile Incompletion</string>
+	<string name="profile_incompletion_text">Please add your gender and DOB</string>
+	
+	<!--Address Fragment-->
+	<string name="address">Address</string>
+	<string name="hello_worldRed"><![CDATA[<b><font color=#cc0029>*</font></b>]]></string>
+	<string name="asteriskred"><font color='#cc0029'>*</font></string>
+	<string name="auto_detect_location">Auto Detect My Location</string>
+	<string name="address_type">Address Type(Home, Work, Hotel, Etc.)</string>
+	<string name="country">Country</string>
+	<string name="city">City</string>
+	<string name="locality">Building Name</string>
+	<string name="house_no">House No, Room No</string>
+	<string name="landmark">Landmark/Special Instructions</string>
+	<string name="save">Save</string>
+	<string name="need_permissions">Need Permissions</string>
+	<string name="permission_message">This app need permissions to use this feature.You can grant them in app settings.</string>
+	<string name="yes">YES</string>
+	<string name="no">NO</string>
+	<string name="enter_address">Please enter address</string>
+	<string name="enter_address_type">Please enter address type</string>
+	<string name="enter_country">Please enter country</string>
+	<string name="enter_city">Please enter city</string>
+	<string name="enter_locality">Please enter locality, area or street</string>
+	<string name="enter_house_no">Please enter house no, room No</string>
+	<string name="enter_landmark">Please enter landmark</string>
+	<string name="can_not_find_address">Can not find address</string>
+	
+	<!--Verification Fragment-->
+	<string name="verification">Verification</string>
+	<string name="verification_instruction">We sent you an One Time Password via SMS on your registered mobile number.</string>
+	<string name="code">Code</string>
+	<string name="not_received">Message not received? Resend</string>
+	<string name="enter_code">Please enter verification code</string>
+	
+	
+	<!-- Home Fragment-->
+	<string name="see_all">See All</string>
+	<string name="off">20 % OFF ON \nALL FOOD ITEMS Valid for over $50</string>
+	<string name="services">Services</string>
+	<string name="nearby">%d Nearby Restaurant</string>
+	
+	<!--Restaurant Details-->
+	<string name="menu">Menu</string>
+	<string name="today_special">Today\'s Special</string>
+	<string name="future_order">Future Food Order</string>
+	<string name="restaurant_reservation">Restaurant Reservation</string>
+	<string name="open_hour">Opening Hours</string>
+	<string name="minimum_order">Minimum order amount (Of Subtotal)</string>
+	<string name="view_cart">View Cart</string>
+	<string name="review">Review</string>
+	
+	<!-- Cart List-->
+	<string name="your_cart">Your Cart</string>
+	<string name="apply_promo_code">Apply Promo Code</string>
+	<string name="add_tip">Add Driver Tip</string>
+	<string name="add_wallet">Add Wallet</string>
+	<string name="add_note">Add Note</string>
+	<string name="enter_promo_code">Enter Promo Code</string>
+	<string name="done">Done</string>
+	<string name="delivery_type">Order Type</string>
+	<string name="pickup">Pickup</string>
+	<string name="delivery">Delivery</string>
+	<string name="price_details">Price Detail</string>
+	<string name="change">Add/Change</string>
+	<string name="sub_total">Subtotal</string>
+	<string name="delivery_charge">Delivery Charge</string>
+	<string name="vat">VAT (%s)</string>
+	<string name="total">Total</string>
+	<string name="please_select_payment_method">Please select payment method</string>
+	<string name="debit_card">Debit/Credit Card</string>
+	<string name="credit_card">Credit Card</string>
+	<string name="cash_on_delivery">Cash On Delivery</string>
+	<string name="wallet">Wallet</string>
+	<string name="wallet_edit_text">Wallet Balance ($%.2f)</string>
+	<string name="checkout">Checkout</string>
+	<string name="add_address">Add Address</string>
+	<string name="select_address">Select Address</string>
+	<string name="select_tip">Please select tip</string>
+	
+	<!--Payment Screen-->
+	<string name="payment">Payment</string>
+	<string name="total_amount">Total Amount</string>
+	<string name="wallet_balance">Wallet Balance</string>
+	<string name="required_amount">Required Amount</string>
+	<string name="choose_card">Choose Card</string>
+	<string name="pay">Pay</string>
+	<string name="please_wait">Please wait... \n we are sending your order to the restaurant</string>
+	<string name="cancel">Cancel</string>
+	
+	
+	<!-- Track order-->
+	<string name="track_order">Track Order</string>
+	<string name="we_have_received_your_order">We have received your order.</string>
+	<string name="order_placed">Order Placed</string>
+	<string name="your_order_has_been_confirmed">Your order has been confirmed.</string>
+	<string name="order_confirmed">Order Confirmed</string>
+	<string name="we_are_preparing_your_food">We are preparing your food.</string>
+	<string name="order_process">Order Being Processed (%s mins estimated preparation time)</string>
+	<string name="food_on_the_way">Food On The Way</string>
+	<string name="beverage_on_the_way">Beverage On The Way</string>
+	<string name="_20_mins_estimated_delivery_time">%s mins estimated delivery time.</string>
+	<string name="delivered">Delivered</string>
+	<string name="your_order_has_been_delivered">Your order has been delivered!</string>
+	<string name="track">Track</string>
+	
+	<!--Rating Screen-->
+	<string name="rating">Rating</string>
+	<string name="write_comment">Write Comment</string>
+	<string name="submit">Submit</string>
+	
+	<!--Order History-->
+	<string name="order_history">Order History</string>
+	<!--My Order Screen-->
+	<string name="my_order">My Orders</string>
+	<string name="order_id">Order ID: %s</string>
+	<string name="order_id_small">Order Id: %s</string>
+	<string name="qty">Qty : %s</string>
+	
+	<!--My Order Details-->
+	<string name="my_order_details">My Order Detail</string>
+	<string name="restaurant">Restaurant</string>
+	<string name="note">Note</string>
+	<string name="tip">Driver Tip (%s)</string>
+	<string name="payment_method">Payment Method</string>
+	<string name="discount">Discount</string>
+	<string name="payment_mode">Payment Mode :</string>
+	<string name="card_number">Card Number :</string>
+	<string name="transaction_id">Transaction ID :</string>
+	
+	
+	<!--Order Food-->
+	<string name="order_food">Order Food</string>
+	
+	<!-- Future Food Order-->
+	<string name="future_food_order">Future Food Order</string>
+	<string name="date">Date</string>
+	<string name="time">Time</string>
+	<string name="next">Next</string>
+	<string name="hours">Hours</string>
+	<string name="minutes">Minutes</string>
+	
+	
+	<!-- Select Vendor-->
+	<string name="select_vendor">Select Vendor</string>
+	<string name="date_time">Date &amp; Time: %s</string>
+	<string name="topping">Topping :</string>
+	<string name="order_beverage">Order Beverage</string>
+	<string name="doller_sign">$</string>
+	<string name="set_beverage">Set Beverage Delivery Date &amp; Time</string>
+	<string name="you_must_be_18">You must be 18 years or older to purchase alcoholic beverages.</string>
+	<string name="add_special_note">Add Special Note</string>
+	<string name="enter_here">Enter here..</string>
+	<string name="menu_title">Placed</string>
+	
+	
+	<!-- Special Order-->
+	<string name="special_order">Special Order</string>
+	<string name="beverage_deliver_info">Order must be placed 6 days in advanced</string>
+	<string name="beverage">Beverage</string>
+	<string name="beverage_underline"><u>Beverage</u></string>
+	<string name="brand">Brand  e.g. Heniken</string>
+	<string name="quantity_type">Quantity Type</string>
+	<string name="please_enter_beverage">Please enter beverage</string>
+	<string name="please_enter_brand">Please enter brand</string>
+	<string name="please_enter_quantity_type">Please enter quantity type</string>
+	<string name="please_enter_quantity">Please enter quantity</string>
+	<string name="please_enter_special_note">Please enter special note</string>
+	<string name="quantity">Quantity</string>
+	<string name="please_select_beverage_date">Please select beverage date</string>
+	
+	
+	<!--Beverage Order Details-->
+	<string name="special_noteq">Special Note</string>
+	<string name="status_pending">Pending</string>
+	<string name="status_confirmed">Confirmed</string>
+	<string name="status_finished">Finished</string>
+	<string name="status_placed">Placed</string>
+	<string name="status_canceled">Canceled</string>
+	<string name="status_accepted">Accepted</string>
+	<string name="beverage_delivery_date">Beverage Delivery Date</string>
+	<string name="admin_comments">Admin Comments</string>
+	
+	<!-- Book Table-->
+	<string name="book_table">Book Table</string>
+	<string name="number_of_people">Number of People</string>
+	<string name="select_hours">Select Hours</string>
+	<string name="select_date">Select Date</string>
+	<string name="select_time">Select Time</string>
+	<string name="dining_time">Approximate dining time</string>
+	<string name="book">Book</string>
+	
+	
+	<!-- Restaurant Order Details-->
+	<string name="table_details">Table Detail</string>
+	
+	<!-- Portable Bar Rental-->
+	<string name="portable_bar_rental">Portable Bar Rental</string>
+	<string name="select_payment_method_not_cash">Select Payment Method (cash not accepted)</string>
+	<string name="portable_bar_delivery_info">The delivery charge will be a flat rate of $10</string>
+	<string name="price">Price: $</string>
+	
+	<!-- Bartender Service-->
+	<string name="bartender_service">Bartender Service</string>
+	<string name="hours_of_service">Hours of Service</string>
+	<string name="type_of_event">Type of Event</string>
+	<string name="dress_code">Bartender Dress Code</string>
+	<string name="please_select_date">Please select date</string>
+	<string name="please_select_time">Please select time</string>
+	<string name="please_select_hours">Please select hours</string>
+	<string name="please_select_number_of_hours">Please select number of hours</string>
+	<string name="please_select_events">Please select event</string>
+	<string name="please_select_dress_code">Please select dress code</string>
+	
+	<!-- Bartender Order Details-->
+	<string name="booking_hours">Booking Hours</string>
+	<string name="bartender_dress_code">Bartender Dress Code</string>
+	
+	<!--Wallet Fragment-->
+	
+	<string name="add_money">Add Money</string>
+	<string name="current_balance">Current Balance</string>
+	<string name="please_enter_money">Please enter money</string>
+	<string name="please_enter_cvv">Please enter CVV</string>
+	<string name="please_enter_valid_cvv">Please enter valid CVV</string>
+	<string name="transaction_details">Transaction Details</string>
+	<string name="my_wallet">Wallet</string>
+	<string name="my_offer">My Offer</string>
+	<string name="refer_friends">Refer A Friend</string>
+	<string name="share">Share</string>
+	<string name="payment_setting">Payment Setting</string>
+	
+	
+	<!--Add to Card fragment-->
+	<string name="lable_holder_name">Card Holder Name</string>
+	<string name="lable_card_number">Card Number</string>
+	<string name="lable_expiry_date">Expiry Date</string>
+	<string name="lable_cvv">CVV</string>
+	<string name="add">Add</string>
+	<string name="add_card">Add Card</string>
+	
+	
+	<string name="please_enter_name">Please enter you name</string>
+	<string name="please_enter_card_name">Please enter card number</string>
+	<string name="please_enter_valid_card_name">Please enter valid card name</string>
+	<string name="please_select_dates">Please select card expiry date</string>
+	<string name="sure_delete">Are you sure you want to delete?</string>
+	<string name="notification">Notifications</string>
+	
+	<!--Setting Fragment-->
+	<string name="setting">Settings</string>
+	<string name="terms_condition"><![CDATA[Terms & Conditions]]></string>
+	<string name="faq_s">FAQ\'s</string>
+	<string name="privacy_policy">Privacy Policy</string>
+	<string name="support_us">Support Us</string>
+	<string name="title">Title</string>
+	<string name="your_message">Your Message</string>
+	<!--<string name="send">Send</string>-->
+	<string name="enter_title">Please enter title</string>
+	<string name="enter_message">Please enter message</string>
+	<string name="edit_profile">Edit Profile</string>
+	<string name="change_password">Change Password</string>
+	<string name="update">Update</string>
+	<string name="old_password">Old Password</string>
+	<string name="new_password">New Password</string>
+	<string name="please_enter_old_password">Please enter old password</string>
+	<string name="please_enter_new_password">Please enter new password</string>
+	<string name="please_enter_confirm_password">Please enter confirm password</string>
+	
+	<string name="please_select_image">Please select image</string>
+	<string name="select_photo">Select photo</string>
+	<string name="take_photo">Take photo</string>
+	<string name="favorite_restaurant">Favorite Restaurant</string>
+	<string name="favorite_beverage">Favorite Beverage</string>
+	<string name="favorite">Favorite</string>
+	
+	<string name="or_login_with">Or login with</string>
+	<string name="facebook">Facebook</string>
+	<string name="google">Google</string>
+	<string name="or_sign_up_with">Or Sign Up with</string>
+	<string name="please_select_card">Please select card.</string>
+	<string name="need_permission">This app need permissions to use this feature.You can grant them in app settings.</string>
+	<string name="request_successfully_sent">Your request successfully sent</string>
+	<string name="invalid_time">Invalid Time</string>
+	<string name="password_successfully_changed">Your password successfully changed</string>
+	<string name="profile_successfully_update">Profile updated successfully.</string>
+	<string name="delivery_pickup"><![CDATA[Delivery & pickup]]></string>
+	<string name="filter">Filter</string>
+	<string name="order_now">Order Now</string>
+	<string name="manage_address">Manage Address</string>
+	<string name="reorder">Re-Order</string>
+	<string name="number_of_hours">Number of Hours</string>
+	<string name="your_order_was_successfully_placed">Your order was successfully placed! \nA KRAVEN representative will contact you.</string>
+	<string name="complate_order_place">Thank you for your order! \nYour order has been sent to \"THE FRENCH ROOM\" to confirm.</string>
+	<string name="continues">Continue</string>
+	<string name="delivery_date_and_time">Date Time</string>
+	<string name="promos">Promos</string>
+	<string name="amount">Amount</string>
+	<string name="contact_us">Contact Us</string>
+	<string name="enter_valid_otp">Please enter valid otp!!</string>
+	<string name="edit">Edit</string>
+	<string name="delete">Delete</string>
+	<string name="home">Home</string>
+	<string name="add_to_cart">Add To Cart</string>
+	<string name="order_text">Your order was Successfully Placed! A KRAVEN representative will contact you.</string>
+	<string name="call">Call</string>
+	<string name="my_reservation_detail">My Reservation Detail</string>
+	<string name="support">Support</string>
+	<string name="special_notes">Special Notes</string>
+	<string name="process_to_pay">Process to pay</string>
+	<string name="column_text"> : %s</string>
+	<string name="place_order">Place Order</string>
+	
+	
+	<!--Other String-->
+	<string name="space_string">%s %s</string>
+	<string name="review_restaurant">(%s Reviews)</string>
+	<string name="mile_restaurant">(%s Miles)</string>
+	<string name="opening_hours">%s - %s</string>
+	<string name="doller_string_space">$ %s</string>
+	<string name="doller_string">$%s</string>
+	<string name="doller_string_d">$%f</string>
+	<string name="ml">(%s ml)</string>
+	
+	
+	<!--Changes By Ankita-->
+	<string name="nearByRestaurant">%s Near by Restaurants</string>
+	<string name="itemNotAvailable">Item is currently unavailable</string>
+	<string name="messge_empty_cart">Your cart is empty.Add something from the menu.</string>
+	<string name="message_restaurant_already_exist_title">Items already in cart</string>
+	<string name="message_restaurant_already_exist">
+        Your cart contains items from a different restaurant/beverage. Would you like to reset your cart before browsing this restaurant/beverage?</string>
+	<string name="message_future_food_already_exits">Normal orders cannot be combined with Future Food orders, would you like to reset your cart before continuing?</string>
+	<string name="VAT">VAT(%.2f%%)</string>
+	<string name="extras">Extras :</string>
+	<string name="toppings">Toppings :</string>
+	<string name="dips">Dips :</string>
+	
+	<string name="extrasSmall">extras</string>
+	<string name="toppingsSmall">toppings</string>
+	<string name="dipsSmall">dips</string>
+	<string name="editToCart">Edit to Cart</string>
+	<string name="Percentage">Percentage</string>
+	<string name="lowWalletTitle">You have low payable balance</string>
+	<string name="resturantCloseTitle">Restauarant is currenty closed</string>
+	<string name="resturantCloseDesc">Do you want to order for the future?</string>
+	<string name="currentlyUnavailable">Currently Unavailable</string>
+	<string name="Close">Close</string>
+	<string name="cashOnDelivery">Cash on Delivery</string>
+	<string name="cashOnPickup">Cash on Pickup</string>
+	<string name="cancel_order">Cancel Order</string>
+	<string name="rate_and_review">Rate &amp; Review</string>
+	
+	
+	<!--Other-->
+	<string name="payment_mode_value">Card: $%s, Wallet: %s </string>
+	<string name="payment_mode_value_wallet">Wallet: %s </string>
+	<string name="estimated_time">Estimated Time : %s mins</string>
+	
+	<string name="estimated_miles">Estimated Miles : %s mi</string>
+	
+	<string name="NoAddress">Address Not Found</string>
+	<string name="message_add_problem">Your problem created successfully</string>
+	<string name="message_connect_to_internet">Please connect to internet to add further problem</string>
+	<string name="net_error">Net Error</string>
+	<string name="location_error">Location Error</string>
+	<string name="times">Time : %s mins</string>
+	
+	
+	<!-- Special Beverage -->
+	<string name="quantity_types">Qty : %s\nQuantity type : %s\nSize of Bottle : %s</string>
+	<string name="order_type">Order Type</string>
+	
+	
+	<string name="cancel_by">Rejected by : %s</string>
+	<string name="cancelled_by">Cancelled by : %s</string>
+	<string name="cancel_reason">Reason : %s</string>
+	<string name="order_must_be_placed_6_days_in_advanced">*  Order must be placed 6 days in advanced</string>
+	
+	<string name="thank_you_for_order">Thank you for your order! \nYour order has been sent to "\"%s\"" to confirm.</string>
+	
+	<!-- TODO: Remove or change this placeholder text -->
+	<string name="hello_blank_fragment">Hello blank fragment</string>
+	<string name="click_here_for_step_on_how_to_apply_wallet">Click here for steps on how to apply wallet</string>
+
+	<string name="paymentprocess">Your payment is processing. <br/> Please wait. <br/> KRAVEN will update you momentarily.</string>
+	<string name="str_for_your_security">For your security please enter the CVV for this card.</string>
+	<string name="str_for_visa_mastercard">For Visa, MasterCard and Discover, 3 digits on the back of your card.</string>
+	<string name="str_caps_cvv">CVV</string>
+    <string name="str_cancel">Cancel</string>
+	<string name="str_your_transaction_declined">Your transaction has been declined.\nPlease contact your issuing bank.\nOrder ID : %d</string>
+
+</resources>
